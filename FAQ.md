@@ -1,24 +1,22 @@
 # FAQ - InnerSource @ Intel
 
-> Intel needs to change to survive and change even more to win. We need to move from reactive software execution to software leading the way for our hardware roadmap. We need to break down the fragmented software silos across Intel and create unified and simple software solutions for the corporation. Reimagining the role of software at Intel is central to the transformation of Intel.
-> - Bill Savage, One Intel Software & Architecture Sept'2020 All Hands
+## What does InnerSource mean?
 
-## What is InnerSource?
+- The use of open source software development best practices and the establishment of an open source-like culture within organizations.
+- The organization may still develop proprietary software, but internally opens up its development.
 
 Many companies use the word "InnerSource" to describe how their engineering teams work together on code. InnerSource is a development methodology where engineers build proprietary software using best practices from large-scale open source projects.  The use of open source software development best practices and the establishment of an open source like culture within OISA, IAGS and eventually across Intel is what InnerSource @ Intel is all about.
 
 ## What do people in our industry have to say about InnerSource?
+
+> Intel needs to change to survive and change even more to win. We need to move from reactive software execution to software leading the way for our hardware roadmap. We need to break down the fragmented software silos across Intel and create unified and simple software solutions for the corporation. Reimagining the role of software at Intel is central to the transformation of Intel.
+> - Bill Savage, One Intel Software & Architecture Sept'2020 All Hands
 
 > Adopting this modern approach to software development can be transformative—enabling collaboration and fostering the creation of high quality code. But understanding the principles, and potential challenges, is critical to success.  Many companies use the word “innersource” to describe how their engineering teams work together on code. Innersource is a development methodology where engineers build proprietary software using best practices from large-scale open source projects, like Kubernetes or Microsoft’s Visual Studio Code.
 > -GitHub
 
 > We see innersource as a way to improve efficiency through code reuse. But even beyond that, it's an amazing conduit for learning and exchanging ideas and facilitating innovation within IBM.
 > -Jeff Jagoda, Senior Software Engineer, IBM
-
-## What is the definition of InnerSource?
-
-- The use of open source software development best practices and the establishment of an open source-like culture within organizations.
-- The organization may still develop proprietary software, but internally opens up its development.
 
 ## What are some Industry Resources about InnerSource?
 
