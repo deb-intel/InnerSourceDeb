@@ -1,1 +1,0 @@
-A CONTRIBUTING.md file in your Github repo gives potential contributors to your project a guide to the processes and conventions your project uses to accept contribution. Similar to README.md and FAQ.md it is convention to capitilize "contributing", structure the file using markdown, and save it in the root directory of your project repo.
