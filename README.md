@@ -10,3 +10,7 @@ reliability, and functionality. The scale at which these operate can teach us a 
 business build better software, faster using innersource.
 
 \- https://resources.github.com/whitepapers/introduction-to-innersource/
+
+# Practices and Guildelines
+
+- [README](/readme/guidelines.md)
