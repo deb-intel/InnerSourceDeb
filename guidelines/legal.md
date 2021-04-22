@@ -5,6 +5,9 @@ SWLC Sharepoint: http://goto.intel.com/swlc
 SWLC Wiki: https://wiki.ith.intel.com/display/SWLC/Software+Legal+Compliance
 SWLC Record Center: http://goto.intel.com/SWLCRecordCenter
 
+We recommend teams also scan for Intellectual Property Leak Detection.
+http://ipldt.intel.com/
+
 The InnerSource community of practice would like to see the following ensure InnerSource readiness for reuse and contribution:
 - In your InnerSource YAML file, please record the location of your Protex project and how to get access.
 - In your InnerSource YAML file, please record the location of your SWLC Record Center project and how to get access.
