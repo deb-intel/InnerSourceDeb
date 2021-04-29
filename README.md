@@ -13,4 +13,5 @@ business build better software, faster using innersource.
 
 # Practices and Guildelines
 
-- [README](/readme/guidelines.md)
+- [README](/guidelines/README.md)
+- [Release cadence](/guidelines/release-cadence.md)

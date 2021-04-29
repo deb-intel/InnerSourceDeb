@@ -9,6 +9,7 @@ your project does in two to three sentences.
 navigate the page.
 
 - [Important information (optional)](#important-information-optional)
+- [Release Candence](#release-cadence)
 - [Contribute](#contribute)
 - [License](#license)
 - [Security](#security)
@@ -22,6 +23,12 @@ example:
 - Usage
 - System requirements
 - Documentation
+
+# Release Cadence
+
+Define your release cadence. If it is less frequent than weekly then include a link to your
+published release schedule so that consumers and contributors would know when to expect the
+latest features and bug fixes.
 
 # Contribute
 
