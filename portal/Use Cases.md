@@ -22,19 +22,19 @@ Product has a set of states: Draft - setup is ongoing; Active - setup is complet
 
 | Metadata                     | Where is stored |
 | ---------------------------- | --------------- |
-| source code                  | giHub           |
-| source code metrics ???      | giHub           |
-| open bugs ???                | Jira            |
-| bugs tracking guidelines ??? | ?               |
-| instructions to engage ???   | ?               |
-| contacts ???                 | ?               |
-| SWLC                         | ?               |
+| source code                  | gitHub          |
+| source code metrics          | gitHub          |
+| open bugs and requirements   | Jira or Rally or gitHub issues |
+| bugs tracking guidelines     | InnerSource gitHub? |
+| instructions to engage       | project gitHub? |
+| contacts                     | project gitHub? |
+| SWLC                         | Protex & Record Center |
 | SDL                          | SDLE            |
-| roadmap                      | ?               |
-| test cases ???               | ?               |
-| coding guidelines ???        | ?               |
-| CI description ???           | ?               |
-| build instructions ???       | ?               |
+| roadmap                      | project sharepoint or project gitHub, etc? |
+| test cases                   | ?               |
+| coding guidelines            | project gitHub? |
+| CI description               | ?               |
+| build instructions           | ?               |
 |                              |                 |
 |                              |                 |
 |                              |                 |
