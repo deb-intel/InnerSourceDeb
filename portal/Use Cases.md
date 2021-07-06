@@ -16,9 +16,29 @@
 Each Product has name, responsible person, is associated with Product metadata, has Product description, Product checklist and Product Grading.
 Product has a set of states: Draft - setup is ongoing; Active - setup is completed, available for engagement; Archived - tracked for historical reasons, not available for engagement
 
-**Product metadata** - set of github branches, bug tracking system, internal documentation, instructions to obtain access to the sources and bug tracking, contacts, SWLC, SDL, roadmap, test cases, info needed in order to reuse the code and then release, coding guidelines, CI rules, how to build, etc.
+**Product description** - information descries the product like high-level description of the product domain and tasks to be solved (for example, Crypto, SignalProcessing, DeepLearning, etc.), presented with tags (words), is used for product classification and future discovery.
 
-**Product description** - information descries the product: high-level description of the product domain and tasks to be solved (for example, Crypto, SignalProcessing, DeepLearning, etc.), may be presented with tags, automated natural language processing of docs, word cloud aggregation, etc.
+**Product metadata** -
+
+| Metadata                     | Where is stored |
+| ---------------------------- | --------------- |
+| source code                  | giHub           |
+| source code metrics ???      | giHub           |
+| open bugs ???                | Jira            |
+| bugs tracking guidelines ??? | ?               |
+| instructions to engage ???   | ?               |
+| contacts ???                 | ?               |
+| SWLC                         | ?               |
+| SDL                          | SDLE            |
+| roadmap                      | ?               |
+| test cases ???               | ?               |
+| coding guidelines ???        | ?               |
+| CI description ???           | ?               |
+| build instructions ???       | ?               |
+|                              |                 |
+|                              |                 |
+|                              |                 |
+|                              |                 |
 
 **Product checklist** - instrument to complete Product self-assessment to get InnerSource grading
 
