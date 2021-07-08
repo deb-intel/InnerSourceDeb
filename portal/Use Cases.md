@@ -24,21 +24,22 @@ Product has a set of states: Draft - setup is ongoing; Active - setup is complet
 | ---------------------------- | --------------- |
 | source code                  | gitHub          |
 | source code metrics          | gitHub          |
-| open bugs and requirements   | Jira or Rally or gitHub issues |
-| bugs tracking guidelines     | InnerSource gitHub? |
+| open bugs and requirements   | Jira or Rally or gitHub issues (eventually 1DB) |
+| bugs tracking guidelines     | project gitHub? |
 | instructions to engage       | project gitHub? |
 | contacts                     | project gitHub? |
 | SWLC                         | Protex & Record Center |
 | SDL                          | SDLE            |
 | roadmap                      | project sharepoint or project gitHub, etc? |
-| test cases                   | ?               |
+| test cases                   | project link to  test case locations |
 | coding guidelines            | project gitHub? |
 | CI description               | ?               |
-| build instructions           | ?               |
-|                              |                 |
-|                              |                 |
-|                              |                 |
-|                              |                 |
+| build instructions           | project CI scripts or project gitHub md file? |
+| TM&B                         | link to TM&B DB |
+| Public Distribution          | links to intel.com or public gitHub |
+| internal project documentation | internal |
+| external project documentation | external  |
+| export classification        | link to SDLE autoclassification or text box where they declare their classification approved via email |
 
 **Product checklist** - instrument to complete Product self-assessment to get InnerSource grading
 
