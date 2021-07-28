@@ -13,7 +13,8 @@ The InnerSource community of practice would like to see the following ensure Inn
 - Record Center
   - In your InnerSource YAML file, please record the location of your SWLC Record Center project and how to get access.
   - Up-to-date SWLC evidence can easily be shared
-  - Record Center items approved
+  - Document your Export Compliance Classifcation Number (ECCN) and your country of origin in Record Center
+  - Record Center items are all approved
 - Protex
   - In your InnerSource YAML file, please record the location of your Protex project and how to get access.
   - Protex contains all 3rd party dependencies and licenses.
