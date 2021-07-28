@@ -6,7 +6,11 @@ SDL Essentials portal: http://goto.intel.com/sdle
 SDL Wiki: http://goto.intel.com/sdle-wiki
 
 The InnerSource community of practice would like to see the following ensure InnerSource readiness for reuse and contribution:
-- In your InnerSource YAML file, please record the location of your SDL project and how to get access.
-- Code marked as shippable (release tags) has 100% of SDL tasks complete in your SDL project.
-- 2 weeks SLA for addressing CVEs reported against current and LTS versions of the component.
-- Compliant with Intel PSIRT policy – all critical/ medium severity PSIRTs have been fixed or are within the acceptable fix window. PSIRT database and records are usually restricted by need-to-know.
+- SDL Essentials
+  - Complete requirements and obtain SDL approval for your current release.
+  - Document your project according to InnerSource BKMs 
+  - In your InnerSource YAML file, please record the location of your SDL project and how to get access.
+  - Document your Export Compliance Classifcation Number (ECCN) in your SDL project.
+
+For teams reusing code
+- If you are not modifying the code, 
