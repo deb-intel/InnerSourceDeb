@@ -1,5 +1,8 @@
 Project Documentation
 
+Coding Standards
+- SWBOK code review BKM: https://intel.sharepoint.com/sites/SoftwareBodyOfKnowledgeandStandards/CodeReview/Pages/Overview.aspx
+
 Need the following for Security:
 - What are Team A's interfaces?  
 - What privilege level are they at?
