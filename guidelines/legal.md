@@ -20,5 +20,6 @@ The InnerSource community of practice would like to see the following ensure Inn
   - Protex contains all 3rd party dependencies and licenses.
   - Protex contains the outboud license for your project.
   - Provide list of obligations that product reusing this code should fulfill.
+- Copyright Headers
 
 
