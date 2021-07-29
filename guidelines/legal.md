@@ -20,6 +20,10 @@ The InnerSource community of practice would like to see the following ensure Inn
   - Protex contains all 3rd party dependencies and licenses.
   - Protex contains the outboud license for your project.
   - Provide list of obligations that product reusing this code should fulfill.
-- Copyright Headers
+- Add all copyright headers per SWLC policy
+  - https://process.autolm.intel.com/services/p/a/processes/ca91a9f8-f2b1-4d44-bc0a-daffb2095de8/WIP/index.html#2_task_swlc110
+  - Add Intel Header to Protex BOM for Intel-developed code
+  - All Intel-developed source files have the Intel Header
+  - 3rd party code requirements: https://legal.intel.com/Software/Pages/Notices%20in%20Source.aspx
 
 
