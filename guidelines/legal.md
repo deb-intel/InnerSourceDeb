@@ -18,6 +18,7 @@ The InnerSource community of practice would like to see the following ensure Inn
 - Protex
   - In your InnerSource YAML file, please record the location of your Protex project and how to get access.
   - Protex contains all 3rd party dependencies and licenses.
+    - https://intel.sharepoint.com/sites/SWLC/SitePages/Frequently-Asked-Questions.aspx 
   - Protex contains the outboud license for your project.
   - Provide list of obligations that product reusing this code should fulfill.
 - Add all copyright headers per SWLC policy
