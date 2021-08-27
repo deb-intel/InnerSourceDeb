@@ -1,4 +1,5 @@
-# What is InnerSource?
+What is InnerSource?
+====================
 
 Many companies use the word “innersource” to describe how their engineering teams work together on code.
 Innersource is a development methodology where engineers build proprietary software using best practices
@@ -9,9 +10,41 @@ most successful ones are driven by a vision for their future, in addition to day
 reliability, and functionality. The scale at which these operate can teach us a few lessons—and help your
 business build better software, faster using innersource.
 
-\- https://resources.github.com/whitepapers/introduction-to-innersource/
+- https://resources.github.com/whitepapers/introduction-to-innersource/
 
-# Practices and Guildelines
+.. toctree::
+    :glob:
+    :maxdepth: 2
+    :caption: Practices and Guildelines
 
-- [README](/guidelines/README.md)
-- [Release cadence](/guidelines/release-cadence.md)
+    guidelines/*
+
+.. toctree::
+    :glob:
+    :maxdepth: 2
+    :caption: Portal
+
+    portal/Use Cases
+
+.. toctree::
+    :glob:
+    :maxdepth: 2
+    :caption: Community
+
+    GitHub Repo <https://github.com/intel-innersource/documentation.practices.innersource>
+    FAQ
+    contributing/docs
+
+.. toctree::
+    :glob:
+    :maxdepth: 2
+    :caption: Templates
+
+    templates/CONTRIBUTING
+    templates/readme
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`search`

@@ -1,0 +1,29 @@
+name: Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  pages:
+    name: Build GitHub Pages
+    runs-on: Linux
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build docs
+      run: |
+        python3 -m pip install -U -r requirements.txt
+        python3 -c 'import os, sys, pkg_resources; sys.exit([e.load() for e in pkg_resources.iter_entry_points("console_scripts") if e.name.startswith("sphinx-build")][0]())' -W -b html . built_html_docs/
+        export COMMIT_MESSAGE="$(git log -n 1 --oneline)"
+        mv .git built_html_docs/
+        cd built_html_docs/
+        git checkout --orphan gh-pages
+        touch .nojekyll
+        git add -A
+        git status
+        git config --global user.email "john.s.andersen@intel.com"
+        git config --global user.name "InnerSource WG"
+        git commit -sm "${COMMIT_MESSAGE}"
+        git push -u origin -f gh-pages

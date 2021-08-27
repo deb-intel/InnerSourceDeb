@@ -1,4 +1,4 @@
-Software Legal Compliance (SWLC)
+# Software Legal Compliance (SWLC)
 
 The InnerSource community of practice does not define or interfere with the corporate Software Legal Compliance requirements.
 - SWLC Sharepoint: http://goto.intel.com/swlc

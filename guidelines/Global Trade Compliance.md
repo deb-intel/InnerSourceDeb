@@ -1,4 +1,4 @@
-Global Trade Complance (Export)
+# Global Trade Complance (Export)
 
 The InnerSource community of practice does not define or interfere with the corporate Global Trade Compliance requirements.
 - Sharepoint: https://intel.sharepoint.com/sites/Trade/SitePages/Export-Classification-Number-(ECCN).aspx

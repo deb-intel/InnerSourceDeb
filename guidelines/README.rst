@@ -1,4 +1,5 @@
-# Guildelines for Creating Readme Files
+Guildelines for Creating Readme Files
+=====================================
 
 The README file is the "front door" to your repository - it is likely the first
 page a new user will see. It should communicate the most important information
@@ -10,10 +11,11 @@ content into a separate page and linking to it from the README or using the
 repository wiki. For example, add a section to your README for the content that
 includes a simple statement linking to the full content on a separate page. The
 License section in this README example demonstrates this.
-Get started with a template provided [here](/templates/readme.md) or pick from
-the numerous templates available on the web.
+Get started with a template provided :doc:`here </templates/readme>` or pick
+from the numerous templates available on the web.
 
 OSPDT BKMs:
-- https://intel.sharepoint.com/:p:/r/sites/docsatintelofficehours/_layouts/15/Doc.aspx?sourcedoc=%7B299F3D02-85E5-4CEA-BDFB-B74E0869ED7D%7D&file=GitHub%20Repo%20Essentials%20-%202020.pptx
-- https://gitlab.devtools.intel.com/document-publishing/github-repo-basics 
 
+- https://intel.sharepoint.com/:p:/r/sites/docsatintelofficehours/_layouts/15/Doc.aspx?sourcedoc=%7B299F3D02-85E5-4CEA-BDFB-B74E0869ED7D%7D&file=GitHub%20Repo%20Essentials%20-%202020.pptx
+
+- https://gitlab.devtools.intel.com/document-publishing/github-repo-basics

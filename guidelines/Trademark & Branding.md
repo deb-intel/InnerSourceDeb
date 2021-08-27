@@ -1,4 +1,4 @@
-Trademark & Branding (TM&B)
+# Trademark & Branding (TM&B)
 
 The InnerSource community of practice does not define or interfere with the corporate Trademark & Branding requirements.
 - https://legal.intel.com/Trademarks/

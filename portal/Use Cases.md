@@ -1,6 +1,6 @@
-[TOC]
-
 # Priorities
+
+[TOC]
 
 1. Portal to find and reuse project, grading visualization
 
@@ -203,7 +203,7 @@ Analyze-1:
 
 # Q&A
 
-----------------------------------------------------------------------------------------------
+------
 
 Do we need to track any dependencies between projects/people like who contributed to what project, what was reused, etc. ? 
 

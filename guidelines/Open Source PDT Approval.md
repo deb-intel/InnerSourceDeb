@@ -1,4 +1,4 @@
-Open Source PDT (OSPDT) Approval 
+# Open Source PDT (OSPDT) Approval
 
 The InnerSource community of practice does not define or interfere with the corporate Open Source PDT Approval requirements.
 - https://opensource.intel.com/how-to/open-source-approval-process
