@@ -1,3 +1,5 @@
+.. _contributing_template:
+
 # How to contribute
 We welcome community contributions to PROJECT NAME. You can:
 

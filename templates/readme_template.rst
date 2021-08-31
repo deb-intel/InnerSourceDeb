@@ -1,3 +1,5 @@
+.. _readme_template:
+
 # Project name
 
 Provide a short introduction to your project. The introduction should state what
