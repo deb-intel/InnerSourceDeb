@@ -15,9 +15,6 @@ For example, add a section to your README for the content that includes a
 simple statement linking to the full content on a separate page. The License
 section in this README example demonstrates this.
 
-Get started with a template provided :ref:`readme_template` or pick
-from the numerous templates available on the web.
-
 OSPDT BKMs
 **********
 

@@ -41,7 +41,6 @@ business build better software, faster using innersource.
     :caption: Templates
 
     templates/CONTRIBUTING
-    templates/readme
 
 Indices and tables
 ==================

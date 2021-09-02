@@ -17,28 +17,28 @@ Many companies use the word "InnerSource" to describe how their engineering team
 What do people in our industry have to say about InnerSource?
 *************************************************************
 
-  |Intel needs to change to survive and change even more to win. We need to
-  |move from reactive software execution to software leading the way for our
-  |hardware roadmap. We need to break down the fragmented software silos
-  |across Intel and create unified and simple software solutions for the
-  |corporation. Reimagining the role of software at Intel is central to the
-  |transformation of Intel.
-    *~Bill Savage, One Intel Software & Architecture Sept'2020 All Hands*
+  | Intel needs to change to survive and change even more to win. We need to
+  | move from reactive software execution to software leading the way for our
+  | hardware roadmap. We need to break down the fragmented software silos
+  | across Intel and create unified and simple software solutions for the
+  | corporation. Reimagining the role of software at Intel is central to the
+  | transformation of Intel.
+  | *~Bill Savage, One Intel Software & Architecture Sept'2020 All Hands*
 
-  |Adopting this modern approach to software development can be
-  |transformative—enabling collaboration and fostering the creation of high
-  |quality code. But understanding the principles, and potential challenges,
-  |is critical to success.  Many companies use the word “innersource” to
-  |describe how their engineering teams work together on code. Innersource is
-  |a development methodology where engineers build proprietary software using
-  |best practices from large-scale open source projects, like Kubernetes or
-  |Microsoft’s Visual Studio Code.
-    *~GitHub*
+  | Adopting this modern approach to software development can be
+  | transformative—enabling collaboration and fostering the creation of high
+  | quality code. But understanding the principles, and potential challenges,
+  | is critical to success.  Many companies use the word “innersource” to
+  | describe how their engineering teams work together on code. Innersource is
+  | a development methodology where engineers build proprietary software using
+  | best practices from large-scale open source projects, like Kubernetes or
+  | Microsoft’s Visual Studio Code.
+  | *~GitHub*
 
-  |We see innersource as a way to improve efficiency through code reuse.
-  |But even beyond that, it's an amazing conduit for learning and exchanging
-  |ideas and facilitating innovation within IBM.
-    *~Jeff Jagoda, Senior Software Engineer, IBM*
+  | We see innersource as a way to improve efficiency through code reuse.
+  | But even beyond that, it's an amazing conduit for learning and exchanging
+  | ideas and facilitating innovation within IBM.
+  | *~Jeff Jagoda, Senior Software Engineer, IBM*
 
 What are some Industry Resources about InnerSource?
 ******************************************************
@@ -99,8 +99,7 @@ How do I get more information on the 1source/db initiatives?
 
 
 .. _InnerSource Commons: https://innersourcecommons.org/
-.. _Microsoft - Manage an InnerSource program by using GitHub:
-https://resources.github.com/whitepapers/introduction-to-innersource/
+.. _Microsoft - Manage an InnerSource program by using GitHub: https://resources.github.com/whitepapers/introduction-to-innersource/
 .. _InnerSource WG MS Teams Channel: https://teams.microsoft.com/l/team/19:3a8548442bc044f18ccd60ca041893a0%40thread.tacv2/conversations?groupId=21a36de7-8fbf-45fe-8133-06da410f3748&tenantId=46c98d88-e344-4ed4-8496-4ed7712e255d
 .. _InnerSource WG Overview: https://intel.sharepoint.com/sites/InnerSource/SitePages/InnerSource-WG-Overview.aspx
 .. _InnerSource WG Roadmap: https://intel.sharepoint.com/:p:/s/IAGSOneIntelSource/EULAUaSo8q5Bgv0-AhJSpqcB5Y1V0PdxYKrx9FRlNWHotw?e=zqeOZm

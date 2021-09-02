@@ -16,8 +16,10 @@ The InnerSource community of practice would like to see the following ensure Inn
 
 
 For teams reusing code:
+
 * If you are not modifying the code, you can reference the existing Export
   Compliance Classifcation Number (ECCN) approval when obtaining the ECCN for your project.
+
 * If you are modifying the code, you are responsible for obtaining a
   new Export Compliance Classifcation Number (ECCN) through the following methods.
 

@@ -24,6 +24,6 @@ Here are the InnerSource Readiness expectations:
 Projects in maintenance  mode that do not need frequent releases still qualify for tier 1-3 if
 they define release cadence and simply skip releases if there are no changes.
 
-Describe your release cadence in [README.md](/templates/README.md) and add a reference to the
+Describe your release cadence in your README and add a reference to the
 published release schedule if it applies.
 

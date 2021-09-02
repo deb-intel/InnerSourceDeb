@@ -236,10 +236,10 @@ TBD -**???Do we need to notify users???**
 
 TBD -**???How user retirement be processed???**
 
+--------------
+
 Q&A
 ===
-
---------------
 
 Do we need to track any dependencies between projects/people like who
 contributed to what project, what was reused, etc. ?

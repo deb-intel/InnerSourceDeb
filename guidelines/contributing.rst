@@ -16,7 +16,7 @@ To learn more about Markdown check out the `Markdown Guide`_ or the
 CONTRIBUTING templates, examples, and guides
 ********************************************
 
-We created a :ref:`CONTRIBUTING template<contributing_template>` as a starting point for InnerSource projects to adapt to their project\'s needs.
+We created a :doc:`CONTRIBUTING template</templates/CONTRIBUTING>` as a starting point for InnerSource projects to adapt to their project\'s needs.
 
 There are many external open source projects that provide good examples of CONTRIBUTING files
 
@@ -32,7 +32,7 @@ There are some external guides to creating an effective CONTRIBUTING file:
 
 .. _Zephyr Project: https://github.com/zephyrproject-rtos/zephyr/blob/master/CONTRIBUTING.rst
 .. _Markdown Guide: https://www.markdownguide.org/
-.. _Cheetsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+.. _Cheatsheet: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 .. _Python Docutils: https://docutils.sourceforge.io/rst.html
 .. _Atom Editor: https://github.com/atom/atom/blob/master/CONTRIBUTING.md
 .. _Angular: https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md
