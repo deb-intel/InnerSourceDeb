@@ -25,23 +25,9 @@ project = "InnerSource"
 author = "Intel"
 copyright = f"2021 - {datetime.datetime.today().year}, {author}"
 
-version = "0.0.0"
-
-REPO_ROOT = pathlib.Path(__file__).parent.parent
-
-if REPO_ROOT.joinpath(".git").is_dir():
-    git_show_output = (
-        subprocess.check_output(
-            ["git", "show", "-s", "--pretty=%h %D", "HEAD"], cwd=str(REPO_ROOT)
-        )
-        .decode()
-        .split()
-    )
-    if "tag:" not in git_show_output:
-        version = git_show_output[0]
-
 # The full version, including alpha/beta/rc tags
-release = version
+version = ""
+release = ""
 
 
 # -- General configuration ---------------------------------------------------
@@ -82,7 +68,7 @@ source_suffix = {
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "alabaster"
+html_theme = "sphinx_book_theme"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,

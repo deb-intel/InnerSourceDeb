@@ -17,13 +17,6 @@ business build better software, faster using innersource.
 .. toctree::
     :glob:
     :maxdepth: 2
-    :caption: Practices and Guildelines
-
-    guidelines/*
-
-.. toctree::
-    :glob:
-    :maxdepth: 2
     :caption: Portal
 
     portal/Use Cases
@@ -43,6 +36,13 @@ business build better software, faster using innersource.
     :caption: Templates
 
     templates/CONTRIBUTING
+
+.. toctree::
+    :glob:
+    :maxdepth: 2
+    :caption: Practices and Guildelines
+
+    guidelines/*
 
 Indices and tables
 ==================

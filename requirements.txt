@@ -2,3 +2,4 @@ sphinx
 myst-parser
 sphinxcontrib-mermaid
 sphinx-tabs>=1.3.0
+sphinx-book-theme
