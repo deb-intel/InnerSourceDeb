@@ -1,18 +1,19 @@
-.. contents::
-   :depth: 3
-..
+InnerSource Portal Use Cases
+============================
 
+.. contents:: :local:
+   :depth: 3
 
 Priorities
-==========
+----------
 
 1. Portal to find and reuse project, grading visualization
 
 2. Portal for project re-use information, metrics and reports, top
    contributors, etc.
 
-**Definitions**
-===============
+Definitions
+-----------
 
 **Portal** is an application to enable InnerSource practices at Intel.
 
@@ -94,8 +95,8 @@ code, builds, released packages, etc.)
 automated Product checklist fulfillment (for example, SDLE, GitHub,
 etc.)
 
-**Roles**
-=========
+Roles
+-----
 
 **Intel BB** - any Intel BB employee
 
@@ -110,11 +111,11 @@ product and has authority to manage this Product
 
 **Portal Automation** - backend engine running behind the portal UI
 
-**InnerSource Portal Use Cases** (P1)
-=====================================
+P1 Use Cases
+------------
 
-**Setup**
----------
+Setup
++++++
 
 Setup-1: - Pre-condition: - git branches are migrated to 1Source github
 - Flow: - As a Portal user, I register a new Product and provide Product
@@ -139,8 +140,8 @@ Setup-2:
    -  Product is Active on the portal, Product has Grading and available
       for discovery and engagement
 
-**Manage**
-----------
+Manage
+++++++
 
 Manage-1: - Pre-condition: - Product is in Draft state on the Portal -
 Flow: - As an Portal user, I change Product and provide updated Product
@@ -167,8 +168,8 @@ Flow: - As a Portal automation, I validate submitted Product metadata -
 Post-condition: - If changes are accepted, Product metadata is updated,
 Product grading is updated
 
-**Engage**
-----------
+Engage
+++++++
 
 Engage-1: - Pre-condition: - Product is in Active state on the Portal -
 Flow: - As an Intel BB, I reuse Product artifacts in my development
@@ -180,16 +181,16 @@ Flow: - As an Intel BB, I provide a bugfix to Product artifacts
 according to the found Product metadata on the Portal - Post-condition:
 - Product is in Active state on the Portal
 
-**Archive**
------------
+Archive
++++++++
 
 Archive-1: - Pre-condition: - Product is Active on the Portal - Flow: -
 As an Product owner, I set a Product on the portal to the Archived state
 - Post-condition: - Product is not available for discovery and
 engagement
 
-**Administrate**
-----------------
+Administrate
+++++++++++++
 
 Admin-1: - Pre-condition: - \* - Flow: - As an Portal administrator, I
 do any action in the system available for the application user -
@@ -200,11 +201,11 @@ Flow: - As an Portal administrator, I update Product checklist template
 version - Post-condition: - Product checklist is correspondently
 updated, Product grading is recalculated
 
-**InnerSource Portal Use Cases** (P2)
-=====================================
+P2 Use Cases
+------------
 
-**Analyze**
------------
+Analyze
++++++++
 
 Analyze-1:
 
@@ -226,20 +227,20 @@ Analyze-1:
 
 --------------
 
-**Notify**
-----------
+Notify
+++++++
 
 TBD -**???Do we need to notify users???**
 
-**User management**
--------------------
+User management
++++++++++++++++
 
 TBD -**???How user retirement be processed???**
 
 --------------
 
 Q&A
-===
+---
 
 Do we need to track any dependencies between projects/people like who
 contributed to what project, what was reused, etc. ?
