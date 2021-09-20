@@ -12,6 +12,8 @@ The InnerSource community of practice would like to see the following ensure Inn
   - Ensure all 3rd party license dependencies are captured in your Protex project
 
   - Ensure you have populated the "Usage" field correctly for every item in your `Protex project`_.
+  
+  - Export BOM from Protex and add Modification status for OSPDT Approval
 
 - In your InnerSource YAML file, record the link to your OSPDT Aproval JIRA ticket
 
