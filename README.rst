@@ -49,3 +49,48 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`search`
+
+
+Build instructions
+==================
+
+Use the Makefile to build or test documentation. 
+
+
+#. Run command to build html.
+
+   .. code-block:: bash
+      
+      make html
+
+#. Navigate to the `_build/html/` directory and open index.html
+
+#. You may also use the Python `http-server` module.
+
+   #. In a separate Terminal, launch server:
+   
+      .. code-block:: bash
+         
+         python3 -m http.server 8080 --bind 127.0.0.1
+
+     See also: `Sphinx BKMs Configure`_
+
+   #. Copy the URL shown in the command line (e.g., http://127.0.0.1:8080/)
+
+   #. Visit the page to view the html build. 
+
+
+#. Optional: Use a virtual environment to develop or test. 
+
+   .. code-block:: bash
+      
+      make venv
+
+#. Clean the html build and virtual environment. 
+
+   .. code-block:: bash
+      
+      make clean
+
+
+.. _Sphinx BKMs Configure: https://opensource.intel.com/os-static/sphinx-bkms/getting-started/config.html#advanced
