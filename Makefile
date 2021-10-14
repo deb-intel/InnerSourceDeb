@@ -28,8 +28,8 @@ html:
 	@echo "Build finished. The HTML pages are in $(BUILDDIR)/html."
 
 venv:
-	python3 -m venv .venv
+	python -m venv .venv
 	. .venv/bin/activate
-	python3 -m pip install -r requirements.txt
+	python -m pip install -r requirements.txt
 	@echo
 	@echo "Virtual environment successfully created."

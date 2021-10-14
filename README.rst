@@ -71,7 +71,7 @@ Use the Makefile to build or test documentation.
    
       .. code-block:: bash
          
-         python3 -m http.server 8080 --bind 127.0.0.1
+         python -m http.server 8080 --bind 127.0.0.1
 
      See also: `Sphinx BKMs Configure`_
 
