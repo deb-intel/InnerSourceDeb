@@ -73,8 +73,6 @@ Use the Makefile to build or test documentation.
          
          python -m http.server 8080 --bind 127.0.0.1
 
-     See also: `Sphinx BKMs Configure`_
-
    #. Copy the URL shown in the command line (e.g., http://127.0.0.1:8080/)
 
    #. Visit the page to view the html build. 
@@ -92,5 +90,3 @@ Use the Makefile to build or test documentation.
       
       make clean
 
-
-.. _Sphinx BKMs Configure: https://opensource.intel.com/os-static/sphinx-bkms/getting-started/config.html#advanced
