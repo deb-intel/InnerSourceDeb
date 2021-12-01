@@ -173,6 +173,7 @@ In this instruction, we focus on use case 1, where our purpose is to make indivi
 
 If you already created an SSH key on your system and added it to your GitHub account, go directly to `Fork and Clone Instruction`_.
 
+.. _fork-and-clone-start:
 
 Fork and Clone Instruction
 ==========================
@@ -180,7 +181,7 @@ Fork and Clone Instruction
 #. Navigate to the root level of the repository where the README appears, and
    find the :guilabel:`Fork` button in the upper right.
 
-#. Select the :guilabel:`Fork` button. Then select which GitHub account where
+#. Select the :guilabel:`Fork` button. Then select the GitHub account where
    you want the fork located.
 
 #. Next, navigate to your *forked copy* of upstream (not original upstream).
@@ -222,7 +223,7 @@ Fork and Clone Instruction
 
       When you clone a repository, you receive the remote "origin" for free.
 
-#. Next, add a remote named upstream, using this command. Again, we'll use
+#. Next, add a remote named :file:`upstream`. Again, we'll use
    the repository for these docs as the example.
 
 #. In your browser, navigate to the GitHub upstream, or the
@@ -280,7 +281,7 @@ Congratulations! You successfully configured Git to work on the command line, an
 Next Steps
 **********
 
-* GitHub Workflow
+* :ref:`github_workflows`
 
 .. _Generating a new SSH key: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
