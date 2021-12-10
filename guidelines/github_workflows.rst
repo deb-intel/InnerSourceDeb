@@ -8,7 +8,6 @@ This page is divided into two workflows:
 * `Developer Workflow`_
 * `Tech Writer Workflow`_
 
-
 Individual Contributions
 ************************
 
@@ -20,13 +19,12 @@ When working on project with two or more contributors, we follow the same model.
 * frequently synchronize branches to ensure integration of upstream changes (and eliminate conflicts)
 * collaborate on branches, pull requests, and feature development
 
-Staging Contributions
-*********************
+Collective Contributions
+************************
 
-A staging area is created for a team that wants to make several contributions to an upstream repository as an aggregate.  The organization forks an upstream repository at the "project" level, and the team contributes only to a new fork (or staging area).
+A staging area is created for a team that wants to make collective contributions to an upstream repository as an aggregate.  The organization forks an upstream repository at the "project" level, and the entire team contributes only to that new fork (or staging area).
 
-Team members contribute to the organization\'s fork. Afterward, a repository maintainer must rebase against upstream and aggregate all changes;
-and then push from the organization\'s fork to the original upstream.
+Team members contribute to the organization\'s fork. Afterward, a repository maintainer must aggregate all changes and rebase them with upstream; and then push from the organization\'s fork to the original upstream.
 
 A good example of a staging contribution repo is the `Intel Project for LLVM* technology`_.
 
@@ -58,22 +56,44 @@ This workflow assumes you **frequently** contribute to a repository. It also ass
 
 * Complete the `Prerequisites`_.
 
-Update forked copy
-==================
+.. _synchronize-forked-copy:
+
+Synchronize forked copy
+=======================
 
 Follow these steps on any repository that you contribute to regularly.
 These steps are basic maintenance tasks that you must follow prior to working on a new branch.
 
-#. Assuming you\'re on the default branch, synchronize your forked copy.
+In this example, `main` is the default branch on upstream. To check the default branch on the upstream repository, navigate to the project root; then select the branch pull-down menu in the upper-left. The default branch shows a check mark.
+
+#. Check out the default branch locally.
+
+   .. code-block:: bash
+
+      git checkout main
+
+#. Synchronize your forked copy, `origin/main` with `upstream/main`.
 
    .. code-block:: bash
 
       git pull --rebase upstream main
 
    .. note::
-      Optionally, you can run, :command:`git pull upstream master`. We recommend adding the flag :command:`--rebase` because it keeps repository history clean and ensures that any squashed commits on upstream, or rewrites, are also included on your local copy.
 
-#. Now update your forked copy'\s remote called ``origin``.
+      Optionally, you can run, :command:`git pull upstream main`. We recommend adding the flag :command:`--rebase` because it keeps repository history clean and ensures that any squashed commits on upstream, or rewrites, are also included on your local copy.
+
+#. Optional: Check the status of your local origin against its remote
+   tracking branch.
+
+   .. code-block:: bash
+
+      git branch -vv
+
+   .. note::
+
+      If applicable, the `origin/main` shows how many commits the local is behind its tracking branch.
+
+#. Now publish these changes to your forked copy'\s remote called `origin`.
 
    .. code-block:: bash
 
@@ -81,22 +101,29 @@ These steps are basic maintenance tasks that you must follow prior to working on
 
    Now your forked copy of the project is synchronized with upstream.
 
-
 Develop a feature branch
 ========================
 
 In this example, we develop a new feature and keep that feature branch updated with the upstream default branch. We use the `InnerSource documentation repository`_ where ``main`` is the default branch.
 See also `Git branch`_ documentation.
 
-#. Ensure you followed steps in the previous section.
+
+In this example, we show the relationship of multiple contributors who develop a feature branch, based on a common `upstream/main` branch.
+
+.. figure:: /_figures/multiple-contributors-branch.png
+   :alt: Feature branch, multiple contributors
+
+   Feature branch, multiple contributors
+
+#. Ensure you followed steps in the previous section. Always synchronize your forked copy before starting a new branch.
 
 #. Create a new branch.
 
    .. code-block:: bash
 
-      git checkout -b my-new-feature
+      git checkout -b new-feature-a
 
-   where ``my-new-feature`` is the name of your branch.
+   where ``new-feature-a`` is the name of your branch.
    where ``-b`` flag allows you to both *create* and *checkout* a branch.
 
    .. note::
@@ -110,7 +137,7 @@ See also `Git branch`_ documentation.
 
 #. Return to the CLI, where you need to manage version control.
 
-#. While on ``my-new-feature`` branch, update it against upstream ``main``.
+#. While on ``new-feature-a`` branch, update it against upstream ``main``.
 
    .. code-block:: bash
 
@@ -124,11 +151,11 @@ See also `Git branch`_ documentation.
 
 #. If no conflicts occur, continue.
 
-#. Add the revised file, :file:`github_workflow`, to the working tree.
+#. Add the revised file, :file:`github_workflows`, to the working tree.
 
    .. code-block:: bash
 
-      git add github_workflow.rst
+      git add github_workflows.rst
 
 #. Enter command and write descriptive commit message.
 
@@ -143,18 +170,18 @@ See also `Git branch`_ documentation.
 
    .. note::
 
-      See Chris Beams\'s guidance on `How to write a Git Commit Message`_.
+      See Chris Beams\' guidance on `How to write a Git Commit Message`_.
       As Beams suggests, the commit message should answer: "If applied, this commit will..." The answer to that question is your commit message.
 
 #. In the editor, select :kbd:CTRL+O` to save.
 
 #. Then select :kbd:CTRL+X` to exit.
 
-#. Finally, push to your origin (forked copy)
+#. Finally, push to your origin (forked copy).
 
    .. code-block:: bash
 
-      git push origin my-new-feature
+      git push origin new-feature-a
 
 #. TBD
 
@@ -178,8 +205,7 @@ Follow the fork-and-clone instructions. In this workflow, we fork and clone as a
 
 #. Select the :guilabel:`pencil` icon to edit a document.
 
-   .. figure:: _figures/tech-writer-gui-edit.png
-      :scale: 100%
+   .. figure:: /_figures/tech-writer-gui-edit.png
       :alt: GitHub edit icon
 
       GitHub edit icon
@@ -194,8 +220,7 @@ Follow the fork-and-clone instructions. In this workflow, we fork and clone as a
 
 #. Find :guilabel:`Propose changes` below the edit screen.
 
-   .. figure:: _figures/tech-writer-propose-changes.png
-      :scale: 100%
+   .. figure:: /_figures/tech-writer-gui-propose-changes.png
       :alt: GitHub propose changes
 
       GitHub propose changes

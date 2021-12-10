@@ -151,137 +151,7 @@ Add to GitHub SSH public key
 
    See also: `Adding a new SSH key to your GitHub account`_.
 
-Fork and Clone Model
-********************
-
-We fork and clone a repository to use a conventional model of contributing to an upstream repository where several contributors are engaged in development. In this type of model, several contributors may be working simultaneously on:
-
-* Topics/Features
-* Bug Fixes
-* Experiments
-
-Forking allows users to experiment freely without impacting the original, or "upstream", project. Contributors may fork a repository to:
-
-1) Make individual contributions to upstream;
-2) Make aggregate contributions, as an organization, to upstream;
-3) Extend an existing project and develop it in a new direction
-
-Using a fork-and-clone model--while adding an upstream and using branching--offers a safe, secure method for collaborative development. In turn, this allows each contributor to work in isolation during development. This collaborative development model contrasts with a model where users
-**only clone** a repository and use one remote, called "origin".
-
-In this instruction, we focus on use case 1, where our purpose is to make individual contributions to the collective development of upstream documentation. The upstream of docs we use here could also be a code base.
-
-If you already created an SSH key on your system and added it to your GitHub account, go directly to `Fork and Clone Instruction`_.
-
-.. _fork-and-clone-start:
-
-Fork and Clone Instruction
-==========================
-
-#. Navigate to the root level of the repository where the README appears, and
-   find the :guilabel:`Fork` button in the upper right.
-
-#. Select the :guilabel:`Fork` button. Then select the GitHub account where
-   you want the fork located.
-
-#. Next, navigate to your *forked copy* of upstream (not original upstream).
-   Your forked copy shows your GitHub username, below which "forked from..." appears in the upper left.
-
-#. On your forked copy, select green button :guilabel:`Code` and then SSH.
-
-#. Select the :guilabel:`copy icon` next to address starting with `git@..`
-
-#. Open a CLI on your system and navigate to where you want to save this docs
-   project.
-
-#. In your CLI, enter this command to clone this documentation project.
-   Remember, we use this documentation repository only as an example.
-
-   .. tabs:: 
-
-      .. tab:: Linux
-
-         .. code-block:: bash
-
-            git clone git@github.com:[yourusername]/documentation.practices.innersource.git
-
-      .. tab:: Git Bash for Windows
-
-         .. code-block:: bash
-
-            git clone git@github.com:[yourusername]/documentation.practices.innersource.git
-
-      .. tab:: PowerShell
-
-         Clone to your home directory to an `example` directory.
-
-         .. code-block:: bash
-
-            git clone git@github.com:[yourusername]/documentation.practices.innersource.git $HOME/example
-
-   .. note::
-
-      When you clone a repository, you receive the remote "origin" for free.
-
-#. Next, add a remote named :file:`upstream`. Again, we'll use
-   the repository for these docs as the example.
-
-#. In your browser, navigate to the GitHub upstream, or the
-   original repository, from which you create a forked copy.
-
-#. On the upstream repository, select green button :guilabel:`Code`
-   and then SSH.
-
-#. Select the :guilabel:`copy icon` next to the address starting with `git@..`
-
-#. Enter the command to create a remote named "upstream" while in the
-   same `InnerSource documentation repository`_.
-
-   .. code-block:: bash
-
-      git remote add upstream git@github.com:intel-innersource/documentation.practices.innersource.git
-
-#. Now verify that both "remotes" exist in the repository.
-
-   .. code-block:: bash
-
-      git remote -v
-
-#. Your CLI should show at least these two remotes.
-
-   .. code-block:: console
-
-      origin         git@github.com:[username]/documentation.practices.innersource.git (fetch)
-      origin         git@github.com:[username]/documentation.practices.innersource.git (push)
-      upstream       git@github.com:intel-innersource/documentation.practices.innersource.git (fetch)
-      upstream       git@github.com:intel-innersource/documentation.practices.innersource.git (push)
-
-   .. note::
-
-      For an upstream remote, instead of the "username" after `git@github.com`, the organizaton name appears: intel-innersource. It\'s common that an upstream project organization name is used for an upstream remote.
-
-#. Verify that you can pull changes from the upstream remote.
-
-   .. code-block:: bash
-
-      git pull upstream main
-
-#. Your CLI should show output similar to the following--assuming you just
-   forked and cloned.
-
-   .. code-block:: console
-
-      From github.com:intel-innersource/documentation.practices.innersource
-      * branch            main       -> FETCH_HEAD
-      Already up to date.
-
-Congratulations! You successfully configured Git to work on the command line, and you successfully added a remote.
-
-
-Next Steps
-**********
-
-* :ref:`github_workflows`
+.. _InnerSource documentation repository: https://github.com/intel-innersource/documentation.practices.innersource
 
 .. _Generating a new SSH key: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
 
@@ -297,4 +167,7 @@ Next Steps
 
 .. _Make PowerShell Remember SSH PassPhrase: https://gist.github.com/danieldogeanu/16c61e9b80345c5837b9e5045a701c99
 
-.. _InnerSource documentation repository: https://github.com/intel-innersource/documentation.practices.innersource
+Next Steps
+**********
+
+* :ref:`github_fork_clone`
