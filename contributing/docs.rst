@@ -25,20 +25,21 @@ Building these docs from the root of the repo
 
 .. code-block:: console
 
-    $ sphinx-build -W -b html . built_html_docs/
+    $ sphinx-build -W -b html . _build/
 
 Display docs site
 
 .. code-block:: console
 
-    $ python -m http.server --directory built_html_docs/ 8080
+    $ python -m http.server --directory _build/ 8080
 
 Push to GitHub Pages
 --------------------
 
 .. code-block:: console
 
-    $ cd built_html_docs/
+    $ cd _build/
+    $ echo .doctrees/ >> .gitignore
     $ touch .nojekyll
     $ git init
     $ git remote add origin https://github.com/intel-innersource/documentation.practices.innersource
