@@ -32,3 +32,16 @@ Display docs site
 .. code-block:: console
 
     $ python -m http.server --directory built_html_docs/ 8080
+
+Push to GitHub Pages
+--------------------
+
+.. code-block:: console
+
+    $ cd built_html_docs/
+    $ git init
+    $ git remote add origin https://github.com/intel-innersource/documentation.practices.innersource
+    $ git checkout -b gh-pages
+    $ git add -A
+    $ git commit -sam "$(date)"
+    $ git push --set-upstream origin gh-pages --force
