@@ -39,6 +39,7 @@ Push to GitHub Pages
 .. code-block:: console
 
     $ cd built_html_docs/
+    $ touch .nojekyll
     $ git init
     $ git remote add origin https://github.com/intel-innersource/documentation.practices.innersource
     $ git checkout -b gh-pages
