@@ -5,20 +5,37 @@ on:
     branches:
       - main
 
+defaults:
+  run:
+    shell: bash
+
+concurrency:
+  group: ${{ github.head_ref }}.${{ github.sha }}.pages
+  cancel-in-progress: true
+
 jobs:
   pages:
     name: Build GitHub Pages
-    runs-on: Linux
+    runs-on: [self-hosted, linux, x64, python, kubernetes]
 
     steps:
-    - uses: actions/checkout@v2
+    - name: FS cleanup
+      run: |
+        rm -rf "$GITHUB_WORKSPACE"/*
+
+    - name: Checkout sources
+      uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
+        ref: ${{ github.event.pull_request.head.sha }}
     - name: Build docs
       run: |
+        python -m pip install -U pip setuptools wheel
         python -m pip install -U -r requirements.txt
-        python -c 'import os, sys, pkg_resources; sys.exit([e.load() for e in pkg_resources.iter_entry_points("console_scripts") if e.name.startswith("sphinx-build")][0]())' -W -b html . built_html_docs/
+        python -m sphinx -W -b html . _build/
         export COMMIT_MESSAGE="$(git log -n 1 --oneline)"
-        mv .git built_html_docs/
-        cd built_html_docs/
+        mv .git _build/
+        cd _build/
         git checkout --orphan gh-pages
         touch .nojekyll
         git add -A
