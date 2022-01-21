@@ -3,17 +3,28 @@
 GitHub Configuration
 ####################
 
-This page explains how to set up an SSH key, fork and clone, and configure remotes for contributions to an upstream repository.
-We use the `InnerSource documentation repository`_ , the source of this page, as an example. Follow along by viewing the repository.
+This page explains how to set up an SSH key, fork and clone, and configure remotes for contributions to an upstream repository. We use the `InnerSource documentation repository`_ , the source of this page, as an example.
 
 .. contents::
    :local:
    :depth: 1
 
-For for initial Git configuration, follow the Intel 1Source instructions below. Upon completion of these steps, restart the process below.
+Prerequisites
+*************
+
+For for initial Git configuration, follow the Intel 1Source instructions below. Upon completion of these steps, continue the process below.
 
 * `1Source Onboard Process`_
 * `1Source Environment Setup`_
+
+Use the `1Source Devtool`_ for git configuration.
+
+.. note::
+
+   The 1Source Devtool assists in creating a global :file:`.gitconfig` file.
+   Git uses a hierarchical configuration method. The home directory :file:`.gitconfig` is global, whereas the :file:`.git/config` in a repository root is local. The latter can override the former with repository-specific options.
+
+Learn more `Optional Git configuration`_.
 
 SSH Configuration
 *****************
@@ -151,6 +162,38 @@ Add to GitHub SSH public key
 
    See also: `Adding a new SSH key to your GitHub account`_.
 
+Optional Git configuration
+**************************
+
+Following a few options for `git config --global` to help simplify your workflow and ease collaboration.
+
+Set the editor. Some editor options include: atom, emacs, nano, etc.
+
+.. code-block:: bash
+
+   git config --global core.editor nano
+
+If using Windows, you can auto-convert LF to CRLF line-endings when you check out files.
+
+.. code-block:: bash
+
+   git config --global core.autocrlf true
+
+If using Linux* OS or macOS* and a file with CRLF is introduced, you tell Git to convert CRLF to LF on committing files.
+
+.. code-block:: bash
+
+   git config --global core.autocrlf input
+
+The above configuration can be useful when users collaborate across platforms like Windows and Linux.
+
+For more details, see `Customizing Git`_, "Formatting and Whitespace."
+
+Next Steps
+**********
+
+* :ref:`github_fork_clone`
+
 .. _InnerSource documentation repository: https://github.com/intel-innersource/documentation.practices.innersource
 
 .. _Generating a new SSH key: https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
@@ -167,7 +210,6 @@ Add to GitHub SSH public key
 
 .. _Make PowerShell Remember SSH PassPhrase: https://gist.github.com/danieldogeanu/16c61e9b80345c5837b9e5045a701c99
 
-Next Steps
-**********
+.. _1Source Devtool: https://1source.intel.com/docs/faq/environment_setup#devtool
 
-* :ref:`github_fork_clone`
+.. _Customizing Git: https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration
