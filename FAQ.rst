@@ -3,6 +3,8 @@
 FAQ - InnerSource @ Intel
 #########################
 
+.. _define_innersource:
+
 What does InnerSource mean?
 ******************************
 

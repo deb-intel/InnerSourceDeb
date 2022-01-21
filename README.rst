@@ -16,6 +16,13 @@ business build better software, faster using innersource.
 
 .. toctree::
     :glob:
+    :maxdepth: 1
+    :caption: InnerSource Overview
+
+    overview/innersource_overview
+
+.. toctree::
+    :glob:
     :maxdepth: 2
     :caption: Portal
 
