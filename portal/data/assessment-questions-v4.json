@@ -1,0 +1,894 @@
+[
+  {
+    "title": "Architecture",
+    "dtoKey": "architecture",
+    "domain": "repoProject",
+    "intent": "More modular the design, the easier it is to contribute (find the part you need to change) and easier to reuse the portion you need. Easier to test, easier for CI, etc.",
+    "category": "Architecture",
+    "importance": 2,
+    "options": [
+      {
+        "title": "Monolithic architecture and design",
+        "description": ""
+      },
+      {
+        "title": "Semi-monolithic architecture and design",
+        "description": ""
+      },
+      {
+        "title": "All modules are externally usable without hidden APIs. Modules have clear high - level definition and responsibility of subsystems.",
+        "description": ""
+      },
+      {
+        "title": "Under migration to loosely coupled architecture",
+        "description": ""
+      },
+      {
+        "title": "Loosely coupled components with clear responsibilities and APIs",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 0, 2, 2, 4]
+  },
+  {
+    "title": "Binary Distribution Via Package Manager",
+    "dtoKey": "binaryDistributionViaPackageManager",
+    "domain": "project",
+    "intent": "Ease of consumption, risk mitigation, reproducibility",
+    "category": "Distribution",
+    "importance": 2,
+    "options": [
+      {
+        "title": "N/A",
+        "description": ""
+      },
+      {
+        "title": "Not distributed via the package manager. Requires manual downloading of a binary from an FTP server. Has clear installation instructions.",
+        "description": ""
+      },
+      {
+        "title": "Distributed via package the manager. Installation is not tested using a system account prior to distribution.",
+        "description": ""
+      },
+      {
+        "title": "Distributed via the package manager. Installation is tested using a system account prior to distribution.",
+        "description": ""
+      },
+      {
+        "title": "Distributed via the package manager. Installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account.",
+        "description": ""
+      },
+      {
+        "title": "Distributed via the package manager. Installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account. Installation is tested after deployment of a binary.",
+        "description": ""
+      }
+    ],
+    "tierMapping": [-1, 5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 1, 1, 2, 4, 4]
+  },
+  {
+    "title": "Branding And Naming",
+    "dtoKey": "brandingAndNaming",
+    "domain": "project",
+    "intent": "Reuse team needs approved and documented TM&B name or generic name for the project.",
+    "category": "Deployment",
+    "importance": 2,
+    "options": [
+      {
+        "title": "Trademark & Branding (TM&B) approved product name documented if you have it or why you don't need it",
+        "description": ""
+      },
+      {
+        "title": "Follow Open Source PDT guidelines for generic naming of projects that TM&B",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 3],
+    "maturityMapping": [1, 2]
+  },
+  {
+    "title": "Build Environment And Documentation",
+    "dtoKey": "buildEnvironmentAndDocumentation",
+    "domain": "project",
+    "intent": "Reuse or contribution teams need to be able to easily build the code they are working on in their env.",
+    "category": "DX",
+    "importance": 3,
+    "options": [
+      {
+        "title": "Non-portable, developed for single platform",
+        "description": ""
+      },
+      {
+        "title": "Comprehensive step by step build instructions including links for any pre-requisites, containers / VMs, AGS permissions, or other requirements",
+        "description": ""
+      },
+      {
+        "title": "One command to build. One command to install project dependencies. Uses standard dependency management solution associated with respective language: JavaScript & package.json, Python & requirements.txt, Go & Go modules, etc.",
+        "description": ""
+      },
+      {
+        "title": "Fully automated build with documentation to replicate it",
+        "description": ""
+      },
+      {
+        "title": "One command to build a deployable deliverable on any machine (ie. docker compose, helm, etc.). Mainstream build utilities (cmake, automake, etc.). Developer Set up for Build Environment Simple and build scripts are clear.",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 2, 2, 4, 4]
+  },
+  {
+    "title": "Code Base Naming",
+    "dtoKey": "codeBaseNaming",
+    "domain": "repo",
+    "intent": "1Source migration into approved namespace needed for reuse and contribution to start occurring",
+    "category": "Source Governance",
+    "importance": 4,
+    "options": [
+      {
+        "title": "No code base naming convention",
+        "description": ""
+      },
+      {
+        "title": "Self defined and maintained code base naming convention",
+        "description": ""
+      },
+      {
+        "title": "GitHub project & repository names follow 1Source guidelines for searchability",
+        "description": ""
+      },
+      {
+        "title": "Code base naming follows best practices for given language, framework, or technology",
+        "description": ""
+      },
+      {
+        "title": "Completed naming process with agreement in place on how to extend name for other usages",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 0, 1, 2, 2]
+  },
+  {
+    "title": "Compliance For Contribution",
+    "dtoKey": "complianceForContribution",
+    "domain": "repo",
+    "intent": "Reuse and contribution teams have confidence that code they are using or contributing to are meeting corporate guidelines.",
+    "category": "Governance",
+    "importance": 4,
+    "options": [
+      {
+        "title": "No compliance enforcement",
+        "description": ""
+      },
+      {
+        "title": "Periodical manual review of new code for compliance",
+        "description": ""
+      },
+      {
+        "title": "Manual review of new code for compliance upon release",
+        "description": ""
+      },
+      {
+        "title": "Some checks are integrated into PR validation pipeline",
+        "description": ""
+      },
+      {
+        "title": "Every applicable check integrated into PR validation pipeline (ex: SDL, SWLC, etc.)",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 0, 1, 2, 4]
+  },
+  {
+    "title": "Contribution Guidelines",
+    "dtoKey": "contributionGuidelines",
+    "domain": "repoProject",
+    "intent": "Critical for contribution teams to understand documented contribution guidelines",
+    "category": "DX",
+    "importance": 2,
+    "options": [
+      {
+        "title": "No guidelines",
+        "description": ""
+      },
+      {
+        "title": "Internal documentation for project eng team",
+        "description": ""
+      },
+      {
+        "title": "CONTRIBUTING file/link at root of GitHub repo that clearly outlines Licensing requirements, Code Style, CI / test requirements, Contribution Workflow",
+        "description": ""
+      },
+      {
+        "title": "Automated checks for SOME BUT NOT ALL contribution guidelines",
+        "description": ""
+      },
+      {
+        "title": "Automated checks for each contribution guideline (ex: scanning for code style)",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 1, 2, 2, 2]
+  },
+  {
+    "title": "Support Contributing Users",
+    "dtoKey": "supportContributingUsers",
+    "domain": "repoProject",
+    "intent": "Support system for contributors. Communicate with originating team.",
+    "category": "Support",
+    "importance": 4,
+    "options": [
+      {
+        "title": "Informal communication with defined individuals",
+        "description": ""
+      },
+      {
+        "title": "Formal communication with defined individuals",
+        "description": ""
+      },
+      {
+        "title": "Defined place to log issues/questions has access granted to all blue badge employees. Internal contributors able to log issues/questions to defined place. Dedicated support team and floating response time.",
+        "description": ""
+      },
+      {
+        "title": "Dedicated support team and defined response time via defined place to log issues. Response time defined and adhered to for responding to opens.",
+        "description": ""
+      },
+      {
+        "title": "Real-time discussion (ex: Teams, Slack, etc.) for Q&A",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 2, 2, 2, 4]
+  },
+  {
+    "title": "Deployment Infrastructure",
+    "dtoKey": "deploymentInfrastructure",
+    "domain": "project",
+    "intent": "Reuse or contribution teams need to be able to easily deploy the code in the documented preferred deployment manner.",
+    "category": "Deployment",
+    "importance": 1,
+    "options": [
+      {
+        "title": "Requires specific hardware without emulation / simulation support",
+        "description": ""
+      },
+      {
+        "title": "Requires specific hardware but supports emulation / simulation",
+        "description": ""
+      },
+      {
+        "title": "Easily deployed to varying environments as a whole only",
+        "description": ""
+      },
+      {
+        "title": "Easily deployed to varying environments as a whole, but requires significant effort to deploy piecemeal",
+        "description": ""
+      },
+      {
+        "title": "Can be easily deployed to varying environments as a whole or piecemeal",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 2, 2, 2, 2]
+  },
+  {
+    "title": "Development Setup",
+    "dtoKey": "developmentSetup",
+    "domain": "repo",
+    "intent": "Contribution teams need to be able to easily setup their dev env in order to make code changes for contributions",
+    "category": "DX",
+    "importance": 3,
+    "options": [
+      {
+        "title": "Tedious development setup",
+        "description": ""
+      },
+      {
+        "title": "Opinionated choice of build utilities, testing frameworks, etc",
+        "description": ""
+      },
+      {
+        "title": "Documented comprehensive set-up",
+        "description": ""
+      },
+      {
+        "title": "Easy and flexible development setup (ex: get all dependencies setup in couple commands like docker container). Project specifies list of constraints (ex: which compilers are supported)",
+        "description": ""
+      },
+      {
+        "title": "No setup required development environment (ex: GitHub workspace)",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 0, 2, 4, 4]
+  },
+  {
+    "title": "Distribution And Packaging",
+    "dtoKey": "distributionAndPackaging",
+    "domain": "project",
+    "intent": "Improving ease of consumption of the components using the package in a particular manner",
+    "category": "Distribution",
+    "importance": 2,
+    "options": [
+      {
+        "title": "Deliver an unpackaged collection of artifacts",
+        "description": ""
+      },
+      {
+        "title": "Versioned package",
+        "description": ""
+      },
+      {
+        "title": "Self-sufficient package (has dependencies included, or contains dependency meta-data for a package manager) - ie can the package be installed without any pre-work by relying only on standard system libraries, component repositories, or otherwise include all required dependencies; package downloadable from shared InnerSource location (access granted to all blue badge employees) - not applicable to open source",
+        "description": ""
+      },
+      {
+        "title": "Web or package server including latest release only",
+        "description": ""
+      },
+      {
+        "title": "Web or package server including latest release older versions. Documentation on how it was configured and built. - ie is the documentation sufficient that a colleague in another group could configure and build the exact same package. Checksums in place. - ie is there a way to confirm the integrity of the package once downloaded. Industry standard package methods.",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 1, 2, 2, 4]
+  },
+  {
+    "title": "Project Internal Documentation",
+    "dtoKey": "projectInternalDocumentation",
+    "domain": "repoProject",
+    "intent": "Reuse and contribution teams need internal documentation for the project.",
+    "category": "Documentation",
+    "importance": 4,
+    "options": [
+      {
+        "title": "No documentation",
+        "description": ""
+      },
+      {
+        "title": "Quickstart and tutorials for key features / use cases",
+        "description": ""
+      },
+      {
+        "title": "Searchable and viewable by all blue badge employees",
+        "description": ""
+      },
+      {
+        "title": "Able to track documentation changes with Git version control",
+        "description": ""
+      },
+      {
+        "title": "Extensive tutorials requiring little to no setup. Internal documentation release aligns with SW Release",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 2, 2, 2, 4]
+  },
+  {
+    "title": "Documentation Coverage",
+    "dtoKey": "documentationCoverage",
+    "domain": "project",
+    "intent": "Reason for needing this is so users know what functions they can use and have confidence will still exist in the future. Expand on what it means to be documented(ex: --help) Also helps with security.",
+    "category": "Documentation",
+    "importance": 4,
+    "options": [
+      {
+        "title": "Automated check verifies exposed interface coverage.",
+        "description": ""
+      },
+      {
+        "title": "At least 50% applicable exposed interface coverage (ex: Public API for Binary Reuse, Public + Internal API for Source Reuse & Contribution). Auto generated exposed interface documentation. Interfaces only, not comments on usage.Ex: using Javadoc, Doxygen, Swagger, or similar API documentation system.",
+        "description": ""
+      },
+      {
+        "title": "At least 60% applicable public interface coverage.",
+        "description": ""
+      },
+      {
+        "title": "At least 75% applicable exposed interface coverage.",
+        "description": ""
+      },
+      {
+        "title": "100% applicable exposed interface coverage. Exposed interface documentation with examples of usage and explanation.",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [2, 2, 2, 2, 4]
+  },
+  {
+    "title": "Pre Production Early Access",
+    "dtoKey": "preProductionEarlyAccess",
+    "domain": "repoProject",
+    "intent": "Reuse and contribution teams can utilize and play with some partially baked features before they are production ready.",
+    "category": "Testing",
+    "importance": 1,
+    "options": [
+      {
+        "title": "No CI/CD",
+        "description": ""
+      },
+      {
+        "title": "CI testing / dev builds",
+        "description": ""
+      },
+      {
+        "title": "Continuous integration triggered with every patch coming into the project is built but not necessarily released (CI production builds)",
+        "description": ""
+      },
+      {
+        "title": "Partially baked features for internal releases. (Do you provide features previews in internal releases for testing and feedback before external release?) (CI/CD with internal release)",
+        "description": ""
+      },
+      {
+        "title": "Code release ≠ feature release so features do not impact each other, degrade the quality of the release, or block the release. Ex: Do you use approaches like Feature toggles or Feature flags to control customer access to experimental features to allow for external testing and feedback before a full release. (CI/CD with production release and feature flags)",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 0, 1, 2, 4]
+  },
+  {
+    "title": "Intellectual Property Leak Detection Tool",
+    "dtoKey": "intellectualPropertyLeakDetectionTool",
+    "domain": "repo",
+    "intent": "Reuse team needs to be able to leverage previously clean tool results",
+    "category": "QRC",
+    "importance": 1,
+    "options": [
+      {
+        "title": "No IP leak detection",
+        "description": ""
+      },
+      {
+        "title": "Manual IP Leak Detection Tool scan passes",
+        "description": ""
+      },
+      {
+        "title": "Manual IP Leak Detection Tool scan passes, and is executed prior to each release",
+        "description": ""
+      },
+      {
+        "title": "Manual IP Leak Detection Tool scan on defined schedule",
+        "description": ""
+      },
+      {
+        "title": "Automated IP Leak Detection Tool scan on defined frequent schedule",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [0, 1, 1, 2, 4]
+  },
+  {
+    "title": "Maintainers Setup",
+    "dtoKey": "maintainersSetup",
+    "domain": "repo",
+    "intent": "Reuse and contribution teams have confidence that the project is getting updated and is not a dead a project.",
+    "category": "Governance",
+    "importance": 4,
+    "options": [
+      {
+        "title": "Single semi active maintainer",
+        "description": ""
+      },
+      {
+        "title": "Several active maintainers",
+        "description": ""
+      },
+      {
+        "title": "Maintainers willing to review and integrate contributions, active maintainers review pull requests and respond to issues submitted",
+        "description": ""
+      },
+      {
+        "title": "7 days response time for pull requests reviews and issues response",
+        "description": ""
+      },
+      {
+        "title": "Clearly documented governance structure with roles responsibilities and bus factor",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [0, 1, 1, 1, 1]
+  },
+  {
+    "title": "Participation Ease Of Ramp",
+    "dtoKey": "participationEaseOfRamp",
+    "domain": "repoProject",
+    "intent": "Contribution teams have an easier time learning quickly about the project in order to start contributions.  (Ex: don't have to learn for 8 weeks to make 2-line code change)",
+    "category": "DX",
+    "importance": 2,
+    "options": [
+      {
+        "title": "Steep learning curve, nothing is documented",
+        "description": ""
+      },
+      {
+        "title": "High-level architecture and design decisions are documented",
+        "description": ""
+      },
+      {
+        "title": "Clear responsibility and key design choices for individual components documented.",
+        "description": ""
+      },
+      {
+        "title": "Discoverable list of non-critical, low priority, and easy issues that are ideal for new contributors to fix.",
+        "description": ""
+      },
+      {
+        "title": "Typical extension points are defined and well documented.",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 1, 1, 2, 2]
+  },
+  {
+    "title": "Quality Assurance CI",
+    "dtoKey": "qualityAssuranceCI",
+    "domain": "repoProject",
+    "intent": "CI in place ensures quality and minimizes risk for reuse and contribution teams. Builds confidence in reusing the code.",
+    "category": "Quality",
+    "importance": 4,
+    "options": [
+      {
+        "title": "Manual QA done by core team",
+        "description": ""
+      },
+      {
+        "title": "Continuous Integration (CI) such that contributor executes before submitting Promotion Request (PR). Continuous Integration (CI) executes before pull request is merged. Scriptable and documented QA such that contributor executes before submitting Pull Request (PR).",
+        "description": ""
+      },
+      {
+        "title": "Test results are stored in a database. Test results are available and actionable to contributors - document expectations for big vs small projects. Test plan (including security validation and scope of validation) is maintained in up-to-date state. Pull requests trigger Continuous Integration (CI) for build & unit tests.",
+        "description": ""
+      },
+      {
+        "title": "Pull requests trigger Continuous Integration (CI) for extensive testing",
+        "description": ""
+      },
+      {
+        "title": "Short feedback loops. Test results stored in test case management system to allow for queries and reporting. Bazaar-style Quality Assurance (QA). Continuous Integration (CI) & Automated Daily Unit Testing.",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [0, 1, 1, 2, 4]
+  },
+  {
+    "title": "Release Cadence",
+    "dtoKey": "releaseCadence",
+    "domain": "project",
+    "intent": "Reuse and contribution teams needs to know when to grab the next version and that high risk bugs will be fixed quickly.",
+    "category": "Planning",
+    "importance": 3,
+    "options": [
+      {
+        "title": "No (visible) release schedule",
+        "description": ""
+      },
+      {
+        "title": "Published release schedule",
+        "description": ""
+      },
+      {
+        "title": "Release train with fixed cadence (whether its yearly, quarterly, monthly, weekly, or any other recurring schedule) OR release schedule defined by cross-product WG or business council (whether internal or external) or consuming products OR internal projects support for on-demand releases",
+        "description": ""
+      },
+      {
+        "title": "Urgent delivery within 1/2 of the fixed schedule",
+        "description": ""
+      },
+      {
+        "title": "Able to cut release and deliver within 2 business days (for example if a Critical CVE were found and fixed).",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 0, 2, 2, 4]
+  },
+  {
+    "title": "Release Lead Time",
+    "dtoKey": "releaseLeadTime",
+    "domain": "project",
+    "intent": "Contribution teams to know when their PR would be in the main branch.",
+    "category": "Planning",
+    "importance": 2,
+    "options": [
+      {
+        "title": "No PR SLA.",
+        "description": ""
+      },
+      {
+        "title": "PR SLA is present but not fully enforced.",
+        "description": ""
+      },
+      {
+        "title": "PR SLA is present and fully enforced without commitment for lead time.",
+        "description": ""
+      },
+      {
+        "title": "PR SLA commitment for lead time.",
+        "description": ""
+      },
+      {
+        "title": "Able to cut release and deliver within 2 business days (for example if a Critical CVE were found and fixed)",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 1, 2, 4, 5]
+  },
+  {
+    "title": "Requirements",
+    "dtoKey": "requirements",
+    "domain": "repoProject",
+    "intent": "Reuse and contribution teams able to see what requirements are being met or planned to be met by the project and build confidence through R2V (requirements to validation)",
+    "category": "Planning",
+    "importance": 1,
+    "options": [
+      {
+        "title": "No requirements.",
+        "description": ""
+      },
+      {
+        "title": "Requirements are available to the project engineering team.",
+        "description": ""
+      },
+      {
+        "title": "Requirements are available to all blue badge employees.",
+        "description": ""
+      },
+      {
+        "title": "Requirements are linked to test cases manually",
+        "description": ""
+      },
+      {
+        "title": "Requirements are linked to test cases via an automated system",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 1, 2, 2, 4]
+  },
+  {
+    "title": "Roadmap",
+    "dtoKey": "roadmap",
+    "domain": "project",
+    "intent": "Reuse and contribution teams to know what features are included in upcoming major releases",
+    "category": "Planning",
+    "importance": 2,
+    "options": [
+      {
+        "title": "No roadmap",
+        "description": ""
+      },
+      {
+        "title": "Published roadmap",
+        "description": ""
+      },
+      {
+        "title": "Internally published and discoverable info about next release, available to Intel blue-badge and discoverable info about next release",
+        "description": ""
+      },
+      {
+        "title": "Roadmap with some features",
+        "description": ""
+      },
+      {
+        "title": "Roadmap with features, release dates",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 2, 2, 4, 4]
+  },
+  {
+    "title": "Security Development Lifecycle",
+    "dtoKey": "securityDevelopmentLifecycle",
+    "domain": "project",
+    "intent": "Reuse team needs to be able to leverage previously approved Parent SDLE project and evidence. Reuse team needs to know that SDL tasks and fixes are being handled quickly",
+    "category": "QRC",
+    "importance": 3,
+    "options": [
+      {
+        "title": "Project has a registered SDL project that can be accessed via the SDL Essentials Portal (https://sdl-e.app.intel.com). SDL project in SD Essentials Portal has Read Access for all Blue badges. Is accessible via the SDL Reports Tool - https://wiki.ith.intel.com/display/SDLEssentials/SDL+One+Report.",
+        "description": ""
+      },
+      {
+        "title": "All SDL evidence has been uploaded to the SDL Essentials Portal. This can be checked via the SDL One Report Tool. Product Security Expert (PSE) assigned to SDL project in SDL Essentials Portal. SDL Gap Analysis task (CT25) has been completed by PSE. This can be checked via the SDL One Report Tool.",
+        "description": ""
+      },
+      {
+        "title": "Code marked as shippable (release tags) has 100% of SDL tasks complete. Not Applicable - project is internal use only. Compliant with Intel PSIRT policy – all PSIRTs have been fixed or are within the acceptable fix window - https://wiki.ith.intel.com/display/PSIRTpublic/Phase+2+-+Mitigate",
+        "description": ""
+      },
+      {
+        "title": "High velocity or steady rate of SDL task completion. Automation of applicable security tools (ex: Klocwork, Coverity, BDBA, Snyk, etc.) exists.",
+        "description": ""
+      },
+      {
+        "title": "2 weeks SLA for addressing CVEs reported against current and LTS versions of the component. SDL status, security bugs, and scan results are accessible on a dashboard. Automated runs of applicable security tools (ex: Klocwork, Coverity, BDBA, Snyk, etc.) occurs on a defined frequent schedule. Dashboard has access granted for all blue badge employees.",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [1, 1, 1, 4, 4]
+  },
+  {
+    "title": "Software Legal Compliance",
+    "dtoKey": "softwareLegalCompliance",
+    "domain": "project",
+    "intent": "Reuse team needs to be able to leverage previously approved Parent SWLC approvals, evidence, and obligations. Reuse team needs to know that SWLC tasks and fixes are being handled quickly",
+    "category": "QRC",
+    "importance": 3,
+    "options": [
+      {
+        "title": "Obtained Software Legal Compliance (SWLC) approval (ex: Protex, Intellectual Property (IP) Plan, Open Source PDT, Export Compliance, etc.)",
+        "description": ""
+      },
+      {
+        "title": "Record Center evidence submitted",
+        "description": ""
+      },
+      {
+        "title": "Up-to-date SWLC evidence can easily be shared. SWLC evidence posted in location with blue badge access granted. Provide list of obligations that project reusing this code should fulfill.",
+        "description": ""
+      },
+      {
+        "title": "Manual applicable SWLC scans (ex: Protex scan, etc.) on defined frequent schedule",
+        "description": ""
+      },
+      {
+        "title": "Automated applicable SWLC scans (ex: Protex scan, etc.) on defined frequent schedule",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [1, 1, 2, 2, 4]
+  },
+  {
+    "title": "Source Distribution Language Specific Packages",
+    "dtoKey": "sourceDistributionLanguageSpecificPackages",
+    "domain": "project",
+    "intent": "Ease of consumption, risk mitigation, reproducibility",
+    "category": "Distribution",
+    "importance": 1,
+    "options": [
+      {
+        "title": "N/A",
+        "description": ""
+      },
+      {
+        "title": "Not distributed via the package manager. Requires manual downloading of archived sources from an FTP server. Has clear compilation and installation instructions",
+        "description": ""
+      },
+      {
+        "title": "Distributed via package the manager. Compilation and installation is NOT tested using a system account prior to distribution",
+        "description": ""
+      },
+      {
+        "title": "Distributed via the package manager. Compilation and installation is tested using a system account prior to distribution",
+        "description": ""
+      },
+      {
+        "title": "Distributed via the package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account",
+        "description": ""
+      },
+      {
+        "title": "Distributed via the package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account. Compilation and installation is tested after deployment of a binary",
+        "description": ""
+      }
+    ],
+    "tierMapping": [-1, 5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 1, 1, 2, 4, 4]
+  },
+  {
+    "title": "Support Reuse Users",
+    "dtoKey": "supportReuseUsers",
+    "domain": "repoProject",
+    "intent": "Support system infrastructure for internal customers that are reuse users",
+    "category": "Support",
+    "importance": 2,
+    "options": [
+      {
+        "title": "Informal communication with defined individuals",
+        "description": ""
+      },
+      {
+        "title": "Formal communication with defined individuals",
+        "description": ""
+      },
+      {
+        "title": "Automated logging system. Internal consumers able to log issues/questions/feature requests to defined place. Defined place to log issues/questions/feature requests has access granted to all blue badge employees.blished list of feature requests. Published list of feature requests where location has access granted for all blue badge employees",
+        "description": ""
+      },
+      {
+        "title": "Dedicated support team and floating response time. Response time is not defined and adhered to",
+        "description": ""
+      },
+      {
+        "title": "Dedicated support team and defined response time. Response time defined and adhered to for responding to opens. For features: open, searchable, archived discussion, clear yes/no, features slotted to releases (similar to github issues)",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 2, 2, 2, 2]
+  },
+  {
+    "title": "Test Plan And Infrastructure",
+    "dtoKey": "testPlanAndInfrastructure",
+    "domain": "repo",
+    "intent": "Reuse or contribution teams able to recreate or integrate test env. Need to contribute tests for their use cases.",
+    "category": "Testing",
+    "importance": 2,
+    "options": [
+      {
+        "title": "N/A",
+        "description": ""
+      },
+      {
+        "title": "Manually tested only before each release. Validation plan documented (test cases and here's how). Scope of validation. Test results.",
+        "description": ""
+      },
+      {
+        "title": "Automated test suite available that can be kicked off manually. Validation plan shared.",
+        "description": ""
+      },
+      {
+        "title": "Test env setup clearly defined. Status of validation and execution viewable.",
+        "description": ""
+      },
+      {
+        "title": "Automated Daily Testing.",
+        "description": ""
+      },
+      {
+        "title": "Ability for consumers to contribute to test suite. SW-defined infrastructure if internal/external consumers need to recreate (for source reuse). Defined CI scripts (for source reuse).",
+        "description": ""
+      }
+    ],
+    "tierMapping": [-1, 5, 4, 3, 2, 1],
+    "maturityMapping": [-1, 1, 2, 2, 2, 4]
+  },
+  {
+    "title": "Versioning",
+    "dtoKey": "versioning",
+    "domain": "repo",
+    "intent": "Reuse team able to evaluate cost of integrating new release based on number reflecting size of change",
+    "category": "Planning",
+    "importance": 4,
+    "options": [
+      {
+        "title": "No versioning",
+        "description": ""
+      },
+      {
+        "title": "Manual versioning (not using a scheme).",
+        "description": ""
+      },
+      {
+        "title": "Versioned releases (using any versioning scheme that you have published info about).",
+        "description": ""
+      },
+      {
+        "title": "Semantic versioning following https://semver.org/ guidelines.",
+        "description": ""
+      }
+    ],
+    "tierMapping": [5, 4, 3, 1],
+    "maturityMapping": [-1, 0, 1, 4]
+  }
+]
