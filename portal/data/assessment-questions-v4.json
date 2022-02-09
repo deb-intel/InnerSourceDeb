@@ -9,23 +9,23 @@
     "options": [
       {
         "title": "Monolithic architecture and design",
-        "description": ""
+        "description": "Shows no modularity."
       },
       {
         "title": "Semi-monolithic architecture and design",
-        "description": ""
+        "description": "Shows progress toward modularity where several modules may be interdependent."
       },
       {
-        "title": "All modules are externally usable without hidden APIs. Modules have clear high - level definition and responsibility of subsystems.",
-        "description": ""
+        "title": "Modular and interdependent architecture",
+        "description": "Shows full modularity with clear high-level definition and responsibility of subsystems for all modules. All modules are externally usable without hidden APIs. "
       },
       {
-        "title": "Under migration to loosely coupled architecture",
-        "description": ""
+        "title": "Modular and several independent modules",
+        "description": "Shows progress toward loosely coupled architecture."
       },
       {
-        "title": "Loosely coupled components with clear responsibilities and APIs",
-        "description": ""
+        "title": "Modular and mostly independent modules",
+        "description": "Shows loosely coupled components with clear responsibilities and APIs."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -44,24 +44,24 @@
         "description": ""
       },
       {
-        "title": "Not distributed via the package manager. Requires manual downloading of a binary from an FTP server. Has clear installation instructions.",
-        "description": ""
+        "title": "Not distributed via a package manager",
+        "description": "Requires manual downloading of a binary from an FTP server. Has clear installation instructions."
       },
       {
-        "title": "Distributed via package the manager. Installation is not tested using a system account prior to distribution.",
-        "description": ""
+        "title": "Distributed via a package manager",
+        "description": "Distributed via package a manager. Installation is not tested using a system account prior to distribution."
       },
       {
-        "title": "Distributed via the package manager. Installation is tested using a system account prior to distribution.",
-        "description": ""
+        "title": "Distributed and installation tested",
+        "description": "Distributed via a package manager. Installation is tested using a system account prior to distribution."
       },
       {
-        "title": "Distributed via the package manager. Installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account.",
-        "description": ""
+        "title": "Distributed, schedued installation-tested, and health-check tool",
+        "description": "Distributed via a package manager. Installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account."
       },
       {
-        "title": "Distributed via the package manager. Installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account. Installation is tested after deployment of a binary.",
-        "description": ""
+        "title": "Distributed, schedued installation-tested, health-check tool, pre and post deployment tests",
+        "description": "Distributed via package manager. Installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account. Installation is tested after deployment of a binary."
       }
     ],
     "tierMapping": [-1, 5, 4, 3, 2, 1],
@@ -76,16 +76,20 @@
     "importance": 2,
     "options": [
       {
-        "title": "Trademark & Branding (TM&B) approved product name documented if you have it or why you don't need it",
-        "description": ""
+        "title": "Trademark & Branding (TM&B) approved product name if applicable",
+        "description": "In repos.yml description field, document Trademark & Branding (TM&B) approved product name. TODO: is this the best location to store this info?"
       },
       {
-        "title": "Follow Open Source PDT guidelines for generic naming of projects that TM&B",
-        "description": ""
+        "title": "Trademark & Branding (TM&B) name not applicable",
+        "description": "In repos.yml description field, document N/A product name if you don't need it. TODO: is this the best location to store this info?"
+      },
+      {
+        "title": "Use descriptive name when TM&B is not applicable",
+        "description": "TODO: link to existing OSPDT explanation."
       }
     ],
-    "tierMapping": [5, 3],
-    "maturityMapping": [1, 2]
+    "tierMapping": [5, 5, 3],
+    "maturityMapping": [1, 1, 2]
   },
   {
     "title": "Build Environment And Documentation",
