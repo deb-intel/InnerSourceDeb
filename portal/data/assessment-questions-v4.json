@@ -100,24 +100,24 @@
     "importance": 3,
     "options": [
       {
-        "title": "Non-portable, developed for single platform",
-        "description": ""
+        "title": "Build instructions are not documented or only partially documented.",
+        "description": "Non-portable. May be developed for single platform."
       },
       {
-        "title": "Comprehensive step by step build instructions including links for any pre-requisites, containers / VMs, AGS permissions, or other requirements",
-        "description": ""
+        "title": "Documented build instructions that are not automated.",
+        "description": "Comprehensive step-by-step build instructions including links for any pre-requisites, containers / VMs, AGS permissions, or other requirements"
       },
       {
-        "title": "One command to build. One command to install project dependencies. Uses standard dependency management solution associated with respective language: JavaScript & package.json, Python & requirements.txt, Go & Go modules, etc.",
-        "description": ""
+        "title": "One command to set up a project and build a deployable artifact.",
+        "description": "The command needs to build, install project dependencies, and use standard dependency management solution associated with respective language: JavaScript & package.json, Python & requirements.txt, Go & Go modules, etc. Example: Contributor clones a repo, executed one command to install everything needed to work with the project, and executes one command to build deployable artifact."
       },
       {
-        "title": "Fully automated build with documentation to replicate it",
-        "description": ""
+        "title": "Fully automated build scripts able to be used locally or by Continuous Integration (CI).",
+        "description": "Fully automated build with documentation to replicate it"
       },
       {
-        "title": "One command to build a deployable deliverable on any machine (ie. docker compose, helm, etc.). Mainstream build utilities (cmake, automake, etc.). Developer Set up for Build Environment Simple and build scripts are clear.",
-        "description": ""
+        "title": "Cross-platform command that combines automated build scripts",
+        "description": "One command to build a deployable deliverable on any supported machine (ie. docker compose, helm, etc.) using mainstream build utilities (cmake, automake, etc.). Developer set up for build environment is fully documented and build scripts are clear."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -132,24 +132,24 @@
     "importance": 4,
     "options": [
       {
-        "title": "No code base naming convention",
-        "description": ""
+        "title": "Arbitrary Source Control Management (SCM).",
+        "description": "Project not yet migrated to 1Source Source Control Management (SCM)."
       },
       {
-        "title": "Self defined and maintained code base naming convention",
-        "description": ""
+        "title": "Migration to 1Source in progress or doesn't meet 1Source guidelines.",
+        "description": "Self defined and maintained code base naming convention"
       },
       {
-        "title": "GitHub project & repository names follow 1Source guidelines for searchability",
-        "description": ""
+        "title": "GitHub project, repository names, and location meet 1Source guidelines.",
+        "description": "GitHub repos are managed via 1Source inventory. https://github.com/intel-innersource/inventory/blob/master/README.md and https://github.com/intel-innersource/inventory#governance. TODO: How are guidelines enforced? Esp. the move from sandbox to inner-source?"
       },
       {
-        "title": "Code base naming follows best practices for given language, framework, or technology",
-        "description": ""
+        "title": "Code base naming follows best practices for given language, framework, or technology.",
+        "description": "TODO: Do we need this?"
       },
       {
-        "title": "Completed naming process with agreement in place on how to extend name for other usages",
-        "description": ""
+        "title": "Documented complete naming process with how to extend name for other usages.",
+        "description": "TODO: Do we need this?"
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -159,29 +159,29 @@
     "title": "Compliance For Contribution",
     "dtoKey": "complianceForContribution",
     "domain": "repo",
-    "intent": "Reuse and contribution teams have confidence that code they are using or contributing to are meeting corporate guidelines.",
+    "intent": "Compliannt to corporate guidelines and is approriate for reuse.",
     "category": "Governance",
     "importance": 4,
     "options": [
       {
-        "title": "No compliance enforcement",
+        "title": "No corporate compliance enforcement",
         "description": ""
       },
       {
-        "title": "Periodical manual review of new code for compliance",
+        "title": "Periodical manual review of new code for corporate compliance",
         "description": ""
       },
       {
-        "title": "Manual review of new code for compliance upon release",
+        "title": "Review of new code for corporate compliance upon release",
+        "description": "TODO: Developer code review for well-written code"
+      },
+      {
+        "title": "Some applicable automated checks are integrated into pull-request (PR) validation pipeline.",
         "description": ""
       },
       {
-        "title": "Some checks are integrated into PR validation pipeline",
-        "description": ""
-      },
-      {
-        "title": "Every applicable check integrated into PR validation pipeline (ex: SDL, SWLC, etc.)",
-        "description": ""
+        "title": "All applicable automated checks are integrated into pull-request (PR) validation pipeline.",
+        "description": "Examples: SDL (klockwork, snyk), SWLC (protex and IPLDT) and OSPDT (TODO: is there an automated check?)"
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
