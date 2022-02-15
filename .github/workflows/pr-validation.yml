@@ -1,19 +1,19 @@
-name: Docs
+name: pr-validation
 
 on:
   pull_request:
+    branches: [main]
 
 defaults:
   run:
     shell: bash
 
 concurrency:
-  group: ${{ github.head_ref }}.${{ github.sha }}.pages
+  group: ${{ github.head_ref }}.${{ github.sha }}.pr-validation
   cancel-in-progress: true
 
 jobs:
-  pages:
-    name: Build Sphinx Docs
+  premerge:
     runs-on: [self-hosted, linux, x64, python, kubernetes]
 
     steps:
@@ -35,3 +35,7 @@ jobs:
     - name: Build docs
       run: |
         python -m sphinx -W -b html . _build/
+
+    - name: FS cleanup
+      run: |
+        rm -rf "$GITHUB_WORKSPACE"/*

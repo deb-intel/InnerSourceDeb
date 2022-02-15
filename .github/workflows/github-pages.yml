@@ -1,21 +1,19 @@
-name: Pages
+name: github-pages
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 defaults:
   run:
     shell: bash
 
 concurrency:
-  group: ${{ github.head_ref }}.${{ github.sha }}.pages
+  group: ${{ github.head_ref }}.${{ github.sha }}.github-pages
   cancel-in-progress: true
 
 jobs:
-  pages:
-    name: Build GitHub Pages
+  github-pages:
     runs-on: [self-hosted, linux, x64, python, kubernetes]
 
     steps:
@@ -28,6 +26,7 @@ jobs:
       with:
         fetch-depth: 0
         ref: ${{ github.event.pull_request.head.sha }}
+
     - name: Build docs
       run: |
         python -m pip install -U pip setuptools wheel
@@ -44,3 +43,7 @@ jobs:
         git config --global user.name "InnerSource WG"
         git commit -sm "${COMMIT_MESSAGE}"
         git push -u origin -f gh-pages
+
+    - name: FS cleanup
+      run: |
+        rm -rf "$GITHUB_WORKSPACE"/*
