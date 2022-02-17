@@ -1,3 +1,6 @@
 built_html_docs/
 .venv/
 _build/
+
+# VS Code folder
+.vscode
