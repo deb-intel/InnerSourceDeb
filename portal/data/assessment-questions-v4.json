@@ -324,12 +324,12 @@
     "importance": 2,
     "options": [
       {
-        "title": "Deliver an unpackaged collection of artifacts",
-        "description": ""
+        "title": "Deliver an unpackaged collection of artifacts.",
+        "description": "Example: zip file with arbitrary names."
       },
       {
-        "title": "Versioned package",
-        "description": ""
+        "title": "Versioned package that is not self-sufficient.",
+        "description": "Not all dependencies are included in the package, but versioning is in place."
       },
       {
         "title": "Self-sufficient package that is easily installable and accessible.",
@@ -356,24 +356,24 @@
     "importance": 4,
     "options": [
       {
-        "title": "No documentation",
+        "title": "Little or no internal documentation.",
         "description": ""
       },
       {
-        "title": "Quickstart and tutorials for key features / use cases",
+        "title": "System requirements clearly documented.",
         "description": ""
       },
       {
-        "title": "Searchable and viewable by all blue badge employees",
-        "description": ""
+        "title": "Quickstart guide for key features & use cases. FAQ exists. Location documented in README for the internal documentation that is accessible by all employees who have completed 1Source onboarding.",
+        "description": "Searchable and viewable internal documentation."
       },
       {
-        "title": "Able to track documentation changes with Git version control",
-        "description": ""
+        "title": "Full feature descriptions and tutorials exist. Able to track documentation changes tracked with Git.",
+        "description": "Well-maintained comprehensive docs."
       },
       {
-        "title": "Extensive tutorials requiring little to no setup. Internal documentation release aligns with SW Release",
-        "description": ""
+        "title": "Extensive tutorials requiring little to no setup. Internal documentation release aligns with SW Release.",
+        "description": "Publication dates are clear. Documentation versions are aligned with SW versions."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -383,20 +383,20 @@
     "title": "Documentation Coverage",
     "dtoKey": "documentationCoverage",
     "domain": "project",
-    "intent": "Reason for needing this is so users know what functions they can use and have confidence will still exist in the future. Expand on what it means to be documented(ex: --help) Also helps with security.",
+    "intent": "Reason for needing this is so users know what functions they can use and have confidence will still exist in the future (ex: stable API). Expand on what it means to be documented(ex: --help) Also helps with security.",
     "category": "Documentation",
     "importance": 4,
     "options": [
       {
-        "title": "Automated check verifies exposed interface coverage.",
+        "title": "Manually generated exposed interface documentation. Automated check verifies exposed interface coverage.",
         "description": ""
       },
       {
-        "title": "At least 50% applicable exposed interface coverage (ex: Public API for Binary Reuse, Public + Internal API for Source Reuse & Contribution). Auto generated exposed interface documentation. Interfaces only, not comments on usage.Ex: using Javadoc, Doxygen, Swagger, or similar API documentation system.",
-        "description": ""
+        "title": "At least 50% applicable exposed interface coverage. Auto-generated exposed interface documentation.",
+        "description": "Exposed interface examples: Public API for Binary Reuse, Public + Internal API for Source Reuse & Contribution. Interfaces only, not comments on usage. Using Javadoc, Doxygen, Swagger, or similar API documentation system."
       },
       {
-        "title": "At least 60% applicable public interface coverage.",
+        "title": "At least 60% applicable exposed interface coverage.",
         "description": ""
       },
       {
@@ -404,7 +404,7 @@
         "description": ""
       },
       {
-        "title": "100% applicable exposed interface coverage. Exposed interface documentation with examples of usage and explanation.",
+        "title": ">95% applicable exposed interface coverage. Exposed interface documentation with examples of usage and explanation.",
         "description": ""
       }
     ],
@@ -420,24 +420,24 @@
     "importance": 1,
     "options": [
       {
-        "title": "No CI/CD",
+        "title": "No Continuous Integration",
         "description": ""
       },
       {
-        "title": "CI testing / dev builds",
+        "title": "Continuous Integration testing / dev builds",
         "description": ""
       },
       {
-        "title": "Continuous integration triggered with every patch coming into the project is built but not necessarily released (CI production builds)",
-        "description": ""
+        "title": "Continuous Integration triggered with every change coming into the project is validated but not necessarily publicly released.",
+        "description": "Example: CI production builds"
       },
       {
-        "title": "Partially baked features for internal releases. (Do you provide features previews in internal releases for testing and feedback before external release?) (CI/CD with internal release)",
-        "description": ""
+        "title": "Continuous Integration completed with internal release and partially baked features.",
+        "description": "Do you provide features previews in internal releases for testing and feedback before external release? ."
       },
       {
-        "title": "Code release ≠ feature release so features do not impact each other, degrade the quality of the release, or block the release. Ex: Do you use approaches like Feature toggles or Feature flags to control customer access to experimental features to allow for external testing and feedback before a full release. (CI/CD with production release and feature flags)",
-        "description": ""
+        "title": "Continuous Integration and Continuous Devivery with production release and feature flags.",
+        "description": "Code release ≠ feature release so features do not impact each other, degrade the quality of the release, or block the release. Do you use approaches like Feature toggles or Feature flags to control customer access to experimental features to allow for external testing and feedback before a full release of that feature."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -457,18 +457,18 @@
       },
       {
         "title": "Manual IP Leak Detection Tool scan passes",
+        "description": "IPDLT found in Product Validation tools: http://pvtools.intel.com/"
+      },
+      {
+        "title": "Manual IP Leak Detection Tool scan passes and is executed prior to each public release",
         "description": ""
       },
       {
-        "title": "Manual IP Leak Detection Tool scan passes, and is executed prior to each release",
+        "title": "Automated IP Leak Detection Tool scan on defined schedule",
         "description": ""
       },
       {
-        "title": "Manual IP Leak Detection Tool scan on defined schedule",
-        "description": ""
-      },
-      {
-        "title": "Automated IP Leak Detection Tool scan on defined frequent schedule",
+        "title": "Automated IP Leak Detection Tool scan built into Continuous Integration",
         "description": ""
       }
     ],
@@ -484,24 +484,24 @@
     "importance": 4,
     "options": [
       {
-        "title": "Single semi active maintainer",
+        "title": "Less than 2 active maintainers",
         "description": ""
       },
       {
-        "title": "Several active maintainers",
+        "title": "2 or more active maintainers",
         "description": ""
       },
       {
-        "title": "Maintainers willing to review and integrate contributions, active maintainers review pull requests and respond to issues submitted",
-        "description": ""
+        "title": "Maintainers documented in CONTRIBUTING file and willing to review and integrate contributions.",
+        "description": "Active maintainers review pull requests and respond to issues submitted. Example: https://github.com/kata-containers/community/blob/main/CONTRIBUTING.md#project-maintainers"
       },
       {
-        "title": "7 days response time for pull requests reviews and issues response",
-        "description": ""
+        "title": "Response time commitment documented in CONTRIBUTING file.",
+        "description": "7 days response time for pull requests reviews and issues response."
       },
       {
-        "title": "Clearly documented governance structure with roles responsibilities and bus factor",
-        "description": ""
+        "title": "Clearly documented governance structure with roles responsibilities and bus factor in CONTRIBUTING and/or CODEOWNERS file.",
+        "description": "Example: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners"
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
