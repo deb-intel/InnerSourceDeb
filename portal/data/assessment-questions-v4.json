@@ -516,24 +516,24 @@
     "importance": 2,
     "options": [
       {
-        "title": "Steep learning curve, nothing is documented",
-        "description": ""
+        "title": "Steep learning curve. Minimal or no documentation accessible.",
+        "description": "Hard for new developers to make even small code changes."
       },
       {
-        "title": "High-level architecture and design decisions are documented",
-        "description": ""
+        "title": "High-level architecture and engineering design decisions are documented.",
+        "description": "TODO: Add example - data flow schema (block schema with interconnection between modules) or high-levelarchitecture decision on solution"
       },
       {
-        "title": "Clear responsibility and key design choices for individual components documented.",
-        "description": ""
+        "title": "Clear responsibility and engineering design choices for individual components documented.",
+        "description": "TODO: add example, maybe Zephyr project or https://github.com/kata-containers"
       },
       {
-        "title": "Discoverable list of non-critical, low priority, and easy issues that are ideal for new contributors to fix.",
-        "description": ""
+        "title": "Well-defined workflow as well as roles and responsibilities documented. Discoverable list of starter issues.",
+        "description": "TODO: add example, maybe Zephyr project or https://github.com/kata-containers.  Examples of starter issues: non-critical, low priority, and easy issues that are ideal for new contributors to fix."
       },
       {
-        "title": "Typical extension points are defined and well documented.",
-        "description": ""
+        "title": "Proven extensibility which follows language or frawework guidelines.",
+        "description": "TODO: reference language or framework guidelines in documentation. Typical extension points are defined and well documented. TODO: add example, maybe Zephyr project or https://github.com/kata-containers"
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -548,24 +548,24 @@
     "importance": 4,
     "options": [
       {
-        "title": "Manual QA done by core team",
-        "description": ""
+        "title": "Manual QA done by core teams",
+        "description": "No manual quality gates in place. Everything can be tested by core team locally before merging pull requests."
       },
       {
-        "title": "Continuous Integration (CI) such that contributor executes before submitting Promotion Request (PR). Continuous Integration (CI) executes before pull request is merged. Scriptable and documented QA such that contributor executes before submitting Pull Request (PR).",
-        "description": ""
+        "title": "Scriptable and documented QA such that contributor executes locally before submitting pull requests.",
+        "description": "Some manual quality gates in place. Examples: pre-commit and pre-push hooks."
       },
       {
-        "title": "Test results are stored in a database. Test results are available and actionable to contributors - document expectations for big vs small projects. Test plan (including security validation and scope of validation) is maintained in up-to-date state. Pull requests trigger Continuous Integration (CI) for build & unit tests.",
-        "description": ""
+        "title": "Pull requests trigger Continuous Integration (CI) for build & unit tests. Test results are stored and accessible.",
+        "description": "Some automated quality gates in place. Test results are available and actionable to contributors. TODO: Document expectations for big vs small projects."
       },
       {
-        "title": "Pull requests trigger Continuous Integration (CI) for extensive testing",
-        "description": ""
+        "title": "Pull requests trigger Continuous Integration (CI) for several types of required testing.",
+        "description": "Mostly automated quality gates in place. TODO: add different types of testing (Unit, build, integration tests, user acceptance tests - E2E testing, etc.) https://www.browserstack.com/guide/testing-pyramid-for-test-automation"
       },
       {
-        "title": "Short feedback loops. Test results stored in test case management system to allow for queries and reporting. Bazaar-style Quality Assurance (QA). Continuous Integration (CI) & Automated Daily Unit Testing.",
-        "description": ""
+        "title": "Continuous Integration (CI) & Automated Daily Testing where results are stored in test case management system.",
+        "description": "Fully automated quality gates in place. Test case management system allows for queries and reporting. Short feedback loops. Bazaar-style Quality Assurance (QA) TODO - what is this?."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -580,28 +580,36 @@
     "importance": 3,
     "options": [
       {
-        "title": "No (visible) release schedule",
+        "title": "Inaccessible or no apparent release schedule",
         "description": ""
       },
       {
-        "title": "Published release schedule",
+        "title": "Published and accessible release schedule.",
         "description": ""
       },
       {
-        "title": "Release train with fixed cadence (whether its yearly, quarterly, monthly, weekly, or any other recurring schedule) OR release schedule defined by cross-product WG or business council (whether internal or external) or consuming products OR internal projects support for on-demand releases",
+        "title": "Release train with fixed cadence",
+        "description": "Example of fixed cadence: yearly, quarterly, monthly, weekly, or any other recurring schedule. "
+      },
+      {
+        "title": "Release schedule defined by cross-product WG, business council, or consuming products.",
         "description": ""
+      },
+      {
+        "title": "Internal projects support for on-demand releases where frequency may vary.",
+        "description": " "
       },
       {
         "title": "Urgent delivery within 1/2 of the fixed schedule",
         "description": ""
       },
       {
-        "title": "Able to cut release and deliver within 2 business days (for example if a Critical CVE were found and fixed).",
-        "description": ""
+        "title": "Able to cut release and deliver within 2 business days.",
+        "description": "Example: Critical CVE found and fixed"
       }
     ],
-    "tierMapping": [5, 4, 3, 2, 1],
-    "maturityMapping": [-1, 0, 2, 2, 4]
+    "tierMapping": [5, 4, 3, 3, 3, 2, 1],
+    "maturityMapping": [-1, 0, 2, 2, 2, 2, 4]
   },
   {
     "title": "Release Lead Time",
@@ -717,7 +725,7 @@
       },
       {
         "title": "Code marked as shippable (release tags) has 100% of SDL tasks complete. Not Applicable - project is internal use only. Compliant with Intel PSIRT policy – all PSIRTs have been fixed or are within the acceptable fix window - https://wiki.ith.intel.com/display/PSIRTpublic/Phase+2+-+Mitigate",
-        "description": ""
+        "description": "Peridical surity audit"
       },
       {
         "title": "High velocity or steady rate of SDL task completion. Automation of applicable security tools (ex: Klocwork, Coverity, BDBA, Snyk, etc.) exists.",
