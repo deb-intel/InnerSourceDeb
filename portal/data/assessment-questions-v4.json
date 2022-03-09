@@ -615,29 +615,29 @@
     "title": "Release Lead Time",
     "dtoKey": "releaseLeadTime",
     "domain": "project",
-    "intent": "Contribution teams to know when their PR would be in the main branch.",
+    "intent": "TODO: Maybe deployment lead time - time taken from commit to deploy.  Contribution teams to know when their PR would be in the main branch.",
     "category": "Planning",
     "importance": 2,
     "options": [
       {
-        "title": "No PR SLA.",
+        "title": "TODO: No pull request review SLA.",
         "description": ""
       },
       {
-        "title": "PR SLA is present but not fully enforced.",
+        "title": "TODO: Pull request review SLA is present but not fully enforced.",
         "description": ""
       },
       {
-        "title": "PR SLA is present and fully enforced without commitment for lead time.",
+        "title": "TODO: Pull request review SLA is present and fully enforced without commitment for lead time.",
         "description": ""
       },
       {
-        "title": "PR SLA commitment for lead time.",
+        "title": "TODO: Pull request review SLA commitment for lead time.",
         "description": ""
       },
       {
-        "title": "Able to cut release and deliver within 2 business days (for example if a Critical CVE were found and fixed)",
-        "description": ""
+        "title": "TODO: Able to cut release and deliver within 2 business days.",
+        "description": "Example: a Critical CVE were found and fixed"
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -656,19 +656,19 @@
         "description": ""
       },
       {
-        "title": "Requirements are available to the project engineering team.",
+        "title": "Requirements are available to the project engineering team and location documented in the root README file.",
+        "description": "TODO: document example"
+      },
+      {
+        "title": "Requirements are available to all employees who have completed 1Source on-boarding.",
         "description": ""
       },
       {
-        "title": "Requirements are available to all blue badge employees.",
+        "title": "Requirements are linked to test cases manually.",
         "description": ""
       },
       {
-        "title": "Requirements are linked to test cases manually",
-        "description": ""
-      },
-      {
-        "title": "Requirements are linked to test cases via an automated system",
+        "title": "Requirements are linked to test cases via an automated system.",
         "description": ""
       }
     ],
@@ -684,23 +684,23 @@
     "importance": 2,
     "options": [
       {
-        "title": "No roadmap",
+        "title": "No roadmap or unplublished roadmap.",
         "description": ""
       },
       {
-        "title": "Published roadmap",
+        "title": "Published roadmap with location documented in root README.",
+        "description": "TODO: example"
+      },
+      {
+        "title": "Internally published and discoverable info about next release available to all employees who have completed 1Source on-boarding.",
         "description": ""
       },
       {
-        "title": "Internally published and discoverable info about next release, available to Intel blue-badge and discoverable info about next release",
+        "title": "Roadmap with some features updated on quarterly basis.",
         "description": ""
       },
       {
-        "title": "Roadmap with some features",
-        "description": ""
-      },
-      {
-        "title": "Roadmap with features, release dates",
+        "title": "Roadmap with features and release dates updated on quarterly basis.",
         "description": ""
       }
     ],
