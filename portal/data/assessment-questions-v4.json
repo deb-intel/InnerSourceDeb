@@ -716,24 +716,24 @@
     "importance": 3,
     "options": [
       {
-        "title": "Project has a registered SDL project that can be accessed via the SDL Essentials Portal (https://sdl-e.app.intel.com). SDL project in SD Essentials Portal has Read Access for all Blue badges. Is accessible via the SDL Reports Tool - https://wiki.ith.intel.com/display/SDLEssentials/SDL+One+Report.",
+        "title": "Project has a registered SDL project that can be accessed via the SDL Essentials Portal. Is accessible via the SDL One Reports Tool.",
+        "description": "SDL Essentials portal: https://sdl-e.app.intel.com.  SDL One Reports tool: https://wiki.ith.intel.com/display/SDLEssentials/SDL+One+Report"
+      },
+      {
+        "title": "All SDL evidence has been uploaded to the SDL Essentials Portal. This can be checked via the SDL One Report Tool. Product Security Expert (PSE) assigned to SDL project in SDL Essentials Portal.",
         "description": ""
       },
       {
-        "title": "All SDL evidence has been uploaded to the SDL Essentials Portal. This can be checked via the SDL One Report Tool. Product Security Expert (PSE) assigned to SDL project in SDL Essentials Portal. SDL Gap Analysis task (CT25) has been completed by PSE. This can be checked via the SDL One Report Tool.",
-        "description": ""
+        "title": "SDL project in SDL Essentials Portal has Read Access for all employees that have completed 1Source onboarding.  Code marked as shippable (release tags) has 100% of SDL tasks complete. Not Applicable - project is internal use only. Compliant with Intel PSIRT policy.",
+        "description": "Peridical security audit. PSIRT policy - all PSIRTs have been fixed or are within the acceptable fix window - https://wiki.ith.intel.com/display/PSIRTpublic/Phase+2+-+Mitigate"
       },
       {
-        "title": "Code marked as shippable (release tags) has 100% of SDL tasks complete. Not Applicable - project is internal use only. Compliant with Intel PSIRT policy – all PSIRTs have been fixed or are within the acceptable fix window - https://wiki.ith.intel.com/display/PSIRTpublic/Phase+2+-+Mitigate",
-        "description": "Peridical surity audit"
+        "title": "High velocity or steady rate of SDL task completion. Automation of applicable security tools exists.",
+        "description": "Examples of security tools: Klocwork, Coverity, BDBA, Snyk, etc."
       },
       {
-        "title": "High velocity or steady rate of SDL task completion. Automation of applicable security tools (ex: Klocwork, Coverity, BDBA, Snyk, etc.) exists.",
-        "description": ""
-      },
-      {
-        "title": "2 weeks SLA for addressing CVEs reported against current and LTS versions of the component. SDL status, security bugs, and scan results are accessible on a dashboard. Automated runs of applicable security tools (ex: Klocwork, Coverity, BDBA, Snyk, etc.) occurs on a defined frequent schedule. Dashboard has access granted for all blue badge employees.",
-        "description": ""
+        "title": "2 weeks SLA for addressing CVEs reported against current and LTS versions of the component. SDL status, security bugs, and scan results are accessible on a dashboard. Automated runs of applicable security tools occurs on a defined frequent schedule. Dashboard has access granted for all employees that have complete 1Source onboarding.",
+        "description": "TODO: how to simplify this?"
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -748,24 +748,24 @@
     "importance": 3,
     "options": [
       {
-        "title": "Obtained Software Legal Compliance (SWLC) approval (ex: Protex, Intellectual Property (IP) Plan, Open Source PDT, Export Compliance, etc.)",
+        "title": "Incomplete or no evidence of Software Legal Compliance (SWLC) approval.",
         "description": ""
       },
       {
-        "title": "Record Center evidence submitted",
+        "title": "Obtained Software Legal Compliance (SWLC) approval. Record Center evidence submitted.",
+        "description": "Examples: Protex, Intellectual Property (IP) Plan, Open Source PDT, Export Compliance, etc."
+      },
+      {
+        "title": "Up-to-date SWLC evidence can easily be shared. SWLC evidence posted in location accessible by employees that have completed 1Source onboarding. Provide list of obligations that project reusing this code should fulfill.",
         "description": ""
       },
       {
-        "title": "Up-to-date SWLC evidence can easily be shared. SWLC evidence posted in location with blue badge access granted. Provide list of obligations that project reusing this code should fulfill.",
-        "description": ""
+        "title": "Manual applicable SWLC scans on defined frequent schedule.",
+        "description": "Example: Protex, etc."
       },
       {
-        "title": "Manual applicable SWLC scans (ex: Protex scan, etc.) on defined frequent schedule",
-        "description": ""
-      },
-      {
-        "title": "Automated applicable SWLC scans (ex: Protex scan, etc.) on defined frequent schedule",
-        "description": ""
+        "title": "Automated applicable SWLC scans on defined frequent schedule.",
+        "description": "Example: Protex, etc."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -784,23 +784,23 @@
         "description": ""
       },
       {
-        "title": "Not distributed via the package manager. Requires manual downloading of archived sources from an FTP server. Has clear compilation and installation instructions",
+        "title": "Not distributed via a package manager.",
+        "description": "Example: Requires manual downloading of archived sources from an FTP server."
+      },
+      {
+        "title": "Distributed via a package manager. Compilation and installation is NOT tested using a system account prior to distribution. Has clear compilation and installation instructions.",
         "description": ""
       },
       {
-        "title": "Distributed via package the manager. Compilation and installation is NOT tested using a system account prior to distribution",
+        "title": "Distributed via a package manager. Compilation and installation is tested using a system account prior to distribution.",
         "description": ""
       },
       {
-        "title": "Distributed via the package manager. Compilation and installation is tested using a system account prior to distribution",
+        "title": "Distributed via a package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account.",
         "description": ""
       },
       {
-        "title": "Distributed via the package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account",
-        "description": ""
-      },
-      {
-        "title": "Distributed via the package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account. Compilation and installation is tested after deployment of a binary",
+        "title": "Distributed via a package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account. Compilation and installation is tested after deployment of a binary.",
         "description": ""
       }
     ],
@@ -824,16 +824,16 @@
         "description": ""
       },
       {
-        "title": "Automated logging system. Internal consumers able to log issues/questions/feature requests to defined place. Defined place to log issues/questions/feature requests has access granted to all blue badge employees.blished list of feature requests. Published list of feature requests where location has access granted for all blue badge employees",
-        "description": ""
+        "title": "Issue tracking system and published list of feature requests for all employees who have completed 1Source onboading. ",
+        "description": "Internal consumers able to log issues/questions/feature requests. Example: GitHub issues, JIRA, etc."
       },
       {
-        "title": "Dedicated support team and floating response time. Response time is not defined and adhered to",
-        "description": ""
+        "title": "Dedicated support team and floating response time. ",
+        "description": "Response time is not defined."
       },
       {
-        "title": "Dedicated support team and defined response time. Response time defined and adhered to for responding to opens. For features: open, searchable, archived discussion, clear yes/no, features slotted to releases (similar to github issues)",
-        "description": ""
+        "title": "Dedicated support team and defined response time. Features must include detailed information.",
+        "description": "Response time defined and adhered to. Detailed feature information: open, searchable, archived discussion, clear yes/no, features slotted to releases (similar to GitHub issues)"
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
