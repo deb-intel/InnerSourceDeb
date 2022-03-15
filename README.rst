@@ -97,3 +97,39 @@ Use the Makefile to build or test documentation.
       
       make clean
 
+Doc Template 
+############
+
+Use the ``doc-template.rst`` to create a new document. Follow along based on your operating system, using a Terminal.
+
+.. note::
+   To change the default app used to open the `doc-template.rst`, follow the `PC Mag instructions`.
+
+Navigate to the project root. 
+
+If using WSL, run:
+
+.. code-block:: bash
+
+   ./doc-wsl.sh
+
+If using a Linux distro, change file permissions: 
+
+.. code-block:: bash
+
+   chmod u+x ./doc-lnx.sh
+
+Run command to open template.
+
+.. code-block:: bash
+
+   ./doc-lnx.sh
+
+Save the document with a new name. Then add it to the `index.rst`.
+
+.. _PC Mag instructions: https://www.pcmag.com/how-to/how-to-customize-your-default-apps-in-windows-and-macos
+
+.. toctree::
+   :hidden:
+
+   .doc-templates/doc-template.rst

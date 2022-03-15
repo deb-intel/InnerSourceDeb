@@ -1,6 +1,9 @@
-built_html_docs/
+#built_html_docs/
 .venv/
 _build/
 
 # VS Code folder
 .vscode
+
+# RST Doc templates
+.doc-templates
