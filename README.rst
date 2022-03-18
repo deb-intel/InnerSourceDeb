@@ -103,7 +103,7 @@ Doc Template
 Use the ``doc-template.rst`` to create a new document. Follow along based on your operating system, using a Terminal.
 
 .. note::
-   To change the default app used to open the `doc-template.rst`, follow the `PC Mag instructions`.
+   To change the default app used to open the `doc-template.rst`, follow the `PC Mag instructions`_.
 
 Navigate to the project root. 
 
@@ -125,11 +125,14 @@ Run command to open template.
 
    ./doc-lnx.sh
 
-Save the document with a new name. Then add it to the `index.rst`.
+
+#. Save the `doc-template.rst` with a new `filename`` to the apppropriate subdirectory.
+#. If using the `toctree` directive *without* the `:glob:` option, add the new file name below a toctree.
+#. If using the `toctree` directive *with* the `:glob:` option, no further action is required.
+
+
+
 
 .. _PC Mag instructions: https://www.pcmag.com/how-to/how-to-customize-your-default-apps-in-windows-and-macos
 
-.. toctree::
-   :hidden:
 
-   .doc-templates/doc-template.rst
