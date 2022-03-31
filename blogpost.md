@@ -1,3 +1,3 @@
-### Blogpost Placeholder
+# Blogpost Placeholder
 
 Intro paragraph.
