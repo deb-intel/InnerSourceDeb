@@ -77,11 +77,11 @@
     "options": [
       {
         "title": "Trademark & Branding (TM&B) approved product name if applicable",
-        "description": "In repos.yml description field, document Trademark & Branding (TM&B) approved product name. TODO: is this the best location to store this info?"
+        "description": "Document Trademark & Branding (TM&B) approved product name in project details in the InnerSource portal."
       },
       {
         "title": "Trademark & Branding (TM&B) name not applicable",
-        "description": "In repos.yml description field, document N/A product name if you don't need it. TODO: is this the best location to store this info?"
+        "description": "Document N/A product name if you don't need it in project details in the InnerSource portal."
       },
       {
         "title": "Use descriptive name when TM&B is not applicable",
@@ -141,19 +141,11 @@
       },
       {
         "title": "GitHub project, repository names, and location meet 1Source guidelines.",
-        "description": "GitHub repos are managed via 1Source inventory. https://github.com/intel-innersource/inventory/blob/master/README.md and https://github.com/intel-innersource/inventory#governance. TODO: How are guidelines enforced? Esp. the move from sandbox to inner-source?"
+        "description": "GitHub repos are managed via 1Source inventory. https://github.com/intel-innersource/inventory/blob/master/README.md and https://github.com/intel-innersource/inventory#governance."
       },
-      {
-        "title": "Code base naming follows best practices for given language, framework, or technology.",
-        "description": "TODO: Do we need this?"
-      },
-      {
-        "title": "Documented complete naming process with how to extend name for other usages.",
-        "description": "TODO: Do we need this?"
-      }
     ],
-    "tierMapping": [5, 4, 3, 2, 1],
-    "maturityMapping": [-1, 0, 1, 2, 2]
+    "tierMapping": [5, 4, 3],
+    "maturityMapping": [-1, 0, 1]
   },
   {
     "title": "Compliance For Contribution",
