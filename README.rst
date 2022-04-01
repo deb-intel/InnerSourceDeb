@@ -20,6 +20,7 @@ business build better software, faster using innersource.
     :caption: InnerSource Overview
 
     overview/innersource_overview
+    blogpost-full
 
 .. toctree::
     :glob:

@@ -1,4 +1,4 @@
-.. _innersource_workflow:
+.. _innersource_overview:
 
 InnerSource Overview
 #####################
