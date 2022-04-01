@@ -2,6 +2,8 @@
 
 .. toctree::
    :hidden:
+   :glob:
 
    .doc-templates/doc-template.rst
    blogpost.md
+
