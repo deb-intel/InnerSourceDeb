@@ -52,6 +52,13 @@ business build better software, faster using innersource.
 
     guidelines/*
 
+.. toctree::
+    :glob:
+    :maxdepth: 2
+    :caption: Git BKMs
+
+    git_bkms/*
+
 Indices and tables
 ==================
 
