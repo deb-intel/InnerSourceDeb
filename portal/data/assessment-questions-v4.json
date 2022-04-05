@@ -165,7 +165,7 @@
       },
       {
         "title": "Review of new code for corporate compliance upon release",
-        "description": "TODO: Developer code review for well-written code"
+        "description": "Developer code review for well-written code.  Internal products should meet AppSec requirements.  External should meet SDL and SWLC requirements."
       },
       {
         "title": "Some applicable automated checks are integrated into pull-request (PR) validation pipeline.",
@@ -173,7 +173,7 @@
       },
       {
         "title": "All applicable automated checks are integrated into pull-request (PR) validation pipeline.",
-        "description": "Examples: SDL (klockwork, snyk), SWLC (protex and IPLDT) and OSPDT (TODO: is there an automated check?)"
+        "description": "Examples: SDL (klockwork, snyk), SWLC (protex and IPLDT), etc."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -205,7 +205,7 @@
       },
       {
         "title": "All applicable pre-commit or pre-merge checks for contributions.",
-        "description": "Automated checks for each contribution guideline (ex: scanning for code style). TODO: Should we include GitHub code of conduct? https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-code-of-conduct-to-your-project"
+        "description": "Automated checks for each contribution guideline (ex: scanning for code style)."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -253,23 +253,23 @@
     "options": [
       {
         "title": "Requires specific hardware without emulation / simulation support.",
-        "description": "TODO: examples"
+        "description": "Contributor has direct access to the hardware locally."
       },
       {
         "title": "Requires specific hardware but supports emulation / simulation.",
-        "description": "TODO: examples"
+        "description": "Contributor has virtual access to the hardware.  Example: Using Android Studio or xCode (iOS)."
       },
       {
         "title": "Easily deployed to varying environments as a whole only.",
-        "description": "TODO: examples"
+        "description": "Continuous deployment. Example: Cloud device farms where you can test how your application works on various hardware (emulated or real)."
       },
       {
         "title": "Easily deployed to varying environments as a whole, but requires significant effort to deploy piecemeal.",
-        "description": "TODO: examples"
+        "description": "Component based builds are easily integrated for deployment. Example: Contribute a change to single oneAPI sub-component and determine ease of deployment."
       },
       {
         "title": "Can be easily deployed to varying environments as a whole or piecemeal.",
-        "description": "TODO: examples"
+        "description": "All components are easily integrated for deployment."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -513,19 +513,19 @@
       },
       {
         "title": "High-level architecture and engineering design decisions are documented.",
-        "description": "TODO: Add example - data flow schema (block schema with interconnection between modules) or high-levelarchitecture decision on solution"
+        "description": "Data flow schema (block schema with interconnection between modules) or high-level architecture decision on solution."
       },
       {
         "title": "Clear responsibility and engineering design choices for individual components documented.",
-        "description": "TODO: add example, maybe Zephyr project or https://github.com/kata-containers"
+        "description": "Easy to navigate the code for contributors to find where to put changes."
       },
       {
         "title": "Well-defined workflow as well as roles and responsibilities documented. Discoverable list of starter issues.",
-        "description": "TODO: add example, maybe Zephyr project or https://github.com/kata-containers.  Examples of starter issues: non-critical, low priority, and easy issues that are ideal for new contributors to fix."
+        "description": "Examples of starter issues: non-critical, low priority, and easy issues that are ideal for new contributors to fix."
       },
       {
         "title": "Proven extensibility which follows language or frawework guidelines.",
-        "description": "TODO: reference language or framework guidelines in documentation. Typical extension points are defined and well documented. TODO: add example, maybe Zephyr project or https://github.com/kata-containers"
+        "description": "Reference language or framework guidelines in documentation. Typical extension points are defined and well documented."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -549,15 +549,15 @@
       },
       {
         "title": "Pull requests trigger Continuous Integration (CI) for build & unit tests. Test results are stored and accessible.",
-        "description": "Some automated quality gates in place. Test results are available and actionable to contributors. TODO: Document expectations for big vs small projects."
+        "description": "Some automated quality gates in place. Test results are available and actionable to contributors."
       },
       {
         "title": "Pull requests trigger Continuous Integration (CI) for several types of required testing.",
-        "description": "Mostly automated quality gates in place. TODO: add different types of testing (Unit, build, integration tests, user acceptance tests - E2E testing, etc.) https://www.browserstack.com/guide/testing-pyramid-for-test-automation"
+        "description": "Mostly automated quality gates in place. Examples of testing types: unit, build, integration tests, user acceptance tests, E2E testing, etc. https://www.browserstack.com/guide/testing-pyramid-for-test-automation"
       },
       {
         "title": "Continuous Integration (CI) & Automated Daily Testing where results are stored in test case management system.",
-        "description": "Fully automated quality gates in place. Test case management system allows for queries and reporting. Short feedback loops. Bazaar-style Quality Assurance (QA) TODO - what is this?."
+        "description": "Fully automated quality gates in place. Test case management system allows for queries and reporting. Short feedback loops."
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
@@ -649,7 +649,7 @@
       },
       {
         "title": "Requirements are available to the project engineering team and location documented in the root README file.",
-        "description": "TODO: document example"
+        "description": "Example: Link to JIRA, MRD, or wiki, etc."
       },
       {
         "title": "Requirements are available to all employees who have completed 1Source on-boarding.",
@@ -681,7 +681,7 @@
       },
       {
         "title": "Published roadmap with location documented in root README.",
-        "description": "TODO: example"
+        "description": "Link to JIRA board or presentation."
       },
       {
         "title": "Internally published and discoverable info about next release available to all employees who have completed 1Source on-boarding.",
