@@ -1,64 +1,140 @@
 <mxfile host="65bd71144e">
     <diagram name="Page-1" id="2cc2dc42-3aac-f2a9-1cec-7a8b7cbee084">
-        <mxGraphModel dx="1124" dy="694" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+        <mxGraphModel dx="1164" dy="407" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="3" style="edgeStyle=none;html=1;" edge="1" parent="1" source="gnwamE3YTWoVNoAS0Me_-10">
+                <mxCell id="19" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="gnwamE3YTWoVNoAS0Me_-10">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="777.3411102294922" y="96" as="targetPoint"/>
+                        <mxPoint x="551" y="190" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="gnwamE3YTWoVNoAS0Me_-10" value="SSO: Hello $USER&lt;br&gt;What do you want to do?&amp;nbsp;&lt;br&gt;&lt;br&gt;- &quot;Onboard?&quot; &lt;br&gt;(automated) [Link to 1Source ]&lt;br&gt;&quot; We noticed that you haven't....&quot;&lt;br&gt;- &quot;Explore&quot; &lt;br&gt;[InnerSource Portal]&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="gnwamE3YTWoVNoAS0Me_-10" value="SSO: HELLO $USER&lt;br&gt;What do you want to do?&amp;nbsp;&lt;br&gt;- &quot;Onboard?&quot; &lt;br&gt;(automated) [Link to 1Source ]&lt;br&gt;&quot; We noticed that you haven't onboarded....&quot;&lt;br&gt;- &quot;Explore&quot; &lt;br&gt;[Jump to InnerSource Portal]&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="429.52" y="34" width="246.95" height="122" as="geometry"/>
-                </mxCell>
-                <mxCell id="6" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="gnwamE3YTWoVNoAS0Me_-11" target="8">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="777.3411102294922" y="250" as="targetPoint"/>
-                        <Array as="points">
-                            <mxPoint x="779" y="250"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="12" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="gnwamE3YTWoVNoAS0Me_-11" target="2">
-                    <mxGeometry relative="1" as="geometry">
-                        <Array as="points">
-                            <mxPoint x="229" y="250"/>
-                        </Array>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="gnwamE3YTWoVNoAS0Me_-11" value="IS Portal loads &quot;dialogue&quot;&lt;br&gt;New USER:&lt;br&gt;&quot;Pick a hat/role&quot; appears&lt;br&gt;Return USER:&lt;br&gt;Don't show &quot;Pick a hat/role&quot;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="425.47" y="199" width="251" height="102" as="geometry"/>
                 </mxCell>
                 <mxCell id="gnwamE3YTWoVNoAS0Me_-12" value="&lt;b&gt;InnerSource Hub&lt;/b&gt;" style="text;html=1;points=[];align=center;verticalAlign=top;spacingTop=-4;fontSize=15;fontFamily=Verdana" parent="1" vertex="1">
                     <mxGeometry x="469" y="13" width="170" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="NEW USER: Show board root: &lt;br&gt;Show personalized dashboard root &lt;br&gt;[ based on the role]" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="103" y="282" width="251" height="102" as="geometry"/>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="21">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="287" y="300" as="sourcePoint"/>
+                        <mxPoint x="581" y="355" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="418" y="355"/>
+                            <mxPoint x="557" y="355"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="4" value="Onboarding&lt;br&gt;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="774" y="35" width="246.95" height="122" as="geometry"/>
+                <mxCell id="2" value="NEW USER: &lt;br&gt;Show board root: &lt;br&gt;Show personalized dashboard root" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="292" y="257" width="251" height="85" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="Pick a Hat/Role&lt;br&gt;- HEader&lt;br&gt;- Content&lt;br&gt;Dialogue&lt;br&gt;Inform user can be changed in Settings&lt;br&gt;Timeout behaviour: 15 secs default changes to neutral" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="106" y="417" width="251" height="102" as="geometry"/>
+                <mxCell id="47" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="438.75299999999993" y="652.4840000000002" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="394" y="632"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="15" style="edgeStyle=none;html=1;" edge="1" parent="1" source="8" target="14">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="5" value="PICK A HAT/ROLE (DIALOGUE)&lt;br&gt;- Header&lt;br&gt;- Content&lt;br&gt;Inform user can be changed in Settings&lt;br&gt;Timeout behaviour: 15 secs default changes to neutral" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="257" y="462" width="274" height="92" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="RETURN USER: &lt;br&gt;previous&amp;nbsp;personalized dashboard root &lt;br&gt;[ based on the role]" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="779" y="274" width="251" height="102" as="geometry"/>
+                <mxCell id="49" style="edgeStyle=none;html=1;entryX=0.995;entryY=0.562;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;startArrow=none;" edge="1" parent="1" source="54" target="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="880" y="638"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="13" value="InnerSource Portal&lt;br&gt;bi-directional access to InnerSource/1Source" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="112" y="538" width="251" height="102" as="geometry"/>
+                <mxCell id="8" value="RETURN USER: &lt;br&gt;previous&amp;nbsp;personalized dashboard root &lt;br&gt;[ based on previously selected role]" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="569" y="257" width="251" height="73" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="InnerSource Portal&lt;br&gt;bi-directional access to InnerSource/1Source" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="780" y="539" width="251" height="102" as="geometry"/>
+                <mxCell id="13" value="SHOW PORTAL ROOT VIEW&lt;br&gt;bi-directional access to InnerSource/1Source" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="441" y="581" width="251" height="102" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="UI - Portal User Tips (UI Flag): &quot;?&quot;&lt;br&gt;Notifies USER of left sidebar&lt;br&gt;Sidebar: user settings, &lt;br&gt;Tutorial: interactive tutorial [How to use the Portal]" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="106" y="659" width="251" height="102" as="geometry"/>
+                <mxCell id="18" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="20" y="246" as="sourcePoint"/>
+                        <mxPoint x="1088" y="246" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="17" style="edgeStyle=none;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="16" target="16">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="20" value="SHOW GRID LAYOUT&lt;br&gt;&amp;nbsp;(BODY)&lt;br&gt;- Onboarding in Grid ??&lt;br&gt;- Consider short (3) clickpath" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="429.52" y="165" width="246.95" height="63" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="21" target="30">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="727.0450500000002" y="486.03999999999996" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="734" y="412"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="PERSONALIZE UX&amp;nbsp;(DIALOGUE)&lt;br&gt;Show Pop-Up for $USER &lt;br&gt;with instructions" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="429.52" y="368" width="254" height="84" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" style="edgeStyle=none;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.997;entryY=0.554;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="30" target="13">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="739" y="581" as="sourcePoint"/>
+                        <mxPoint x="694" y="630" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="734" y="638"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="DISMISS / DO NOTHING = TIMEOUT&lt;br&gt;&amp;nbsp;(DIALOGUE)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="611" y="462" width="245" height="91" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="&quot;Inventory&quot; [Add widget ]&lt;br&gt;Repo Inventory&lt;br&gt;https://1source.intel.com/inventory/explore?organization=intel-innersource" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="86" y="710" width="242" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="TUTORIAL&lt;br&gt;[ Add a card ]&lt;br&gt;Answers: &lt;br&gt;How to use this app&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="771" y="711" width="119.05" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="MENU [?]&lt;br&gt;1Source&amp;nbsp;&lt;br&gt;- System State ?" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="902" y="710" width="119.05" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="Leaderboard ?&lt;br&gt;- Is this a feature request for the app?&lt;br&gt;- iFrame?&amp;nbsp;&lt;br&gt;- Can we support Power BI -- and let users developer their own?&amp;nbsp;&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="466" y="863" width="196.05" height="187" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="27.999999999999773" y="574" as="sourcePoint"/>
+                        <mxPoint x="1096" y="574" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="BLOG&lt;br&gt;- 3 sentences&amp;nbsp;with link to full blog" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="649" y="711" width="119.05" height="102" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="DOCS - [add widget menu]&lt;br&gt;&amp;nbsp;Add widget with expandable menu for:&amp;nbsp;&lt;br&gt;- Docs: 1Source&lt;br&gt;- InnerSource Docs&lt;br&gt;- Include Training BKMs &amp;amp; Guidance" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="336" y="711" width="295" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="52" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="27.999999999999773" y="691" as="sourcePoint"/>
+                        <mxPoint x="1096" y="691" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="53" style="edgeStyle=none;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="21">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="386.5" y="462.0000000000001" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="387" y="412"/>
+                        </Array>
+                        <mxPoint x="353.0000000000002" y="412" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="54" value="SKIP AHEAD" style="ellipse;whiteSpace=wrap;html=1;align=center;newEdgeStyle={&quot;edgeStyle&quot;:&quot;entityRelationEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;,&quot;segment&quot;:10,&quot;curved&quot;:1};treeFolding=1;treeMoving=1;" vertex="1" parent="1">
+                    <mxGeometry x="830" y="370" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="" style="edgeStyle=none;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;" edge="1" parent="1" source="8" target="54">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="820" y="293.4999999999999" as="sourcePoint"/>
+                        <mxPoint x="690.7450000000001" y="638.3240000000001" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="881" y="294"/>
+                            <mxPoint x="881" y="372"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>
