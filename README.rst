@@ -66,6 +66,7 @@ business build better software, faster using innersource.
     GitHub Repo <https://github.com/intel-innersource/documentation.practices.innersource>
     FAQ
     contributing/docs
+    contributing/ops
 
 .. toctree::
     :glob:
