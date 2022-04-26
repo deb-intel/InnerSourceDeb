@@ -3,6 +3,18 @@ What is InnerSource?
 
 This site is hosted at: https://probable-fiesta-6f2be87d.pages.github.io/
 
+
+InnerSource is:
+- best practice documentation: https://github.com/intel-innersource/documentation.practices.innersource
+- metric collection / granular inventory on projects: https://github.com/intel-innersource/applications.web.inner-source-portal.ml
+  - SDE
+  - SWLC
+  - documentation within repos
+  - tracking of reuse and contribution across project: 1bom
+  - tracking adoption of best practices
+- portal, which displays of all the above info in a central location: https://github.com/intel-innersource/applications.web.inner-source-portal.ui-mono
+
+
 Many companies use the word “innersource” to describe how their engineering teams work together on code.
 Innersource is a development methodology where engineers build proprietary software using best practices
 from large-scale open source projects, like Kubernetes or Microsoft’s Visual Studio Code.
