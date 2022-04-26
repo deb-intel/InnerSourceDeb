@@ -1,18 +1,35 @@
 What is InnerSource?
 ====================
 
-This site is hosted at: https://probable-fiesta-6f2be87d.pages.github.io/
-
+This site is hosted at: https://intel-innersource.github.io/documentation.practices.innersource/
 
 InnerSource is:
-- best practice documentation: https://github.com/intel-innersource/documentation.practices.innersource
-- metric collection / granular inventory on projects: https://github.com/intel-innersource/applications.web.inner-source-portal.ml
+
+- Best Practice Documentation
+
+  - BKMs around writing and maintaining quality code
+  
+  - https://github.com/intel-innersource/documentation.practices.innersource
+  
+
+- Metric Collection / Granular Inventory for all projects
+
+  - Collect data for use by the portal / hub
+
+  - https://github.com/intel-innersource/applications.web.inner-source-portal.ml
+
+  - What are all the repos / projects members of an org are working on
   - SDE
   - SWLC
-  - documentation within repos
-  - tracking of reuse and contribution across project: 1bom
-  - tracking adoption of best practices
-- portal, which displays of all the above info in a central location: https://github.com/intel-innersource/applications.web.inner-source-portal.ui-mono
+  - Documentation within repos
+  - Tracking of reuse and contribution across project: 1bom
+  - Tracking adoption of best practices
+
+- InnerSource Portal / Hub
+
+  - Central location for all the above info
+  
+  - https://github.com/intel-innersource/applications.web.inner-source-portal.ui-mono
 
 
 Many companies use the word “innersource” to describe how their engineering teams work together on code.
