@@ -4,38 +4,29 @@ on:
   pull_request:
     branches: [main]
 
-defaults:
-  run:
-    shell: bash
-
-concurrency:
-  group: ${{ github.head_ref }}.${{ github.sha }}.pr-validation
-  cancel-in-progress: true
-
 jobs:
   premerge:
-    runs-on: [self-hosted, linux, x64, python, kubernetes]
+    image: cache-registry.caas.intel.com/cache/library/python:3.9-alpine
+  runs-on: gasp 
 
     steps:
-    - name: FS cleanup
-      run: |
-        rm -rf "$GITHUB_WORKSPACE"/*
-
+ 
     - name: Checkout sources
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
       with:
         fetch-depth: 0
         ref: ${{ github.event.pull_request.head.sha }}
 
     - name: Install deps
       run: |
-        python -m pip install -U pip setuptools wheel
+        apk --no-cache add git
+        pip3 install -U sphinx
+        pip3 install sphinx-book-theme
+        pip3 install myst-parser
+        pip3 install sphinx-tabs
         python -m pip install -U -r requirements.txt
 
     - name: Build docs
       run: |
-        python -m sphinx -W -b html . _build/
-
-    - name: FS cleanup
-      run: |
-        rm -rf "$GITHUB_WORKSPACE"/*
+        python -m sphinx -b html . _build/
+        echo ${{ github.ref }}
