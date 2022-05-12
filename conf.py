@@ -17,13 +17,14 @@
 import pathlib
 import datetime
 import subprocess
-
+from datetime import datetime
 
 # -- Project information -----------------------------------------------------
 
 project = "InnerSource"
 author = "Intel"
-copyright = f"2021 - {datetime.datetime.today().year}, {author}"
+now = datetime.now().strftime("%Y-%m-%d %H:%M")
+copyright = f"Published {now} by {author}"
 
 # The full version, including alpha/beta/rc tags
 version = ""
