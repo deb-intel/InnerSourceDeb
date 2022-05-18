@@ -21,9 +21,6 @@ jobs:
       run: |
          apk --no-cache add git
          pip3 install -U sphinx
-         pip3 install sphinx-book-theme
-         pip3 install myst-parser
-         pip3 install sphinx-tabs
          python -m pip install -U -r requirements.txt
 
     - name: Build docs
