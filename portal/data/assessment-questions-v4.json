@@ -484,15 +484,15 @@
         "description": ""
       },
       {
-        "title": "Maintainers documented in CONTRIBUTING file and willing to review and integrate contributions.",
+        "title": "Maintainers documented in the CONTRIBUTING file and a commitment to review and integrate contributions.",
         "description": "Active maintainers review pull requests and respond to issues submitted. Example: https://github.com/kata-containers/community/blob/main/CONTRIBUTING.md#project-maintainers"
       },
       {
-        "title": "Response time commitment documented in CONTRIBUTING file.",
+        "title": "Response time commitment documented in the CONTRIBUTING file.",
         "description": "7 days response time for pull requests reviews and issues response."
       },
       {
-        "title": "Clearly documented governance structure with roles responsibilities and bus factor in CONTRIBUTING and/or CODEOWNERS file.",
+        "title": "Clear governance structure with roles, responsibilities, and bus factor documented in the CONTRIBUTING file. Review process automated with a CODEOWNERS file.",
         "description": "Example: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners"
       }
     ],
