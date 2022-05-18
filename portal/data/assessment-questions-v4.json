@@ -279,28 +279,28 @@
     "title": "Development Setup",
     "dtoKey": "developmentSetup",
     "domain": "repo",
-    "intent": "Contribution teams (new devlopers) need to be able to easily setup their dev env in order to make code changes for contributions",
+    "intent": "In order to attract contribution a project should enable a developer to setup a productive development environment as simply and quickly as possible.",
     "category": "DX",
     "importance": 3,
     "options": [
       {
         "title": "Undocumented or lacks clear development setup",
-        "description": "Example: New developer has to compile a tool to be able to use it."
+        "description": "Example: has to find missing tools and compile them in order to start development."
       },
       {
-        "title": "Custom or possibly outdated build utilities and/or testing frameworks.",
+        "title": "Custom or outdated build utilities and/or testing frameworks.",
         "description": "Example: Karma test-runner, Python 2, Selenium E2E testing, etc."
       },
       {
-        "title": "README file/link at root of GitHub repo contains documented comprehensive set-up.",
-        "description": "README may contain all set-up instructions or references to location(s) of set-up instructions."
+        "title": "An up to date, well documented, development setup.",
+        "description": "A README, or other document, contains comprehensive setup instructions. None of the required tools or frameworks are deprecated or unmaintained."
       },
       {
-        "title": "Easy and flexible development set-up.",
-        "description": "Example: get all dependencies setup in couple commands like docker container. Project specifies list of constraints (example: which compilers are supported)"
+        "title": "Easy and flexible development setup.",
+        "description": "Example: A developer can setup the development environment via a script, a docker container, or preconfigured VM. The documentation covers not only setup but also defines constraints, e.g. which compilers are supported."
       },
       {
-        "title": "One-Click development set-up.",
+        "title": "One-Click development setup.",
         "description": "Example: GitHub workspace"
       }
     ],
