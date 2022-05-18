@@ -3,7 +3,7 @@
     "title": "Architecture",
     "dtoKey": "architecture",
     "domain": "repoProject",
-    "intent": "More modular the design, the easier it is to contribute (find the part you need to change) and easier to reuse the portion you need. Easier to test, easier for CI, etc.",
+    "intent": "More modular the design, the easier it is to contribute (find the part you need to change), the easier to reuse the portion you need. Easier to test, easier for CI, etc.",
     "category": "Architecture",
     "importance": 2,
     "options": [
@@ -85,7 +85,7 @@
       },
       {
         "title": "Use descriptive name when TM&B is not applicable",
-        "description": "TODO: link to existing OSPDT explanation."
+        "description": "https://probable-fiesta-6f2be87d.pages.github.io/guidelines/tm_and_b.html"
       }
     ],
     "tierMapping": [5, 5, 3],
@@ -572,7 +572,7 @@
     "importance": 3,
     "options": [
       {
-        "title": "Inaccessible or no apparent release schedule",
+        "title": "Unpublished or no apparent release schedule.",
         "description": ""
       },
       {
@@ -580,60 +580,20 @@
         "description": ""
       },
       {
-        "title": "Release train with fixed cadence",
-        "description": "Example of fixed cadence: yearly, quarterly, monthly, weekly, or any other recurring schedule. "
+        "title": "Fixed cadence release schedule where on-demand frequency may vary."
+        "description": "Example of fixed cadence: yearly, quarterly, monthly, weekly, or any other recurring schedule."
       },
       {
-        "title": "Release schedule defined by cross-product WG, business council, or consuming products.",
+        "title": "Pull request review SLA published with commitment for lead time.",
         "description": ""
       },
       {
-        "title": "Internal projects support for on-demand releases where frequency may vary.",
-        "description": " "
-      },
-      {
-        "title": "Urgent delivery within 1/2 of the fixed schedule",
-        "description": ""
-      },
-      {
-        "title": "Able to cut release and deliver within 2 business days.",
+        "title": "Able to cut release or deliver bug-fix outside of regular release schedule within 2 business days.",
         "description": "Example: Critical CVE found and fixed"
       }
     ],
-    "tierMapping": [5, 4, 3, 3, 3, 2, 1],
-    "maturityMapping": [-1, 0, 2, 2, 2, 2, 4]
-  },
-  {
-    "title": "Release Lead Time",
-    "dtoKey": "releaseLeadTime",
-    "domain": "project",
-    "intent": "TODO: Maybe deployment lead time - time taken from commit to deploy.  Contribution teams to know when their PR would be in the main branch.",
-    "category": "Planning",
-    "importance": 2,
-    "options": [
-      {
-        "title": "TODO: No pull request review SLA.",
-        "description": ""
-      },
-      {
-        "title": "TODO: Pull request review SLA is present but not fully enforced.",
-        "description": ""
-      },
-      {
-        "title": "TODO: Pull request review SLA is present and fully enforced without commitment for lead time.",
-        "description": ""
-      },
-      {
-        "title": "TODO: Pull request review SLA commitment for lead time.",
-        "description": ""
-      },
-      {
-        "title": "TODO: Able to cut release and deliver within 2 business days.",
-        "description": "Example: a Critical CVE were found and fixed"
-      }
-    ],
     "tierMapping": [5, 4, 3, 2, 1],
-    "maturityMapping": [-1, 1, 2, 4, 5]
+    "maturityMapping": [-1, 0, 2, 2, 4]
   },
   {
     "title": "Requirements",
@@ -724,8 +684,8 @@
         "description": "Examples of security tools: Klocwork, Coverity, BDBA, Snyk, etc."
       },
       {
-        "title": "2 weeks SLA for addressing CVEs reported against current and LTS versions of the component. SDL status, security bugs, and scan results are accessible on a dashboard. Automated runs of applicable security tools occurs on a defined frequent schedule. Dashboard has access granted for all employees that have complete 1Source onboarding.",
-        "description": "TODO: how to simplify this?"
+        "title": "2 weeks SLA for addressing critical security issues. SDL status, security bugs, and scan results are accessible on a dashboard. Automated runs of applicable security tools occurs on a defined frequent schedule. Dashboard has access granted for all employees that have complete 1Source onboarding.",
+        "description": ""
       }
     ],
     "tierMapping": [5, 4, 3, 2, 1],
