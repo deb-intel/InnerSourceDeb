@@ -3,28 +3,28 @@ name: pr-validation
 on:
   pull_request:
     branches: [main]
+    
+concurrency:
+  group: ${{ github.head_ref }}.${{ github.sha }}.pr-validation
+  cancel-in-progress: true
 
 jobs:
   premerge:
-    image: cache-registry.caas.intel.com/cache/library/python:3.9-alpine
-  runs-on: gasp 
+    container: cache-registry.caas.intel.com/cache/library/python:3.9-alpine
+    runs-on: gasp 
 
     steps:
- 
     - name: Checkout sources
     - uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
-        ref: ${{ github.event.pull_request.head.sha }}
 
     - name: Install deps
       run: |
-        apk --no-cache add git
-        pip3 install -U sphinx
-        pip3 install sphinx-book-theme
-        pip3 install myst-parser
-        pip3 install sphinx-tabs
-        python -m pip install -U -r requirements.txt
+         apk --no-cache add git
+         pip3 install -U sphinx
+         pip3 install sphinx-book-theme
+         pip3 install myst-parser
+         pip3 install sphinx-tabs
+         python -m pip install -U -r requirements.txt
 
     - name: Build docs
       run: |
