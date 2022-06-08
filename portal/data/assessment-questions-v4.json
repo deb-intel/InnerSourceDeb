@@ -87,23 +87,18 @@
     "importance": 2,
     "options": [
       {
+        "prevtitle":"",
+        "title": "Trademark & Branding (TM&B) name not applicable",
+        "description": "Document N/A product name if you don't need it in project details in the InnerSource portal."
+      }, 
+     {
         "prevtitle": "Trademark & Branding (TM&B) approved product name documented if you have it or why you don't need it",
         "title": "Trademark & Branding (TM&B) approved product name if applicable",
         "description": "Document Trademark & Branding (TM&B) approved product name in project details in the InnerSource portal."
       },
-      {
-        "prevtitle":"",
-        "title": "Trademark & Branding (TM&B) name not applicable",
-        "description": "Document N/A product name if you don't need it in project details in the InnerSource portal."
-      },
-      {
-        "prevtitle":"",
-        "title": "Use descriptive name when TM&B is not applicable",
-        "description": "https://probable-fiesta-6f2be87d.pages.github.io/guidelines/tm_and_b.html"
-      }
     ],
-    "tierMapping": [5, 5, 3],
-    "maturityMapping": [1, 1, 2]
+    "tierMapping": [-1, 3],
+    "maturityMapping": [-1, 2]
   },
   {
     "title": "Build Environment And Documentation",
@@ -125,17 +120,17 @@
       },
       {
         "prevtitle": "One command to build. One command to install project dependencies. Uses standard dependency management solution associated with respective language: JavaScript & package.json, Python & requirements.txt, Go & Go modules, etc.",
-        "title": "One command to set up a project and build a deployable artifact.",
+        "title": "One command to set up a project and build a deployable artifact is documented.",
         "description": "The command needs to build, install project dependencies, and use standard dependency management solution associated with respective language: JavaScript & package.json, Python & requirements.txt, Go & Go modules, etc. Example: Contributor clones a repo, executed one command to install everything needed to work with the project, and executes one command to build deployable artifact."
       },
       {
         "prevtitle": "Fully automated build with documentation to replicate it",
-        "title": "Fully automated build scripts able to be used locally or by Continuous Integration (CI).",
+        "title": "Fully automated build scripts are able to be used locally or by Continuous Integration (CI) and is documented.",
         "description": "Fully automated build with documentation to replicate it"
       },
       {
         "prevtitle": "One command to build a deployable deliverable on any machine (ie. docker compose, helm, etc.). Mainstream build utilities (cmake, automake, etc.). Developer Set up for Build Environment Simple and build scripts are clear.",
-        "title": "Cross-platform command that combines automated build scripts",
+        "title": "Cross-platform command that combines automated build scripts is well-documented.",
         "description": "One command to build a deployable deliverable on any supported machine (ie. docker compose, helm, etc.) using mainstream build utilities (cmake, automake, etc.). Developer set up for build environment is fully documented and build scripts are clear."
       }
     ],
@@ -157,7 +152,7 @@
       },
       {
         "prevtitle": "Self defined and maintained code base naming convention",
-        "title": "Migration to 1Source in progress or doesn't meet 1Source guidelines.",
+        "title": "Migration to 1Source in progress or may not meet 1Source guidelines.",
 	"description": "Self defined and maintained code base naming convention"
       },
       {
@@ -173,7 +168,7 @@
     "title": "Compliance For Contribution",
     "dtoKey": "complianceForContribution",
     "domain": "repo",
-    "intent": "Compliannt to corporate guidelines and is approriate for reuse.",
+    "intent": "Compliant to corporate guidelines and is approriate for reuse.",
     "category": "Governance",
     "importance": 4,
     "options": [
@@ -190,7 +185,7 @@
       {
         "prevtitle": "Manual review of new code for compliance upon release",
         "title": "Review of new code for corporate compliance upon release",
-        "description": "Developer code review for well-written code.  Internal products should meet AppSec requirements.  External should meet SDL and SWLC requirements."
+        "description": "Developer code review for well-written code.  Internal products should meet AppSec (IAPM) requirements.  External should meet SDL and SWLC requirements."
       },
       {
         "prevtitle": "Some checks are integrated into PR validation pipeline",
@@ -221,7 +216,7 @@
       },
       {
         "prevtitle": "Internal documentation for project eng team",
-        "title": "Partially documnented internal contribution guidelines.",
+        "title": "Partially documented internal contribution guidelines.",
         "description": "Examples include Enterprise wiki, readme, sharepoint, teams, etc."
       },
       {
@@ -252,18 +247,18 @@
     "importance": 4,
     "options": [
       {
-        "prevtitle": "Informal communication with defined individuals",
+        "prevtitle": "Informal communication.",
         "title": "Informal communication.",
         "description": ""
       },
       {
         "prevtitle": "Formal communication with defined individuals",
-        "title": "Communication with documented defined support team.",
+        "title": "Communication with documented support team.",
         "description": "Example: Public Distribution List (PDL), Yammer, etc."
       },
       {
         "prevtitle": "Defined place to log issues/questions has access granted to all blue badge employees. Internal contributors able to log issues/questions to defined place. Dedicated support team and floating response time.",
-        "title": "SUPPORT file/link at root of GitHub repo which documents preferred communication channel that meets guidelines.",
+        "title": "SUPPORT.md file/link at root of GitHub repo which documents preferred communication channel that meets guidelines.",
         "description": "Defined place to log issues/questions that has access granted to all employees that have completed 1Source onboarding. Internal contributors able to log issues/questions to defined place. Dedicated support team and floating response time. Example: https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/creating-a-default-community-health-file"
       },
       {
@@ -332,12 +327,12 @@
       },
       {
         "prevtitle": "Opinionated choice of build utilities, testing frameworks, etc",
-        "title": "Custom or outdated build utilities and/or testing frameworks.",
+        "title": "Custom or unconventional build utilities and/or testing frameworks.",
         "description": "Example: Karma test-runner, Python 2, Selenium E2E testing, etc."
       },
       {
         "prevtitle": "Documented comprehensive set-up",
-        "title": "An up to date, well documented, development setup.",
+        "title": "An up-to-date and well-documented development setup.",
         "description": "A README, or other document, contains comprehensive setup instructions. None of the required tools or frameworks are deprecated or unmaintained."
       },
       {
@@ -379,7 +374,7 @@
       },
       {
         "prevtitle": "Web or package server including latest release only",
-        "title": "Mainstream web or package server including latest release only.",
+        "title": "Mainstream web or package server including at least the latest release.",
         "description": ""
       },
       {
@@ -416,7 +411,7 @@
       },
       {
         "prevtitle": "Able to track documentation changes with Git version control",
-        "title": "Full feature descriptions and tutorials exist. Able to track documentation changes tracked with Git.",
+        "title": "Comprehensive feature descriptions and tutorials exist. Able to track documentation changes tracked with Git.",
         "description": "Well-maintained comprehensive docs."
       },
       {
@@ -491,7 +486,7 @@
       {
         "prevtitle": "Partially baked features for internal releases. (Do you provide features previews in internal releases for testing and feedback before external release?) (CI/CD with internal release)",
         "title": "Continuous Integration completed with internal release and partially baked features.",
-        "description": "Do you provide features previews in internal releases for testing and feedback before external release? ."
+        "description": "Do you provide features previews in internal releases for testing and feedback before external release?"
       },
       {
         "prevtitle": "Code release ≠ feature release so features do not impact each other, degrade the quality of the release, or block the release. Ex: Do you use approaches like Feature toggles or Feature flags to control customer access to experimental features to allow for external testing and feedback before a full release. (CI/CD with production release and feature flags)",
@@ -606,7 +601,7 @@
       },
       {
         "prevtitle": "Typical extension points are defined and well documented.",
-        "title": "Proven extensibility which follows language or frawework guidelines.",
+        "title": "Practical extensibility which follows language or frawework guidelines.",
         "description": "Reference language or framework guidelines in documentation. Typical extension points are defined and well documented."
       }
     ],
@@ -628,7 +623,7 @@
       },
       {
         "prevtitle": "Continuous Integration (CI) such that contributor executes before submitting Promotion Request (PR). Continuous Integration (CI) executes before pull request is merged. Scriptable and documented QA such that contributor executes before submitting Pull Request (PR).",
-        "title": "Scriptable and documented QA such that contributor executes locally before submitting pull requests.",
+        "title": "Scripted and documented QA such that contributor executes locally before submitting pull requests.",
         "description": "Some manual quality gates in place. Examples: pre-commit and pre-push hooks."
       },
       {
@@ -818,7 +813,7 @@
       },
       {
         "prevtitle": "Up-to-date SWLC evidence can easily be shared. SWLC evidence posted in location with blue badge access granted. Provide list of obligations that project reusing this code should fulfill.",
-        "title": "Up-to-date SWLC evidence can easily be shared. SWLC evidence posted in location accessible by employees that have completed 1Source onboarding. Provide list of obligations that project reusing this code should fulfill.",
+        "title": "Up-to-date SWLC evidence stored in location accessible by employees that have completed 1Source onboarding. Provide list of obligations that project reusing this code should fulfill.",
         "description": ""
       },
       {
@@ -855,23 +850,23 @@
       },
       {
         "prevtitle": "Distributed via package the manager. Compilation and installation is NOT tested using a system account prior to distribution",
-        "title": "Distributed via a package manager. Compilation and installation is NOT tested using a system account prior to distribution. Has clear compilation and installation instructions.",
-        "description": ""
+        "title": "Distributed via a package manager where compilation and installation is NOT tested using a system account prior to distribution.",
+        "description": "Has clear compilation and installation instructions."
       },
       {
         "prevtitle": "Distributed via the package manager. Compilation and installation is tested using a system account prior to distribution",
-        "title": "Distributed via a package manager. Compilation and installation is tested using a system account prior to distribution.",
+        "title": "Distributed via a package manager where compilation and installation is tested using a system account prior to distribution.",
         "description": ""
       },
       {
         "prevtitle": "Distributed via the package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account",
-        "title": "Distributed via a package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account.",
-        "description": ""
+        "title": "Distributed via a package manage where compilation and installation is tested using a system account on defined schedule.",
+        "description": "Has an installation health check tool that is used to test installation using a system account."
       },
       {
         "prevtitle": "Distributed via the package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account. Compilation and installation is tested after deployment of a binary",
-        "title": "Distributed via a package manager. Compilation and installation is tested using a system account on defined schedule. Has an installation health check tool that is used to test installation using a system account. Compilation and installation is tested after deployment of a binary.",
-        "description": ""
+        "title": "Distributed via a package manager where compilation and installation is tested using a system account on defined schedule with additional requirements.",
+        "description": "Has an installation health check tool that is used to test installation using a system account. Compilation and installation is tested after deployment of a binary."
       }
     ],
     "tierMapping": [-1, 5, 4, 3, 2, 1],
@@ -929,18 +924,18 @@
       },
       {
         "prevtitle": "Manually tested only before each release. Validation plan documented (test cases and here's how). Scope of validation. Test results.",
-        "title": "Manually tested only before each release. Validation plan documented (test cases and here's how). Scope of validation. Test results.",
-        "description": ""
+        "title": "Manually tested only before each release.",
+        "description": "Validation plan documented (test cases and here's how). Scope of validation. Test results."
       },
       {
         "prevtitle": "Automated test suite available that can be kicked off manually. Validation plan shared.", 
-        "title": "Automated test suite available that can be kicked off manually. Validation plan shared.",
-        "description": ""
+        "title": "Automated test suite available that can be kicked off manually.",
+        "description": "Validation plan shared."
       },
       {
         "prevtitle": "Test env setup clearly defined. Status of validation and execution viewable.",
-        "title": "Test env setup clearly defined. Status of validation and execution viewable.",
-        "description": ""
+        "title": "Test env setup clearly defined.",
+        "description": "Status of validation and execution viewable."
       },
       {
         "prevtitle": "Automated Daily Testing.",
@@ -949,8 +944,8 @@
       },
       {
         "prevtitle": "Ability for consumers to contribute to test suite. SW-defined infrastructure if internal/external consumers need to recreate (for source reuse). Defined CI scripts (for source reuse).",        
-        "title": "Ability for consumers to contribute to test suite. SW-defined infrastructure if internal/external consumers need to recreate (for source reuse). Defined CI scripts (for source reuse).",
-        "description": ""
+        "title": "Ability for consumers to contribute to test suite.",
+        "description": "SW-defined infrastructure if internal/external consumers need to recreate (for source reuse). Defined CI scripts (for source reuse)."
       }
     ],
     "tierMapping": [-1, 5, 4, 3, 2, 1],
