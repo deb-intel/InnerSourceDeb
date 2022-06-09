@@ -35,6 +35,10 @@ This table describes some key differences between 1Source and InnerSource. We ho
      - https://1source.intel.com/docs/index
      - https://intel-innersource.github.io/documentation.practices.innersource/
 
+   * - Application
+     - `Onboard`_
+     - `InnerSource Portal`_
+
    * - GitHub Usage
      - Provide *technical guidance* to improve uniform creation of repos/projects and cross-BU discovery (and remove duplication).
      - Provide *functional guidance* to improve repos' and projects' characteristics to encourage cross-pollination and collaboration over time.
@@ -76,3 +80,5 @@ This table describes some key differences between 1Source and InnerSource. We ho
 .. _Devtool: https://1source.intel.com/docs/faq/environment_setup#devtool
 .. _Inventory Automation: https://1source.intel.com/docs/overview/1source_overview#inventory-automation
 .. _1Source Mindset: https://1source.intel.com/docs/overview/1source_overview#mindset
+.. _Onboard: https://1source.intel.com/onboard
+.. _InnerSource Portal: https://inner-source.intel.com/board/root

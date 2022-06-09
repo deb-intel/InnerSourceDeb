@@ -3,7 +3,7 @@
 Git Overview
 ############
 
-Git is an open source version control system with automated tracking and support for branch management and workflows. This page gives an descriptive overview of how Git works.
+Git is an open source version control system with automated tracking and support for branch management and workflows. This page gives a descriptive overview of how Git works.
 
 .. contents::
    :local:
@@ -140,7 +140,9 @@ Remote repository
 
 A `remote` maintains a fluid state that may be managed by one or more people, contributor guidelines, and supporting processes (e.g., CI/CD).
 
-A `remote` is a placeholder (or reference) that stands for a website URL. When you perform a Git action on a remote, you interact with a URL. Consider two common examples of `origin`.
+A `remote` is a placeholder (or reference) that stands for a website URL. When you perform a Git action on a remote, you interact with a URL. 
+
+Consider two common examples of `origin` below.
 
 Clone
 -----
@@ -151,7 +153,7 @@ When you simply `clone` a Git repository, you establish a *two-way* relationship
 
 * :command:`git remote -v`
 
-The default namespace for origin is "intel-innersource". It appears after `git@github.com` like so: "git@github.com:intel-innersource..."
+In this example, the default namespace for origin is "intel-innersource". It appears after `git@github.com` like so: "git@github.com:intel-innersource..."
 
 Fork-and-Clone
 --------------
@@ -196,11 +198,12 @@ Work in short cycles, staging the files you plan to commit. One cycle is:
 * `git add` file(s)
 * `git commit` file(s)
 
-When you work in short cycles, managing Git is simple and effective.
+Work in short cycles. Create branches. Push commits to your branch(es) frequently; or rebase your commits frequently and push. This makes managing Git simple and effective.
 
 .. note::
 
-   After the above cycle is complete, you decide when to * `git push` commit(s). Consider the above three bullets as the minimum steps to keep the working tree clean while you develop content or code.
+   After the above cycle is complete, you decide when to * `git push` commit(s). 
+   Consider the above three bullets as the minimum steps to keep the working tree clean while you develop content or code.
 
 See also :ref:`github_workflows`
 
