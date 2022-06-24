@@ -6,4 +6,6 @@
 
    .doc-templates/doc-template.rst
    blogpost.md
-   templates/*
+   template_files/CODE_PLAN
+   template_files/CODE_REVIEW
+   template_files/CONTRIBUTING 

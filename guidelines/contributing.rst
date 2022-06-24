@@ -16,7 +16,7 @@ To learn more about Markdown check out the `Markdown Guide`_ or the
 CONTRIBUTING templates, examples, and guides
 ********************************************
 
-We created a :doc:`CONTRIBUTING template</templates/CONTRIBUTING>` as a starting point for InnerSource projects to adapt to their project\'s needs.
+We created a :doc:`CONTRIBUTING template</template_files/CONTRIBUTING>` as a starting point for InnerSource projects to adapt to their project\'s needs.
 
 There are many external open source projects that provide good examples of CONTRIBUTING files
 
