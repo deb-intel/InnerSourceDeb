@@ -73,9 +73,12 @@ business build better software, faster using innersource.
     :maxdepth: 2
     :caption: Templates
 
-    template_files/CONTRIBUTING
-    template_files/CODE_REVIEW
-    template_files/CODE_PLAN
+    template_files/CONTRIBUTING.rst
+    template_files/CODE_REVIEW.md
+    template_files/CODE_PLAN.md
+    template_files/CODEOWNERS.md
+    template_files/SUPPORT.md
+    template_files/SECURITY.md
 
 .. toctree::
     :glob:
