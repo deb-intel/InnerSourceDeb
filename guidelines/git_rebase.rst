@@ -85,7 +85,8 @@ Method 1
       
 #. After you tried rebasing on the :file:`bash-script-howto-rev2` branch, Git raises a `CONFLICT`.
 
-   .. code-bock:: console 
+   .. code-block:: console 
+      
       ...
       Auto-merging bash-script-howto.md
       CONFLICT (content): Merge conflict in bash-script-howto.md
@@ -104,13 +105,12 @@ Method 1
    and `>>>>>>>` at the end. You must reconcile the edits inside those brackets
    and then remove these extra characters. Example:
 
-   .. code-bock:: console 
+   .. code-block:: console 
       
       <<<<<<< HEAD
       sudo apt-get -y update
       =======
       apt-get -y update && apt-get -y upgrade
-      ```
 
    .. note::
       Note how the upstream change lies above the `=======` characters, whereas 
@@ -124,7 +124,7 @@ Method 1
 
 #. So, our revised change will look like this:
 
-  .. code-bock:: console 
+  .. code-block:: console 
      
       ```bash
       sudo apt-get -y update && apt-get -y upgrade
@@ -132,7 +132,7 @@ Method 1
 
 #. Remember to remove characters at the end of the bracketed conflict area.
 
-  .. code-bock:: console 
+  .. code-block:: console 
      
      >>>>>>> ddbc1af... Update changes to bash-script-howto.
 
@@ -160,7 +160,7 @@ Method 1
 
 #. Next, a message should appear, indicating that you "Successfully rebased..."
 
-  .. code-bock:: console 
+  .. code-block:: console 
      
      [detached HEAD 5c8b670] Update changes to bash-script-howto.
      1 file changed, 8 insertions(+), 1 deletion(-)
