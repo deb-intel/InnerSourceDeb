@@ -44,55 +44,52 @@ business build better software, faster using innersource.
 - https://resources.github.com/whitepapers/introduction-to-innersource/
 
 .. toctree::
-    :glob:
-    :maxdepth: 1
-    :caption: InnerSource Overview
+   :maxdepth: 1
+   :caption: InnerSource Overview
 
-    overview/innersource_overview
-    blogpost-full
-
-.. toctree::
-    :glob:
-    :maxdepth: 2
-    :caption: Portal
-
-    portal/Use Cases
+   overview/innersource_overview
+   blogpost-full
 
 .. toctree::
-    :glob:
-    :maxdepth: 2
-    :caption: Community
+   :maxdepth: 2
+   :caption: Portal
 
-    GitHub Repo <https://github.com/intel-innersource/documentation.practices.innersource>
-    FAQ
-    contributing/docs
-    contributing/ops
+   portal/Use Cases
 
 .. toctree::
-    :glob:
-    :maxdepth: 2
-    :caption: Templates
+   :maxdepth: 2
+   :caption: Community
 
-    template_files/CONTRIBUTING.rst
-    template_files/CODE_REVIEW.md
-    template_files/CODE_PLAN.md
-    template_files/CODEOWNERS.md
-    template_files/SUPPORT.md
-    template_files/SECURITY.md
+   GitHub Repo <https://github.com/intel-innersource/documentation.practices.innersource>
+   FAQ
+   contributing/docs
+   contributing/ops
 
 .. toctree::
-    :glob:
-    :maxdepth: 2
-    :caption: Practices and Guildelines
+   :glob:
+   :maxdepth: 2
+   :caption: Templates
 
-    guidelines/*
+   template_files/*
+    
+.. toctree::
+   :glob:
+   :maxdepth: 2
+   :caption: Practices and Guidelines
+
+   guidelines/*
 
 .. toctree::
-    :glob:
-    :maxdepth: 2
-    :caption: Git BKMs
+   :maxdepth: 2
+   :caption: Git BKMs
 
-    git_bkms/*
+   git_bkms/git_overview
+   git_bkms/git_install
+   git_bkms/github_config
+   git_bkms/github_fork_clone
+   git_bkms/github_workflows
+   git_bkms/git_rebase      
+   git_bkms/codeowners_help
 
 Indices and tables
 ==================

@@ -145,9 +145,7 @@ In this example, we show the relationship of multiple contributors who develop a
 
    This action ensures that you get the latest updates on upstream ``main`` on your local branch.
 
-#. If conflicts occur, follow this subsection.
-
-   ...
+#. If conflicts occur, follow :ref:`git_rebase` and return.
 
 #. If no conflicts occur, continue.
 

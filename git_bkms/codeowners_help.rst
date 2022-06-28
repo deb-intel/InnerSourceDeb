@@ -1,5 +1,7 @@
-Add a CODEOWNERS File
-=====================
+.. _codeowners_help:
+
+Add CODEOWNERS
+###############
 
 The CODEOWNERS file defines individuals or teams who maintain the repo. This
 ensures that members or teams who are responsible for the accuracy of

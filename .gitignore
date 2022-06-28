@@ -6,4 +6,5 @@ _build/
 .vscode
 
 # RST Doc templates
-.doc-templates
+.doc-templates/*
+

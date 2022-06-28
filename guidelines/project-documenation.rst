@@ -1,4 +1,4 @@
-.. _filename:
+.. _project_documentation:
 
 Project Documentation
 #####################
