@@ -26,10 +26,13 @@ author = "Intel"
 now = datetime.now().strftime("%Y-%m-%d %H:%M")
 copyright = f"Published {now} by {author}"
 
+# The version info for the project you're documenting, acts as replacement for
+# |version| and |release|, also used in various other places throughout the
+# built documents.
+#
 # The full version, including alpha/beta/rc tags
-version = ""
-release = ""
-
+# version = ""
+release = "0.5.0"
 
 # -- General configuration ---------------------------------------------------
 
