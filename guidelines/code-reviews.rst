@@ -16,9 +16,13 @@ software solution.
 Downloads
 =========
 
-* :download:`Code Review checklist</template_files/CODE_REVIEW.md>` 
-* :download:`Code Plan checklist</template_files/CODE_PLAN.md>` 
+* :download:`Code Review checklist</template_files/CODEREVIEW.md>` 
+* :download:`Code Plan checklist</template_files/CODEPLAN.md>` 
 
+.. tip::
+
+   Right-click a file and open it as a new tab to view as **Markdown**.
+   
 Instructions
 ============
 
@@ -44,18 +48,18 @@ Instructions
       In GitHub, select the :guilabel:`Write` tab to comment.
       Select the :guilabel:`Preview` tab to view Markdown.
 
-Process
+Methods
 *******
 
-Following are a few methods on how to start a code review. 
+Here are a few methods for doing a code review. 
 
-Whereas a `Linear Flow`_ asks you to consider the linear sequence of steps, an `Atomic Flow`_ asks you to
-start at a specific event in the code and try to understand the scope of its impact.
+* A `Linear Flow`_ asks you to follow a **linear sequence** of steps
+* An `Atomic Flow`_ asks you to follow one **specific event** in the code and understand its impact.
 
 Linear Flow
 ===========
 
-Consider starting with a prompt like one below.
+Consider starting with a prompt like:
 
 * Where does the code start? (e.g., main function, object instantiation, etc.) 
 * Is the execution path for the code clear? 
@@ -66,7 +70,7 @@ Consider starting with a prompt like one below.
 Atomic Flow
 ============
 
-Consider starting with a prompt like one below.
+Consider starting with a prompt like:
 
 * How do Classes instantiate objects that are needed to process data? Are class attributes properly introspected?
 * Which Class instantiation dependencies exist (outside scope of code)?

@@ -1,9 +1,7 @@
-.. contents::
-   :depth: 3
-..
+CONTRIBUTING
+============
 
-How to contribute
-=================
+# How to contribute
 
 We welcome community contributions to PROJECT NAME. You can:
 
@@ -12,12 +10,10 @@ We welcome community contributions to PROJECT NAME. You can:
 -  Log a bug or feedback with an
    `issue <Link%20to%20your%20project%20issues>`__
 
-Pull requests
-=============
+## Pull requests
 
-This project follows the `GitHub
-flow <https://guides.github.com/introduction/flow/index.html>`__. To
-submit your change directly to the repository:
+This project follows the [GitHub flow](https://guides.github.com/introduction/flow/index.html). 
+To submit your change directly to the repository:
 
 -  Make sure your code is in line with our `coding
    conventions <#coding-conventions>`__.
@@ -25,22 +21,19 @@ submit your change directly to the repository:
    request <https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request>`__
    into the master branch.
 
-Coding conventions
-==================
+## Coding conventions
 
 Add your project’s coding conventions. If you do not have them defined,
 remove this section. If you are following a standard coding convention,
 consider linking to the standard.
 
-License
-=======
+## License
 
 PROJECT NAME is licensed under the terms in `LICENSE <LICENSE>`__. By
 contributing to the project, you agree to the license and copyright
 terms therein and release your contribution under these terms.
 
-Sign your work
-==============
+## Sign your work
 
          **Attention:** The following sign-off guidance is based on the
          standard Developer Certificate of Origin. If your project
@@ -53,7 +46,8 @@ it on as an open-source patch. The rules are pretty simple: if you can
 certify the below (from
 `developercertificate.org <http://developercertificate.org/>`__):
 
-::
+
+```bash
 
    Developer Certificate of Origin
    Version 1.1
@@ -65,7 +59,7 @@ certify the below (from
    Everyone is permitted to copy and distribute verbatim copies of this
    license document, but changing it is not allowed.
 
-   Developer's Certificate of Origin 1.1
+   Developer\'s Certificate of Origin 1.1
 
    By making a contribution to this project, I certify that:
 
@@ -90,12 +84,13 @@ certify the below (from
        personal information I submit with it, including my sign-off) is
        maintained indefinitely and may be redistributed consistent with
        this project or the open source license(s) involved.
+```
 
 Then you just add a line to every git commit message:
 
-::
-
-   Signed-off-by: Kris Smith <kris.smith@email.com>
+```bash
+Signed-off-by: Kris Smith <kris.smith@email.com>
+```
 
 Use your real name (sorry, no pseudonyms or anonymous contributions.)
 

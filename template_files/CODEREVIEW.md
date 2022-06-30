@@ -1,12 +1,11 @@
-# Code Review
+CODEREVIEW
+==========
 
 # Architecture
 - [ ] Is the code modular?
 
 # Design
-- [ ] 
-  - How does code integrate with existing codebase?
-  - Does code follow existing codebase conventions? 
+- [ ] Does code follow existing codebase conventions? 
 
 # Readability
 - [ ] Are function names easy to understand?
@@ -26,13 +25,12 @@
 
 # Security
 - [ ] Have you identified impacts on security or trust boundaries in code? 
-  - Have security implications been considered or addressed?
+- [ ] Have security implications been considered or addressed?
 
 # Automation
 - [ ] Linting tools available? integrated?
 - [ ] Do CI/CD solutions support, or extend, native code capabilities?
 
 # Testing
-- [ ] Testing
-  - Have unit tests, functional tests, or integration tests been developed?
-  - Is a test-bench, or test-harness, used? Does it requirement inclusion of specific hardware or software? 
+- [ ] Have unit tests, functional tests, or integration tests been developed?
+- [ ] Is a test-bench, or test-harness, used? Does it requirement inclusion of specific hardware or software? 

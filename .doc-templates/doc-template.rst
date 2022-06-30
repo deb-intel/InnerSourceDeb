@@ -1,11 +1,13 @@
-.. _filename:
+.. _changethisfilename:
 
-Change the filename.
+**Change 'changethisfilename' above.**
+
+**Don\'t read this. At your own risk**
 
 Title
 #####
 
-Change the title.
+**Change the title.**
 
 Define the InnerSource practice or term. Explain: Why is using this important for InnerSource?
 Answer: How do users benefit from using this? Answer at least one of these questions. Keep it simple.

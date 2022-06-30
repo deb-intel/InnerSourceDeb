@@ -15,9 +15,10 @@ Suddenly, the rigid "waterfall model" from the 1960s was forced to contend with 
 What is InnerSource?
 ********************
 
-In the book "Adopting InnerSource," the authors state:
+In "Adopting InnerSource," the authors define the term:
 
-    | InnerSource is simply the use of Open Source principles and practices inside proprietary organizations. InnerSource empowers individual engineers to contribute code from within their team to another team in order to speed up the process of adding functionality (features) or fixing defects.
+  | InnerSource is simply the use of Open Source principles and practices **inside proprietary organizations**.  InnerSource empowers individual engineers to contribute code from within their team 
+  | to another team in order to speed up the process of adding functionality (features) or fixing defects.
 
 More than 20 years later, InnerSource is more relevant than ever.  
 

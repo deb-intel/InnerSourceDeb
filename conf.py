@@ -85,4 +85,4 @@ master_doc = 'index'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
-exclude_patterns = ['_build','_themes', 'blogpost.md','.doc-templates', 'requirements.txt']
+exclude_patterns = ['_build','_themes', 'blogpost.md','.doc-templates', "requirements.txt", "README.md"]
