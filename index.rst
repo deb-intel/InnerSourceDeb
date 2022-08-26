@@ -26,6 +26,13 @@
 .. toctree::
    :glob:
    :maxdepth: 2
+   :caption: Tier Definitions
+
+   tier-definitions/*
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
    :caption: Templates
 
    template_files/* 
