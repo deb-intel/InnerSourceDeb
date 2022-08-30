@@ -1,16 +1,86 @@
 .. _innersource_docs:
 
+InnerSource Documentation
+##########################
+
+.. grid:: 3
+   :gutter: 4
+   :padding: 2
+
+     
+   .. grid-item-card::
+      :img-background: images/background.png
+      :link: index_contrib
+      :link-type: ref
+
+      **Community**
+      ^^^^^^^^^^^^^^
+      Join our :ref:`index_contrib`.
+      Help improve our docs!
+
+   .. grid-item-card:: 
+      :img-background: images/background.png
+      :link: index_guide
+      :link-type: ref 
+
+      **Guidelines**
+      ^^^^^^^^^^^^^^
+      Use our :ref:`collaboration guidelines <index_guide>`.
+
+   .. grid-item-card::
+      :img-background: images/background.png
+      :link: index_git
+      :link-type: ref
+
+      **Git BKMs**
+      ^^^^^^^^^^^^
+      Follow our :ref:`Git BKMs<index_git>`.
+
+
+   .. grid-item-card::
+      :img-background: images/background.png
+      :link: index_tmpl
+      :link-type: ref
+
+      **Templates**
+      ^^^^^^^^^^^^^
+
+      Copy our :ref:`starter templates <index_tmpl>`.
+
+   .. grid-item-card:: 
+      :img-background: images/background.png 
+      :link: index_tiers
+      :link-type: ref
+
+      **Tier Levels**
+      ^^^^^^^^^^^^^^^
+
+      Understand the criteria for evaluation of :ref:`Tier Levels <index_tiers>`.
+      
+   .. grid-item-card:: 
+      :img-background: images/background.png 
+      :link: index_use
+      :link-type: ref
+
+      **Portal Use Cases**
+      ^^^^^^^^^^^^^^^^^^^^
+
+      Review use cases for the :ref:`InnerSource Portal App <index_use>`.
+
+
+
 .. toctree::
    :maxdepth: 1
-   :caption: InnerSource Overview
+   :hidden:
 
    overview/innersource_overview
    blogpost-full
 
 .. toctree::
    :maxdepth: 2
-   :caption: Community
+   :hidden:
 
+   contributing/index_contrib
    CONTRIBUTING 
    FAQ
    contributing/docs
@@ -19,6 +89,7 @@
 .. toctree::
    :glob:
    :maxdepth: 2
+   :hidden:
    :caption: Practices and Guidelines
 
    guidelines/*
@@ -26,14 +97,26 @@
 .. toctree::
    :glob:
    :maxdepth: 2
+   :hidden:
+   :caption: Tier Definitions
+
+   tier-definitions/*
+
+.. toctree::
+   :glob:
+   :maxdepth: 2
+   :hidden:
    :caption: Templates
 
    template_files/* 
+
    
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Git BKMs
 
+   git_bkms/index_git
    git_bkms/git_overview
    git_bkms/git_install
    git_bkms/github_config
@@ -44,12 +127,9 @@
 
 .. toctree::
    :maxdepth: 2
+   :hidden:
    :caption: Portal
 
+   portal/index_use
    portal/Use Cases
 
-Indices and tables
-*********************
-
-* :ref:`genindex`
-* :ref:`search`

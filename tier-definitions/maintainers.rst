@@ -12,7 +12,7 @@ BKMs
 
 A common practice in open source projects, in particular those that use Github, is to define owners or maintainers of the code in the CODEOWNERS file in the root directory of the project. Github will automatically request review from the maintainers defined in the CODEOWNERS file. The syntax of the CODEOWNERS file allows owners to be assigned to directories or filetypes or even specific files. For more details on how CODEOWNERS is used in Github see `About code owners`_
 
-In addition it's a good practice to document in human readable form the maintainers and governance processes of the project. This is usually documented in the CONTRIBUTING file (see :doc:`contributing`) or for smaller project the README file (see :doc:`readme_guidelines`).
+In addition it's a good practice to document in human readable form the maintainers and governance processes of the project. This is usually documented in the CONTRIBUTING file (see :ref:`index_contrib`) or for smaller project the README file (see :ref:`readme_guidelines`).
 
 Tier Definitions
 ****************
