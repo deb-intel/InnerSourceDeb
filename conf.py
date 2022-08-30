@@ -41,7 +41,8 @@ release = "0.5.0"
 # ones.
 extensions = [
     'myst_parser',
-    'sphinx_tabs.tabs'
+    'sphinx_tabs.tabs', 
+    'sphinx_design',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
