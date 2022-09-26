@@ -1,4 +1,4 @@
-.. _maintainers:
+.. _maintainersSetup:
 
 Maintainers Setup
 #################
@@ -19,7 +19,7 @@ Tier Definitions
 
 The following levels of readiness have been defined;
 
-.. _tier_maintainers_start:
+.. _tier_maintainersSetup_start:
 
 * **Tier 5.** Less than 2 active maintainers
 * **Tier 4.** 2 or more active maintainers
@@ -27,7 +27,7 @@ The following levels of readiness have been defined;
 * **Tier 2.** Response time commitment documented in the CONTRIBUTING file. A 7-day response time for pull requests and issues.
 * **Tier 1.** Clear governance structure with roles, responsibilities, and bus factor documented in the CONTRIBUTING file. Review process automated with a CODEOWNERS file. 
 
-.. _tier_maintainers_end:
+.. _tier_maintainersSetup_end:
 
 
 .. _About code owners: https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-code-owners
