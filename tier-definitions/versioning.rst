@@ -1,7 +1,9 @@
+.. _versioning:
+
 Versioning
 ##########
 
-Using a versioning scheme allows potential contributors and consumers of your project to understand the scope and impact of releases. Managing depencies of a project is difficult especially as depencies evolve their API, fix bugs and CVEs, etc. Using a clearly defined versioning scheme should help comsumers of your project understand if a given release fixed bugs, breaks compatibility, or adds new functionality. This will allow informed decisions about which versions to consume as their own projects develop and mature. In addition, build sripts, CI/CD, etc can automate update of dependencies based on clearly defined and consistently applied versioning schcemes.
+Using a versioning scheme allows potential contributors and consumers of your project to understand the scope and impact of releases. Managing depencies of a project is difficult especially as depencies evolve their API, fix bugs and CVEs, etc. Using a clearly defined versioning scheme should help comsumers of your project understand if a given release fixed bugs, breaks compatibility, or adds new functionality. This will allow informed decisions about which versions to consume as their own projects develop and mature. In addition, build sripts, CI/CD, etc can automate update of dependencies based on clearly defined and consistently applied versioning schemes.
 
 
 Prerequisites
@@ -16,8 +18,6 @@ BKMS
 
 Tier Definitions
 ****************
-
-The following levels of readiness have been defined;
 
 .. _tier_versioning_start:
 
