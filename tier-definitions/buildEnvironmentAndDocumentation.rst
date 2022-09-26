@@ -21,7 +21,7 @@ Tier Definitions
 Related
 *******
 
-In addition to a simple and well documented build environment teams should also aim to enable an easy to use :ref:`dev-env-setup`
+In addition to a simple and well documented build environment teams should also aim to enable an easy to use :ref:`developmentSetup`
 
 Next Steps
 **********

@@ -1,4 +1,4 @@
-.. _dev-env-setup:
+.. _developmentSetup:
 
 Development environment setup
 #############################
@@ -10,7 +10,7 @@ Tier Definitions
 
 The following levels of readiness have been defined;
 
-.. _tier_development_evinronment_setup_start:
+.. _tier_developmentSetup_start:
 
 * **Tier 5.** Undocumented or lacks clear development setup. For example a new developer has to find missing tools and compile them in order to start development.
 * **Tier 4.** Custom or outdated build utilities and/or testing frameworks, e.g. Karma test-runner, Python 2, Selenium E2E testing, etc.
@@ -18,4 +18,4 @@ The following levels of readiness have been defined;
 * **Tier 2.** Easy and flexible development setup. For example a developer can setup the development environment via a script, a docker container, or preconfigured VM. The documentation covers not only setup but also defines constraints, e.g. which compilers are supported.
 * **Tier 1.** One-Click development setup, e.g. Github workspace.
 
-.. _tier_development_evinronment_setup_end:
+.. _tier_developmentSetup_end:
