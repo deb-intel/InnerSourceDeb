@@ -16,7 +16,6 @@ jobs:
 
     - name: Install deps
       run: |
-         apk --no-cache add git
          pip3 install -U sphinx
          python -m pip install -U -r requirements.txt
 
