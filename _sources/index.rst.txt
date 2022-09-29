@@ -100,7 +100,7 @@ InnerSource Documentation
    :hidden:
    :caption: Tier Definitions
 
-   tier-definitions/*
+   tier-definitions/index_tiers
 
 .. toctree::
    :glob:
@@ -108,7 +108,7 @@ InnerSource Documentation
    :hidden:
    :caption: Templates
 
-   template_files/* 
+   template_files/index_tmpl
 
    
 .. toctree::
@@ -117,13 +117,6 @@ InnerSource Documentation
    :caption: Git BKMs
 
    git_bkms/index_git
-   git_bkms/git_overview
-   git_bkms/git_install
-   git_bkms/github_config
-   git_bkms/github_fork_clone
-   git_bkms/github_workflows
-   git_bkms/git_rebase      
-   git_bkms/codeowners_help
 
 .. toctree::
    :maxdepth: 2
@@ -131,5 +124,3 @@ InnerSource Documentation
    :caption: Portal
 
    portal/index_use
-   portal/Use Cases
-
