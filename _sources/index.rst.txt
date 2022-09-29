@@ -92,7 +92,7 @@ InnerSource Documentation
    :hidden:
    :caption: Practices and Guidelines
 
-   guidelines/*
+   guidelines/index_guide
 
 .. toctree::
    :glob:
