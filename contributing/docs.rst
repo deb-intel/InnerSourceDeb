@@ -1,7 +1,7 @@
 .. _docs:
 
-Contribute Docs
-###############
+How to Contribute Docs
+######################
 
 Create virtual environment to isolate build dependencies. This step must only be
 done once.
