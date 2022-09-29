@@ -1,0 +1,1436 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>InnerSource Portal Use Cases &#8212; InnerSource 0.5.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Portal Use Cases" href="index_use.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">InnerSource 0.5.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview/innersource_overview.html">
+   InnerSource Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../blogpost-full.html">
+   Why InnerSource at Intel?
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../contributing/index_contrib.html">
+   Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/docs.html">
+     Contribute Docs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/ops.html">
+     Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FAQ.html">
+     FAQ - InnerSource @ Intel
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CONTRIBUTING.html">
+   Contributions Wanted!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FAQ.html">
+   FAQ - InnerSource @ Intel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributing/docs.html">
+   Contribute Docs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributing/ops.html">
+   Operations
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Practices and Guidelines
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/Support.html">
+   Support
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/code-reviews.html">
+   Code Reviews
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/contributing.html">
+   What is a CONTRIBUTING file?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/global_trade_compliance.html">
+   Global Trade Complance (Export)
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../guidelines/index_guide.html">
+   Guidelines
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/Support.html">
+     Support
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/code-reviews.html">
+     Code Reviews
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/contributing.html">
+     What is a CONTRIBUTING file?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/global_trade_compliance.html">
+     Global Trade Complance (Export)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/legal.html">
+     Software Legal Compliance (SWLC)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/open_source_pdt_approval.html">
+     Open Source PDT (OSPDT) Approval
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/readme_guidelines.html">
+     Guildelines for Creating Readme Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/security.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/security_policy_help.html">
+     Create a Security Policy File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/support_file_help.html">
+     Create a Support File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/tm_and_b.html">
+     Trademark &amp; Branding (TM&amp;B)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/legal.html">
+   Software Legal Compliance (SWLC)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/open_source_pdt_approval.html">
+   Open Source PDT (OSPDT) Approval
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/readme_guidelines.html">
+   Guildelines for Creating Readme Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/security.html">
+   Security Development Lifecycle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/security_policy_help.html">
+   Create a Security Policy File
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/support_file_help.html">
+   Create a Support File
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/tm_and_b.html">
+   Trademark &amp; Branding (TM&amp;B)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tier Definitions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/architecture.html">
+   Architecture
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/binaryDistributionViaPackageManager.html">
+   Binary Distribution Via Package Manager
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/buildEnvironmentAndDocumentation.html">
+   Build Environment And Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/codeBaseNaming.html">
+   Code Base Naming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/complianceForContribution.html">
+   Compliance for Contribution
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/contributionGuidelines.html">
+   Contribution Guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/deploymentInfrastructure.html">
+   Deployment Infrastructure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/developmentSetup.html">
+   Development environment setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/distributionAndPackaging.html">
+   Distribution And Packaging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/documentationCoverage.html">
+   Documentation Coverage
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tier-definitions/index_tiers.html">
+   Tier Levels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/architecture.html">
+     Architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/binaryDistributionViaPackageManager.html">
+     Binary Distribution Via Package Manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/buildEnvironmentAndDocumentation.html">
+     Build Environment And Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/codeBaseNaming.html">
+     Code Base Naming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/complianceForContribution.html">
+     Compliance for Contribution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/contributionGuidelines.html">
+     Contribution Guidelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/deploymentInfrastructure.html">
+     Deployment Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/developmentSetup.html">
+     Development environment setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/distributionAndPackaging.html">
+     Distribution And Packaging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/documentationCoverage.html">
+     Documentation Coverage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/intellectualPropertyLeakDetectionTool.html">
+     Intellectual Property Leak Detection Tool
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/maintainersSetup.html">
+     Maintainers Setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/participationEaseOfRamp.html">
+     Participation Ease Of Ramp
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/preProductionEarlyAccess.html">
+     Pre Production Early Access
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/project-documenation.html">
+     Project Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/projectInternalDocumentation.html">
+     Project Internal Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/qualityAssuranceCI.html">
+     Quality Assurance CI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/releaseCadence.html">
+     Release Cadence
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/requirements.html">
+     Requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/roadmap.html">
+     Roadmap
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/securityDevelopmentLifecycle.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/softwareLegalCompliance.html">
+     Software Legal Compliance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/sourceDistributionLanguageSpecificPackages.html">
+     Source Distribution Language Specific Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/supportContributingUsers.html">
+     Support Contributing Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/supportReuseUsers.html">
+     Support Reuse Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/testPlanAndInfrastructure.html">
+     Test Plan And Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/versioning.html">
+     Versioning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/intellectualPropertyLeakDetectionTool.html">
+   Intellectual Property Leak Detection Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/maintainersSetup.html">
+   Maintainers Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/participationEaseOfRamp.html">
+   Participation Ease Of Ramp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/preProductionEarlyAccess.html">
+   Pre Production Early Access
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/project-documenation.html">
+   Project Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/projectInternalDocumentation.html">
+   Project Internal Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/qualityAssuranceCI.html">
+   Quality Assurance CI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/releaseCadence.html">
+   Release Cadence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/requirements.html">
+   Requirements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/roadmap.html">
+   Roadmap
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/securityDevelopmentLifecycle.html">
+   Security Development Lifecycle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/softwareLegalCompliance.html">
+   Software Legal Compliance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/sourceDistributionLanguageSpecificPackages.html">
+   Source Distribution Language Specific Packages
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/supportContributingUsers.html">
+   Support Contributing Users
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/supportReuseUsers.html">
+   Support Reuse Users
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/testPlanAndInfrastructure.html">
+   Test Plan And Infrastructure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/versioning.html">
+   Versioning
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Templates
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CODEOWNERS.html">
+   CODEOWNERS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CODEPLAN.html">
+   CODEPLAN
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CODEREVIEW.html">
+   CODEREVIEW
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CODE_OF_CONDUCT.html">
+   Contributor Covenant Code of Conduct
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CONTRIBUTING.html">
+   CONTRIBUTING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/README.html">
+   README
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/SECURITY.html">
+   Security Policy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/SUPPORT.html">
+   Support
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../template_files/index_tmpl.html">
+   Templates
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CODEOWNERS.html">
+     CODEOWNERS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CODEPLAN.html">
+     CODEPLAN
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CODEREVIEW.html">
+     CODEREVIEW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CODE_OF_CONDUCT.html">
+     Contributor Covenant Code of Conduct
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CONTRIBUTING.html">
+     CONTRIBUTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/README.html">
+     README
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/SECURITY.html">
+     Security Policy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/SUPPORT.html">
+     Support
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git BKMs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../git_bkms/index_git.html">
+   Git BKMs
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git_bkms/git_overview.html">
+     Git Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git_bkms/git_install.html">
+     Install Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git_bkms/github_config.html">
+     GitHub Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git_bkms/github_fork_clone.html">
+     GitHub Fork and Clone
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git_bkms/github_workflows.html">
+     GitHub Workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git_bkms/git_rebase.html">
+     Git Rebase
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../git_bkms/codeowners_help.html">
+     Add CODEOWNERS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../git_bkms/git_overview.html">
+   Git Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../git_bkms/git_install.html">
+   Install Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../git_bkms/github_config.html">
+   GitHub Configuration
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../git_bkms/github_fork_clone.html">
+   GitHub Fork and Clone
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../git_bkms/github_workflows.html">
+   GitHub Workflows
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../git_bkms/git_rebase.html">
+   Git Rebase
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../git_bkms/codeowners_help.html">
+   Add CODEOWNERS
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Portal
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index_use.html">
+   Portal Use Cases
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     InnerSource Portal Use Cases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   InnerSource Portal Use Cases
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/portal/Use Cases.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#priorities">
+   Priorities
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definitions">
+   Definitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#roles">
+   Roles
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#p1-use-cases">
+   P1 Use Cases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manage">
+     Manage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#engage">
+     Engage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#archive">
+     Archive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#administrate">
+     Administrate
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#p2-use-cases">
+   P2 Use Cases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analyze">
+     Analyze
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notify">
+     Notify
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-management">
+     User management
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#q-a">
+   Q&amp;A
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>InnerSource Portal Use Cases</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#priorities">
+   Priorities
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definitions">
+   Definitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#roles">
+   Roles
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#p1-use-cases">
+   P1 Use Cases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#manage">
+     Manage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#engage">
+     Engage
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#archive">
+     Archive
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#administrate">
+     Administrate
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#p2-use-cases">
+   P2 Use Cases
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analyze">
+     Analyze
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notify">
+     Notify
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#user-management">
+     User management
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#q-a">
+   Q&amp;A
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="innersource-portal-use-cases">
+<h1>InnerSource Portal Use Cases<a class="headerlink" href="#innersource-portal-use-cases" title="Permalink to this headline">#</a></h1>
+<div class="contents local topic" id="contents">
+<ul class="simple">
+<li><p><a class="reference internal" href="#priorities" id="id1">Priorities</a></p></li>
+<li><p><a class="reference internal" href="#definitions" id="id2">Definitions</a></p></li>
+<li><p><a class="reference internal" href="#roles" id="id3">Roles</a></p></li>
+<li><p><a class="reference internal" href="#p1-use-cases" id="id4">P1 Use Cases</a></p>
+<ul>
+<li><p><a class="reference internal" href="#setup" id="id5">Setup</a></p></li>
+<li><p><a class="reference internal" href="#manage" id="id6">Manage</a></p></li>
+<li><p><a class="reference internal" href="#engage" id="id7">Engage</a></p></li>
+<li><p><a class="reference internal" href="#archive" id="id8">Archive</a></p></li>
+<li><p><a class="reference internal" href="#administrate" id="id9">Administrate</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#p2-use-cases" id="id10">P2 Use Cases</a></p>
+<ul>
+<li><p><a class="reference internal" href="#analyze" id="id11">Analyze</a></p></li>
+<li><p><a class="reference internal" href="#notify" id="id12">Notify</a></p></li>
+<li><p><a class="reference internal" href="#user-management" id="id13">User management</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#q-a" id="id14">Q&amp;A</a></p></li>
+</ul>
+</div>
+<section id="priorities">
+<h2><a class="toc-backref" href="#id1">Priorities</a><a class="headerlink" href="#priorities" title="Permalink to this headline">#</a></h2>
+<ol class="arabic simple">
+<li><p>Portal to find and reuse project, grading visualization</p></li>
+<li><p>Portal for project re-use information, metrics and reports, top
+contributors, etc.</p></li>
+</ol>
+</section>
+<section id="definitions">
+<h2><a class="toc-backref" href="#id2">Definitions</a><a class="headerlink" href="#definitions" title="Permalink to this headline">#</a></h2>
+<p><strong>Portal</strong> is an application to enable InnerSource practices at Intel.</p>
+<p><strong>Product</strong> is the Basic UNIT that Intel design, build, license and sell
+Each Product has name, responsible person, is associated with Product
+metadata, has Product description, Product checklist and Product
+Grading. Product has a set of states: Draft - setup is ongoing; Active -
+setup is completed, available for engagement; Archived - tracked for
+historical reasons, not available for engagement</p>
+<p><strong>Product description</strong> - information descries the product like
+high-level description of the product domain and tasks to be solved (for
+example, Crypto, SignalProcessing, DeepLearning, etc.), presented with
+tags (words), is used for product classification and future discovery.</p>
+<p><strong>Product metadata</strong> -</p>
+<table class="table">
+<colgroup>
+<col style="width: 65%" />
+<col style="width: 35%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Metadata</p></th>
+<th class="head"><p>Where is stored</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>source code</p></td>
+<td><p>gitHub</p></td>
+</tr>
+<tr class="row-odd"><td><p>source code metrics</p></td>
+<td><p>gitHub</p></td>
+</tr>
+<tr class="row-even"><td><p>open bugs and requirements</p></td>
+<td><p>Jira or Rally or
+gitHub issues
+(eventually 1DB)</p></td>
+</tr>
+<tr class="row-odd"><td><p>bugs tracking guidelines</p></td>
+<td><p>project gitHub?</p></td>
+</tr>
+<tr class="row-even"><td><p>instructions to engage</p></td>
+<td><p>project gitHub?</p></td>
+</tr>
+<tr class="row-odd"><td><p>contacts</p></td>
+<td><p>project gitHub?</p></td>
+</tr>
+<tr class="row-even"><td><p>SWLC</p></td>
+<td><p>Protex &amp; Record Center</p></td>
+</tr>
+<tr class="row-odd"><td><p>SDL</p></td>
+<td><p>SDLE</p></td>
+</tr>
+<tr class="row-even"><td><p>roadmap</p></td>
+<td><p>project sharepoint or
+project gitHub, etc?</p></td>
+</tr>
+<tr class="row-odd"><td><p>test cases</p></td>
+<td><p>project link to test
+case locations</p></td>
+</tr>
+<tr class="row-even"><td><p>coding guidelines</p></td>
+<td><p>project gitHub?</p></td>
+</tr>
+<tr class="row-odd"><td><p>CI description</p></td>
+<td><p>?</p></td>
+</tr>
+<tr class="row-even"><td><p>build instructions</p></td>
+<td><p>project CI scripts or
+project gitHub md
+file?</p></td>
+</tr>
+<tr class="row-odd"><td><p>TM&amp;B</p></td>
+<td><p>link to TM&amp;B DB</p></td>
+</tr>
+<tr class="row-even"><td><p>Public Distribution</p></td>
+<td><p>links to intel.com or
+public gitHub</p></td>
+</tr>
+<tr class="row-odd"><td><p>internal project documentation</p></td>
+<td><p>internal</p></td>
+</tr>
+<tr class="row-even"><td><p>external project documentation</p></td>
+<td><p>external</p></td>
+</tr>
+<tr class="row-odd"><td><p>export classification</p></td>
+<td><p>link to SDLE
+autoclassification or
+text box where they
+declare their
+classification
+approved via email</p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Product checklist</strong> - instrument to complete Product self-assessment
+to get InnerSource grading</p>
+<p><strong>Product Grading</strong> - a score on the InnerSource readiness scale</p>
+<p><strong>Product artifacts</strong> - any reusable outcome of the Product (source
+code, builds, released packages, etc.)</p>
+<p><strong>The 3rd party systems</strong> - any system that may provide data for
+automated Product checklist fulfillment (for example, SDLE, GitHub,
+etc.)</p>
+</section>
+<section id="roles">
+<h2><a class="toc-backref" href="#id3">Roles</a><a class="headerlink" href="#roles" title="Permalink to this headline">#</a></h2>
+<p><strong>Intel BB</strong> - any Intel BB employee</p>
+<p><strong>Portal user</strong> - Intel BB authorized for Product management usage via
+AGS</p>
+<p><strong>Portal administrator</strong> - user with administrative privilege on the
+Portal</p>
+<p><strong>Product owner</strong> - user who is specified as a Primary contact for the
+product and has authority to manage this Product</p>
+<p><strong>Portal Automation</strong> - backend engine running behind the portal UI</p>
+</section>
+<section id="p1-use-cases">
+<h2><a class="toc-backref" href="#id4">P1 Use Cases</a><a class="headerlink" href="#p1-use-cases" title="Permalink to this headline">#</a></h2>
+<section id="setup">
+<h3><a class="toc-backref" href="#id5">Setup</a><a class="headerlink" href="#setup" title="Permalink to this headline">#</a></h3>
+<p>Setup-1: - Pre-condition: - git branches are migrated to 1Source github
+- Flow: - As a Portal user, I register a new Product and provide Product
+metadata and Product description - Post-condition: - If input is
+accepted, then I become a Product owner and Product is in Draft state on
+the Portal, otherwise I get an error. I may get a warning that a Product
+with similar Product description already exists and probably should be
+reused.</p>
+<p>Setup-2:</p>
+<ul class="simple">
+<li><p>Pre-condition:</p>
+<ul>
+<li><p>Product is in Draft state on the Portal</p></li>
+</ul>
+</li>
+<li><p>Flow:</p>
+<ul>
+<li><p>As an Product owner, I complete Product checklist</p></li>
+</ul>
+</li>
+<li><p>Post-condition:</p>
+<ul>
+<li><p>Product is Active on the portal, Product has Grading and available
+for discovery and engagement</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="manage">
+<h3><a class="toc-backref" href="#id6">Manage</a><a class="headerlink" href="#manage" title="Permalink to this headline">#</a></h3>
+<p>Manage-1: - Pre-condition: - Product is in Draft state on the Portal -
+Flow: - As an Portal user, I change Product and provide updated Product
+metadata, Product description - Post-condition: - If input is accepted,
+then Product metadata, Product description are updated, otherwise I get
+an error. I may get a warning that a Product with similar Product
+description already exists and probably should be reused.</p>
+<p>Manage-2: - Pre-condition: - Product is in Active state on the Portal -
+Flow: - As an Portal user, I change Product and provide updated Product
+metadata, Product description, Product checklist - Post-condition: - If
+input is accepted, then Product metadata, Product description and
+Product checklist are updated, Product grading is changed, otherwise I
+get an error. I may get a warning that a Product with similar Product
+description already exists and probably should be reused.</p>
+<p>Manage-3: - Pre-condition: - Product is in Active state on the Portal -
+Flow: - As an Portal automation, I regular update Product checklist
+based on information from The 3rd party systems - Post-condition: -
+Product grading is updated</p>
+<p>Manage-4: - Pre-condition: - A Portal user submits Product metadata -
+Flow: - As a Portal automation, I validate submitted Product metadata -
+Post-condition: - If changes are accepted, Product metadata is updated,
+Product grading is updated</p>
+</section>
+<section id="engage">
+<h3><a class="toc-backref" href="#id7">Engage</a><a class="headerlink" href="#engage" title="Permalink to this headline">#</a></h3>
+<p>Engage-1: - Pre-condition: - Product is in Active state on the Portal -
+Flow: - As an Intel BB, I reuse Product artifacts in my development
+pipeline according to the found Product metadata on the Portal -
+Post-condition: - Product is in Active state on the Portal</p>
+<p>Engage-2: - Pre-condition: - Product is in Active state on the Portal -
+Flow: - As an Intel BB, I provide a bugfix to Product artifacts
+according to the found Product metadata on the Portal - Post-condition:
+- Product is in Active state on the Portal</p>
+</section>
+<section id="archive">
+<h3><a class="toc-backref" href="#id8">Archive</a><a class="headerlink" href="#archive" title="Permalink to this headline">#</a></h3>
+<p>Archive-1: - Pre-condition: - Product is Active on the Portal - Flow: -
+As an Product owner, I set a Product on the portal to the Archived state
+- Post-condition: - Product is not available for discovery and
+engagement</p>
+</section>
+<section id="administrate">
+<h3><a class="toc-backref" href="#id9">Administrate</a><a class="headerlink" href="#administrate" title="Permalink to this headline">#</a></h3>
+<p>Admin-1: - Pre-condition: - * - Flow: - As an Portal administrator, I
+do any action in the system available for the application user -
+Post-condition: - Corresponding action is executed</p>
+<p>Admin-2: - Pre-condition: - Product has Product checklist and grading -
+Flow: - As an Portal administrator, I update Product checklist template
+version - Post-condition: - Product checklist is correspondently
+updated, Product grading is recalculated</p>
+</section>
+</section>
+<section id="p2-use-cases">
+<h2><a class="toc-backref" href="#id10">P2 Use Cases</a><a class="headerlink" href="#p2-use-cases" title="Permalink to this headline">#</a></h2>
+<section id="analyze">
+<h3><a class="toc-backref" href="#id11">Analyze</a><a class="headerlink" href="#analyze" title="Permalink to this headline">#</a></h3>
+<p>Analyze-1:</p>
+<ul>
+<li><p>Pre-condition:</p>
+<ul class="simple">
+<li><p>Product is in Active state on the Portal</p></li>
+</ul>
+</li>
+<li><p>Flow:</p>
+<ul class="simple">
+<li><p>As an Intel BB, I open Portal reports</p></li>
+</ul>
+</li>
+<li><p>Post-condition:</p>
+<ul class="simple">
+<li><p>Information with best-in-class InnerSource Intel Products is
+available</p></li>
+</ul>
+<p><strong>???Do we need to track dependencies???</strong> <strong>???What are other
+reporting use cases???</strong></p>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="notify">
+<h3><a class="toc-backref" href="#id12">Notify</a><a class="headerlink" href="#notify" title="Permalink to this headline">#</a></h3>
+<p>TBD -<strong>???Do we need to notify users???</strong></p>
+</section>
+<section id="user-management">
+<h3><a class="toc-backref" href="#id13">User management</a><a class="headerlink" href="#user-management" title="Permalink to this headline">#</a></h3>
+<p>TBD -<strong>???How user retirement be processed???</strong></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="q-a">
+<h2><a class="toc-backref" href="#id14">Q&amp;A</a><a class="headerlink" href="#q-a" title="Permalink to this headline">#</a></h2>
+<p>Do we need to track any dependencies between projects/people like who
+contributed to what project, what was reused, etc. ?</p>
+<ul class="simple">
+<li><p>Project BOM is critical (should include internal and external
+components &amp; licenses)</p></li>
+<li><p>We have to know what’s being reused</p></li>
+<li><p>Portal: We need to link to where the BOM is stored (Ex: Protex, SPDX,
+oneBOM eventually, etc.). One record of truth for the BOM.</p></li>
+<li><p>Gamification and leader board - Lower priority, future feature.</p>
+<ul>
+<li><p>People: Someone contributed to 10 projects vs. 100 projects.</p></li>
+<li><p>Project: How many people contributed? How many times reused?</p></li>
+</ul>
+</li>
+</ul>
+<p>What use cases to retrieve data from the system we see? Reporting use
+cases?</p>
+<ul class="simple">
+<li><p>Reporting use for metrics (for management, for targeting projects
+that need help, etc.)</p></li>
+</ul>
+<p>Do we need notifications?</p>
+<ul class="simple">
+<li><p>Yes, but not in early release. Need to have later.</p></li>
+</ul>
+<p>How user retirement (for example, a person responsible for the product)
+to be processed?</p>
+<ul class="simple">
+<li><p>TBD</p></li>
+<li><p>Keep the history for quite a while</p></li>
+<li><p>Is there alert manager when a user leaves Intel to ensure new name is
+put in place?</p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="index_use.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Portal Use Cases</p>
+        </div>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Intel<br/>
+  
+      &copy; Copyright Published 2022-09-29 20:46 by Intel.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

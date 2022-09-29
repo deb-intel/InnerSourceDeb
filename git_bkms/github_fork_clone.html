@@ -1,0 +1,1166 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>GitHub Fork and Clone &#8212; InnerSource 0.5.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/tabs.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="GitHub Workflows" href="github_workflows.html" />
+    <link rel="prev" title="GitHub Configuration" href="github_config.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">InnerSource 0.5.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../overview/innersource_overview.html">
+   InnerSource Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../blogpost-full.html">
+   Why InnerSource at Intel?
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../contributing/index_contrib.html">
+   Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/docs.html">
+     Contribute Docs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../contributing/ops.html">
+     Operations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../FAQ.html">
+     FAQ - InnerSource @ Intel
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../CONTRIBUTING.html">
+   Contributions Wanted!
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../FAQ.html">
+   FAQ - InnerSource @ Intel
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributing/docs.html">
+   Contribute Docs
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../contributing/ops.html">
+   Operations
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Practices and Guidelines
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/Support.html">
+   Support
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/code-reviews.html">
+   Code Reviews
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/contributing.html">
+   What is a CONTRIBUTING file?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/global_trade_compliance.html">
+   Global Trade Complance (Export)
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../guidelines/index_guide.html">
+   Guidelines
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/Support.html">
+     Support
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/code-reviews.html">
+     Code Reviews
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/contributing.html">
+     What is a CONTRIBUTING file?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/global_trade_compliance.html">
+     Global Trade Complance (Export)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/legal.html">
+     Software Legal Compliance (SWLC)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/open_source_pdt_approval.html">
+     Open Source PDT (OSPDT) Approval
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/readme_guidelines.html">
+     Guildelines for Creating Readme Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/security.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/security_policy_help.html">
+     Create a Security Policy File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/support_file_help.html">
+     Create a Support File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../guidelines/tm_and_b.html">
+     Trademark &amp; Branding (TM&amp;B)
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/legal.html">
+   Software Legal Compliance (SWLC)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/open_source_pdt_approval.html">
+   Open Source PDT (OSPDT) Approval
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/readme_guidelines.html">
+   Guildelines for Creating Readme Files
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/security.html">
+   Security Development Lifecycle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/security_policy_help.html">
+   Create a Security Policy File
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/support_file_help.html">
+   Create a Support File
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../guidelines/tm_and_b.html">
+   Trademark &amp; Branding (TM&amp;B)
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tier Definitions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/architecture.html">
+   Architecture
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/binaryDistributionViaPackageManager.html">
+   Binary Distribution Via Package Manager
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/buildEnvironmentAndDocumentation.html">
+   Build Environment And Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/codeBaseNaming.html">
+   Code Base Naming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/complianceForContribution.html">
+   Compliance for Contribution
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/contributionGuidelines.html">
+   Contribution Guidelines
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/deploymentInfrastructure.html">
+   Deployment Infrastructure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/developmentSetup.html">
+   Development environment setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/distributionAndPackaging.html">
+   Distribution And Packaging
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/documentationCoverage.html">
+   Documentation Coverage
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../tier-definitions/index_tiers.html">
+   Tier Levels
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/architecture.html">
+     Architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/binaryDistributionViaPackageManager.html">
+     Binary Distribution Via Package Manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/buildEnvironmentAndDocumentation.html">
+     Build Environment And Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/codeBaseNaming.html">
+     Code Base Naming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/complianceForContribution.html">
+     Compliance for Contribution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/contributionGuidelines.html">
+     Contribution Guidelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/deploymentInfrastructure.html">
+     Deployment Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/developmentSetup.html">
+     Development environment setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/distributionAndPackaging.html">
+     Distribution And Packaging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/documentationCoverage.html">
+     Documentation Coverage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/intellectualPropertyLeakDetectionTool.html">
+     Intellectual Property Leak Detection Tool
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/maintainersSetup.html">
+     Maintainers Setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/participationEaseOfRamp.html">
+     Participation Ease Of Ramp
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/preProductionEarlyAccess.html">
+     Pre Production Early Access
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/project-documenation.html">
+     Project Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/projectInternalDocumentation.html">
+     Project Internal Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/qualityAssuranceCI.html">
+     Quality Assurance CI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/releaseCadence.html">
+     Release Cadence
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/requirements.html">
+     Requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/roadmap.html">
+     Roadmap
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/securityDevelopmentLifecycle.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/softwareLegalCompliance.html">
+     Software Legal Compliance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/sourceDistributionLanguageSpecificPackages.html">
+     Source Distribution Language Specific Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/supportContributingUsers.html">
+     Support Contributing Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/supportReuseUsers.html">
+     Support Reuse Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/testPlanAndInfrastructure.html">
+     Test Plan And Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../tier-definitions/versioning.html">
+     Versioning
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/intellectualPropertyLeakDetectionTool.html">
+   Intellectual Property Leak Detection Tool
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/maintainersSetup.html">
+   Maintainers Setup
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/participationEaseOfRamp.html">
+   Participation Ease Of Ramp
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/preProductionEarlyAccess.html">
+   Pre Production Early Access
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/project-documenation.html">
+   Project Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/projectInternalDocumentation.html">
+   Project Internal Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/qualityAssuranceCI.html">
+   Quality Assurance CI
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/releaseCadence.html">
+   Release Cadence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/requirements.html">
+   Requirements
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/roadmap.html">
+   Roadmap
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/securityDevelopmentLifecycle.html">
+   Security Development Lifecycle
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/softwareLegalCompliance.html">
+   Software Legal Compliance
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/sourceDistributionLanguageSpecificPackages.html">
+   Source Distribution Language Specific Packages
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/supportContributingUsers.html">
+   Support Contributing Users
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/supportReuseUsers.html">
+   Support Reuse Users
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/testPlanAndInfrastructure.html">
+   Test Plan And Infrastructure
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../tier-definitions/versioning.html">
+   Versioning
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Templates
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CODEOWNERS.html">
+   CODEOWNERS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CODEPLAN.html">
+   CODEPLAN
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CODEREVIEW.html">
+   CODEREVIEW
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CODE_OF_CONDUCT.html">
+   Contributor Covenant Code of Conduct
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/CONTRIBUTING.html">
+   CONTRIBUTING
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/README.html">
+   README
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/SECURITY.html">
+   Security Policy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../template_files/SUPPORT.html">
+   Support
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../template_files/index_tmpl.html">
+   Templates
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CODEOWNERS.html">
+     CODEOWNERS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CODEPLAN.html">
+     CODEPLAN
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CODEREVIEW.html">
+     CODEREVIEW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CODE_OF_CONDUCT.html">
+     Contributor Covenant Code of Conduct
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/CONTRIBUTING.html">
+     CONTRIBUTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/README.html">
+     README
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/SECURITY.html">
+     Security Policy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../template_files/SUPPORT.html">
+     Support
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git BKMs
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index_git.html">
+   Git BKMs
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_overview.html">
+     Git Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_install.html">
+     Install Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github_config.html">
+     GitHub Configuration
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     GitHub Fork and Clone
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github_workflows.html">
+     GitHub Workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="git_rebase.html">
+     Git Rebase
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="codeowners_help.html">
+     Add CODEOWNERS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="git_overview.html">
+   Git Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="git_install.html">
+   Install Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="github_config.html">
+   GitHub Configuration
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   GitHub Fork and Clone
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="github_workflows.html">
+   GitHub Workflows
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="git_rebase.html">
+   Git Rebase
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="codeowners_help.html">
+   Add CODEOWNERS
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Portal
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../portal/index_use.html">
+   Portal Use Cases
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../portal/Use%20Cases.html">
+     InnerSource Portal Use Cases
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../portal/Use%20Cases.html">
+   InnerSource Portal Use Cases
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/git_bkms/github_fork_clone.rst.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.rst</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fork-and-clone-instruction">
+   Fork and Clone Instruction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps">
+   Next Steps
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>GitHub Fork and Clone</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fork-and-clone-instruction">
+   Fork and Clone Instruction
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#next-steps">
+   Next Steps
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="github-fork-and-clone">
+<span id="github-fork-clone"></span><h1>GitHub Fork and Clone<a class="headerlink" href="#github-fork-and-clone" title="Permalink to this headline">#</a></h1>
+<p>This page explains how and why to set up a fork and clone method for contributions.</p>
+<p>We fork and clone a repository to use a common model for contributing to an upstream repository, where several contributors are engaged in development. In this type of model, several contributors may be working simultaneously on:</p>
+<ul class="simple">
+<li><p>Topics/Features</p></li>
+<li><p>Bug Fixes</p></li>
+<li><p>Experiments</p></li>
+</ul>
+<p>Forking allows users to experiment freely without impacting the original, or “upstream”, project. Contributors may fork a repository to:</p>
+<ol class="arabic simple">
+<li><p>Make individual contributions to an upstream repository;</p></li>
+<li><p>Make aggregate contributions, as an organization, to an upstream repository;</p></li>
+<li><p>Extend an existing project and develop it in a new direction</p></li>
+</ol>
+<p>Using a fork-and-clone model–while adding an upstream and using a branching method–offers a safe and secure way to collaborate. In turn, forking allows each contributor to work independently during development. This collaborative development model contrasts with a model where users may <strong>only clone</strong> a repository and use the default remote, called “origin”.</p>
+<p>In this instruction, we focus on use case 1. Here, we illustrate how to make individual contributions to collective development of upstream documentation. The upstream documentation used here could also be an upstream code base.</p>
+<p>If you already created an SSH key on your system and added it to your GitHub account, continue below. If you haven't  set up and SSH key, return to
+<a class="reference internal" href="github_config.html#github-config"><span class="std std-ref">GitHub Configuration</span></a>.</p>
+<section id="fork-and-clone-instruction">
+<span id="fork-and-clone-start"></span><h2>Fork and Clone Instruction<a class="headerlink" href="#fork-and-clone-instruction" title="Permalink to this headline">#</a></h2>
+<ol class="arabic">
+<li><p>Navigate to the root level of the repository where the README appears, and
+find the <span class="guilabel">Fork</span> button in the upper right.</p></li>
+<li><p>Select the <span class="guilabel">Fork</span> button. Then select the GitHub account where
+you want the fork located.</p></li>
+<li><p>Next, navigate to your <em>forked copy</em> of upstream
+(not the original). Your forked copy shows your GitHub username, below which “forked from…” appears in the upper left.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><cite>upstream</cite> is the repository from which you created a <cite>forked</cite> copy.</p>
+</div>
+</li>
+<li><p>On your forked copy, select green button <span class="guilabel">Code</span> and then SSH.</p></li>
+<li><p>Select the <span class="guilabel">copy icon</span> next to address starting with <cite>git&#64;..</cite></p></li>
+<li><p>Open a CLI on your system and navigate to where you want to save this docs
+project.</p></li>
+<li><p>In your CLI, enter this command to clone this documentation project.
+Remember, we use this documentation repository only as an example.
+Note: <cite>[yourusername]</cite> will reflect your GitHub username shown below.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-0-0" aria-selected="true" class="sphinx-tabs-tab" id="tab-0-0-0" name="0-0" role="tab" tabindex="0">Linux</button><button aria-controls="panel-0-0-1" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-1" name="0-1" role="tab" tabindex="-1">Git Bash for Windows</button><button aria-controls="panel-0-0-2" aria-selected="false" class="sphinx-tabs-tab" id="tab-0-0-2" name="0-2" role="tab" tabindex="-1">PowerShell</button></div><div aria-labelledby="tab-0-0-0" class="sphinx-tabs-panel" id="panel-0-0-0" name="0-0" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:<span class="o">[</span>yourusername<span class="o">]</span>/documentation.practices.innersource.git
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-1" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-1" name="0-1" role="tabpanel" tabindex="0"><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:<span class="o">[</span>yourusername<span class="o">]</span>/documentation.practices.innersource.git
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-0-2" class="sphinx-tabs-panel" hidden="true" id="panel-0-0-2" name="0-2" role="tabpanel" tabindex="0"><p>Clone to your home directory to an <cite>example</cite> directory.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:<span class="o">[</span>yourusername<span class="o">]</span>/documentation.practices.innersource.git <span class="nv">$HOME</span>/example
+</pre></div>
+</div>
+</div></div>
+</li>
+<li><p>After you clone, you set up one part of the triangular relationship.</p>
+<figure class="align-default" id="id1">
+<img alt="Fork-and-clone" src="../_images/fork-and-clone.png" />
+<figcaption>
+<p><span class="caption-text">Fork and clone</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Run command to view current the “remote” called <cite>origin</cite>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote -v
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When you clone a repository, you receive the remote “origin” for free.
+More on remotes below.</p>
+</div>
+</li>
+<li><p>Next, add a remote named <code class="file docutils literal notranslate"><span class="pre">upstream</span></code>. Again, the source code for this
+documentation repository is used as the example.</p></li>
+<li><p>In your browser, navigate to the GitHub upstream, or the
+original repository, from which you create a forked copy.</p></li>
+<li><p>On the upstream repository, select green button <span class="guilabel">Code</span>
+and then SSH.</p></li>
+<li><p>Select the <span class="guilabel">copy icon</span> next to the address starting with <cite>git&#64;..</cite></p></li>
+<li><p>Enter the command to create a remote named “upstream” while in the
+same <a class="reference external" href="https://github.com/intel-innersource/documentation.practices.innersource">InnerSource documentation repository</a>.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote add upstream git@github.com:intel-innersource/documentation.practices.innersource.git
+</pre></div>
+</div>
+</li>
+<li><p>Now verify that both “remotes” exist in the repository.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git remote -v
+</pre></div>
+</div>
+</li>
+<li><p>Your CLI should show at least these two remotes.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">origin         git@github.com:[yourusername]/documentation.practices.innersource.git (fetch)</span>
+<span class="go">origin         git@github.com:[yourusername]/documentation.practices.innersource.git (push)</span>
+<span class="go">upstream       git@github.com:intel-innersource/documentation.practices.innersource.git (fetch)</span>
+<span class="go">upstream       git@github.com:intel-innersource/documentation.practices.innersource.git (push)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For an upstream remote, instead of a “username” after <cite>git&#64;github.com</cite>, the organization name appears: intel-innersource, as shown above.
+It's common that the project organization name appears as the upstream remote.</p>
+</div>
+</li>
+<li><p>Observe: This configuration completes setup of the triangular relationship
+between your local forked copy and upstream, where:</p>
+<ul class="simple">
+<li><p><cite>origin</cite> remote has remote-tracking by default. Generally, you create and push new local branches to <cite>origin</cite>, given that by default it is a remote-tracking branch of the original, which you added, as shown above.</p></li>
+<li><p><cite>upstream</cite> remote represents the collective sum of all individual contributions that have been merged. Generally, while on the local forked copy (e.g., <cite>origin/main</cite>, or default branch), you <cite>pull</cite> from the default upstream branch to synchronize your forked copy with upstream. See also: <a class="reference internal" href="github_workflows.html#synchronize-forked-copy"><span class="std std-ref">Synchronize forked copy</span></a>.</p></li>
+</ul>
+<p>Now let's illustrate the triangular relationship between remotes.</p>
+<figure class="align-default" id="id2">
+<img alt="Fork-and-clone, relationship of remotes" src="../_images/fork-and-clone-remotes.png" />
+<figcaption>
+<p><span class="caption-text">Fork-and-clone, relationship of remotes</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</li>
+<li><p>Verify that you can pull changes from the upstream remote.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git pull upstream main
+</pre></div>
+</div>
+</li>
+<li><p>Your CLI should show output similar to the following–assuming you just
+forked and cloned.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">From github.com:intel-innersource/documentation.practices.innersource</span>
+<span class="go">* branch            main       -&gt; FETCH_HEAD</span>
+<span class="go">Already up to date.</span>
+</pre></div>
+</div>
+</li>
+<li><p>Navigate to your project root. Run command to show hidden files.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls -la
+</pre></div>
+</div>
+</li>
+</ol>
+<blockquote>
+<div><p>The <cite>.git/</cite> directory appears at the project root.</p>
+</div></blockquote>
+<ol class="arabic">
+<li><p>Finally, run command to view configuration of remotes:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat .git/config
+</pre></div>
+</div>
+</li>
+</ol>
+<p>Congratulations! You successfully configured Git to work on the command line, and you successfully added an <cite>upstream</cite> remote.</p>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="github_workflows.html#github-workflows"><span class="std std-ref">GitHub Workflows</span></a></p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="github_config.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">GitHub Configuration</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="github_workflows.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">GitHub Workflows</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Intel<br/>
+  
+      &copy; Copyright Published 2022-09-29 20:46 by Intel.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
