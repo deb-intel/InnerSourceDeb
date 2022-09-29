@@ -75,16 +75,7 @@ InnerSource Documentation
 
    overview/innersource_overview
    blogpost-full
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-
-   contributing/index_contrib
-   CONTRIBUTING 
    FAQ
-   contributing/docs
-   contributing/ops
 
 .. toctree::
    :glob:
@@ -124,3 +115,12 @@ InnerSource Documentation
    :caption: Portal
 
    portal/index_use
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Community
+
+   contributing/index_contrib
+   CONTRIBUTING 
+   
