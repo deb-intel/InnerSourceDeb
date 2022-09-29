@@ -21,14 +21,14 @@ jobs:
         pip3 install sphinx-tabs
         pip3 install sphinx_design
         python -m sphinx -b html . _build/
-        echo ${{ github.ref }}
     - name: Build the docs
       run: |
         export PATH="$HOME/.local/bin:$PATH"
+        make html
     - name: Push the docs
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: Documentation/_build/html
+        publish_dir: _build/html
         publish_branch: latestHTML
 
