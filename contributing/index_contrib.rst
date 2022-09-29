@@ -14,4 +14,3 @@ Join the InnerSource community inside Intel! Help us improve BKMS.
 
    docs
    ops
-   /FAQ

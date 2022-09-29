@@ -1,7 +1,7 @@
 .. _contributing:
 
-Contributions Wanted!
-#####################
+Contribution Setup
+##################
 
 We welcome contributions to the InnerSource Documentation project. 
 To contribute, please use the :ref:`github_fork_clone` method. 
