@@ -1,7 +1,7 @@
 .. _index_contrib:
 
-Community
-#########
+Set Up and Generate Documents
+#############################
 
 Join the InnerSource community inside Intel! Help us improve BKMS.  
 
@@ -14,4 +14,3 @@ Join the InnerSource community inside Intel! Help us improve BKMS.
 
    docs
    ops
-   /FAQ
