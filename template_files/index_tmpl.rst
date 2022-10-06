@@ -1,7 +1,7 @@
 .. _index_tmpl:
 
-Templates
-##########
+Template Files
+##############
 
 Use our templates to write common GitHub files. 
 

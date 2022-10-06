@@ -1,7 +1,7 @@
 .. _index_tiers:
 
-Tier Levels
-###########
+Tier Levels and Definitions
+###########################
 
 Results of a project assessment in the Portal App show Tier Levels.
 
