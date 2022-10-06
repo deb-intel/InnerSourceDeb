@@ -16,7 +16,7 @@ InnerSource Documentation
       **Community**
       ^^^^^^^^^^^^^^
       Join our :ref:`index_contrib`.
-      Help improve our docs!
+      Help improve our docs.
 
    .. grid-item-card:: 
       :img-background: images/background.png
@@ -25,7 +25,7 @@ InnerSource Documentation
 
       **Guidelines**
       ^^^^^^^^^^^^^^
-      Use our :ref:`collaboration guidelines <index_guide>`.
+      Use our :ref:`guidelines <index_guide>` to support collaboration, security, and compliance.
 
    .. grid-item-card::
       :img-background: images/background.png
@@ -34,7 +34,7 @@ InnerSource Documentation
 
       **Git BKMs**
       ^^^^^^^^^^^^
-      Follow our :ref:`Git BKMs<index_git>`.
+      Follow our :ref:`Git BKMs<index_git>` to set up your repository.
 
 
    .. grid-item-card::
@@ -45,7 +45,7 @@ InnerSource Documentation
       **Templates**
       ^^^^^^^^^^^^^
 
-      Copy our :ref:`starter templates <index_tmpl>`.
+      Use our :ref:`starter templates <index_tmpl>` to build collaboration and structure your code reviews.
 
    .. grid-item-card:: 
       :img-background: images/background.png 
@@ -55,7 +55,7 @@ InnerSource Documentation
       **Tier Levels**
       ^^^^^^^^^^^^^^^
 
-      Understand the criteria for evaluation of :ref:`Tier Levels <index_tiers>`.
+      Understand the criteria for evaluation of :ref:`Tier Levels <index_tiers>` in your project assessment.
       
    .. grid-item-card:: 
       :img-background: images/background.png 
@@ -68,8 +68,7 @@ InnerSource Documentation
       Review use cases for the :ref:`InnerSource Portal App <index_use>`.
 
 
-
-. toctree::
+.. toctree::
    :maxdepth: 1
    :hidden:
 
