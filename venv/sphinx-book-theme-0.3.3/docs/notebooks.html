@@ -1,0 +1,868 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Jupyter notebooks &#8212; InnerSource 0.5.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">InnerSource 0.5.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../overview/innersource_overview.html">
+   InnerSource Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../blogpost-full.html">
+   Why InnerSource at Intel?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../FAQ.html">
+   FAQ - InnerSource @ Intel
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Practices and Guidelines
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../guidelines/index_guide.html">
+   Guidelines
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/Support.html">
+     Support
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/code-reviews.html">
+     Code Reviews
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/contributing.html">
+     What is a CONTRIBUTING file?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/global_trade_compliance.html">
+     Global Trade Complance (Export)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/legal.html">
+     Software Legal Compliance (SWLC)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/open_source_pdt_approval.html">
+     Open Source PDT (OSPDT) Approval
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/readme_guidelines.html">
+     Guildelines for Creating Readme Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/security.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/security_policy_help.html">
+     Create a Security Policy File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/support_file_help.html">
+     Create a Support File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../guidelines/tm_and_b.html">
+     Trademark &amp; Branding (TM&amp;B)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tier Definitions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../tier-definitions/index_tiers.html">
+   Tier Levels and Definitions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/architecture.html">
+     Architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/binaryDistributionViaPackageManager.html">
+     Binary Distribution Via Package Manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/buildEnvironmentAndDocumentation.html">
+     Build Environment And Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/codeBaseNaming.html">
+     Code Base Naming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/complianceForContribution.html">
+     Compliance for Contribution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/contributionGuidelines.html">
+     Contribution Guidelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/deploymentInfrastructure.html">
+     Deployment Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/developmentSetup.html">
+     Development environment setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/distributionAndPackaging.html">
+     Distribution And Packaging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/documentationCoverage.html">
+     Documentation Coverage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/intellectualPropertyLeakDetectionTool.html">
+     Intellectual Property Leak Detection Tool
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/maintainersSetup.html">
+     Maintainers Setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/participationEaseOfRamp.html">
+     Participation Ease Of Ramp
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/preProductionEarlyAccess.html">
+     Pre Production Early Access
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/project-documenation.html">
+     Project Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/projectInternalDocumentation.html">
+     Project Internal Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/qualityAssuranceCI.html">
+     Quality Assurance CI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/releaseCadence.html">
+     Release Cadence
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/requirements.html">
+     Requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/roadmap.html">
+     Roadmap
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/securityDevelopmentLifecycle.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/softwareLegalCompliance.html">
+     Software Legal Compliance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/sourceDistributionLanguageSpecificPackages.html">
+     Source Distribution Language Specific Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/supportContributingUsers.html">
+     Support Contributing Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/supportReuseUsers.html">
+     Support Reuse Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/testPlanAndInfrastructure.html">
+     Test Plan And Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../tier-definitions/versioning.html">
+     Versioning
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Templates
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../template_files/index_tmpl.html">
+   Template Files
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../template_files/CODEOWNERS.html">
+     CODEOWNERS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../template_files/CODEPLAN.html">
+     CODEPLAN
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../template_files/CODEREVIEW.html">
+     CODEREVIEW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../template_files/CODE_OF_CONDUCT.html">
+     Contributor Covenant Code of Conduct
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../template_files/CONTRIBUTING.html">
+     CONTRIBUTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../template_files/README.html">
+     README
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../template_files/SECURITY.html">
+     Security Policy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../template_files/SUPPORT.html">
+     Support
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git BKMs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../git_bkms/index_git.html">
+   Git BKMs
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../git_bkms/git_overview.html">
+     Git Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../git_bkms/git_install.html">
+     Install Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../git_bkms/github_config.html">
+     GitHub Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../git_bkms/github_fork_clone.html">
+     GitHub Fork and Clone
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../git_bkms/github_workflows.html">
+     GitHub Workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../git_bkms/git_rebase.html">
+     Git Rebase
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../git_bkms/codeowners_help.html">
+     Add CODEOWNERS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Portal
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../portal/index_use.html">
+   Portal Use Cases
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../portal/Use%20Cases.html">
+     InnerSource Portal Use Cases
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Community
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../contributing/index_contrib.html">
+   Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../contributing/docs.html">
+     How to Contribute Docs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../contributing/ops.html">
+     Operations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../CONTRIBUTING.html">
+   How to Submit Contributions
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/venv/sphinx-book-theme-0.3.3/docs/notebooks.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-notebooks">
+   Markdown + notebooks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-blocks-and-image-outputs">
+   Code blocks and image outputs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#removing-content-before-publishing">
+   Removing content before publishing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactive-outputs">
+   Interactive outputs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rich-outputs-from-notebook-cells">
+   Rich outputs from notebook cells
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-code-cells">
+   Formatting code cells
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrolling-cell-outputs">
+     Scrolling cell outputs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrolling-cell-inputs">
+     Scrolling cell inputs
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Jupyter notebooks</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#markdown-notebooks">
+   Markdown + notebooks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#code-blocks-and-image-outputs">
+   Code blocks and image outputs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#removing-content-before-publishing">
+   Removing content before publishing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interactive-outputs">
+   Interactive outputs
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#rich-outputs-from-notebook-cells">
+   Rich outputs from notebook cells
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#formatting-code-cells">
+   Formatting code cells
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrolling-cell-outputs">
+     Scrolling cell outputs
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scrolling-cell-inputs">
+     Scrolling cell inputs
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="jupyter-notebooks">
+<h1>Jupyter notebooks<a class="headerlink" href="#jupyter-notebooks" title="Permalink to this headline">#</a></h1>
+<p>You can also create content with Jupyter Notebooks, using the <a class="reference external" href="https://myst-nb.readthedocs.io/en/latest/">MyST-NB Sphinx extension</a>.</p>
+<p>This page demonstrates some extra functionality that works with this theme.</p>
+<section id="markdown-notebooks">
+<h2>Markdown + notebooks<a class="headerlink" href="#markdown-notebooks" title="Permalink to this headline">#</a></h2>
+<p>As it is markdown, you can embed images, HTML, etc into your posts!</p>
+<p><img alt="" src="../../../_images/cool.jpg" /></p>
+<p>You an also $add_{math}$ and</p>
+<p>$$
+math^{blocks}
+$$</p>
+<p>or</p>
+<p>$$
+\begin{align*}
+\mbox{mean} la_{tex} \ \
+math blocks
+\end{align*}
+$$</p>
+<p>But make sure you $Escape $your $dollar signs $you want to keep!</p>
+</section>
+<section id="code-blocks-and-image-outputs">
+<h2>Code blocks and image outputs<a class="headerlink" href="#code-blocks-and-image-outputs" title="Permalink to this headline">#</a></h2>
+<p>Jupyter Book will also embed your code blocks and output in your book.
+For example, here’s some sample Matplotlib code:</p>
+<p>Note that the image above is captured and displayed.</p>
+<aside class="margin sidebar">
+<p class="sidebar-title">You can also pop out content to the margin</p>
+<p>For more information on how to do this,
+check out <a class="reference internal" href="content-blocks.html"><span class="doc std std-doc">Special content blocks</span></a>.</p>
+</aside>
+</section>
+<section id="removing-content-before-publishing">
+<h2>Removing content before publishing<a class="headerlink" href="#removing-content-before-publishing" title="Permalink to this headline">#</a></h2>
+<p>You can also remove some content before publishing your book to the web. For example,
+in <a class="reference download internal" download="" href="../../../_downloads/c0584122fdbd98756fa73f5d77edc472/notebooks.md"><code class="xref download docutils literal notranslate"><span class="pre">./notebooks.md</span></code></a>, there used to be a cell below…</p>
+<p>You can also <strong>remove only the code</strong> so that images and other output still show up.</p>
+<p>Below we’ll <em>only</em> display an image. It was generated with Python code in a cell,
+which you can <a class="reference download internal" download="" href="../../../_downloads/c0584122fdbd98756fa73f5d77edc472/notebooks.md"><code class="xref download docutils literal notranslate"><span class="pre">see</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">original</span> <span class="pre">notebook</span></code></a>.</p>
+<p>And here we’ll <em>only</em> display a Pandas DataFrame.</p>
+<p>You can even style Pandas DataFrames!
+See <a class="reference external" href="https://pandas.pydata.org/pandas-docs/stable/user_guide/style.html">the Pandas Styling docs</a> for more information.</p>
+<p>Testing margins before headers</p>
+</section>
+<section id="interactive-outputs">
+<h2>Interactive outputs<a class="headerlink" href="#interactive-outputs" title="Permalink to this headline">#</a></h2>
+<p>We can even do the same for <em>interactive</em> material. Below we’ll display a map using <a class="reference external" href="https://python-visualization.github.io/folium/">folium</a>. When the notebook
+is converted to Markdown, the code for creating the interactive map is retained.</p>
+<p><strong>Note that this will only work for some packages.</strong> They need to be able to output standalone HTML/Javascript, and not
+depend on an underlying Python kernel to work.</p>
+</section>
+<section id="rich-outputs-from-notebook-cells">
+<h2>Rich outputs from notebook cells<a class="headerlink" href="#rich-outputs-from-notebook-cells" title="Permalink to this headline">#</a></h2>
+<p>Because notebooks have rich text outputs, you can store these in
+your Jupyter Book as well!</p>
+</section>
+<section id="formatting-code-cells">
+<h2>Formatting code cells<a class="headerlink" href="#formatting-code-cells" title="Permalink to this headline">#</a></h2>
+<section id="scrolling-cell-outputs">
+<h3>Scrolling cell outputs<a class="headerlink" href="#scrolling-cell-outputs" title="Permalink to this headline">#</a></h3>
+<p>The traditional Jupyter Notebook interface allows you to toggle <strong>output scrolling</strong>
+for your cells. This allows you to visualize part of a long output without it taking up
+the entire page.</p>
+<p>You can trigger this behavior in Jupyter Book by adding the following
+tag to a cell’s metadata:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;scroll-output&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>For example, the following cell has a long output, but will be scrollable in the book:</p>
+</section>
+<section id="scrolling-cell-inputs">
+<h3>Scrolling cell inputs<a class="headerlink" href="#scrolling-cell-inputs" title="Permalink to this headline">#</a></h3>
+<p>If your input code is long and takes up a lot of your page, you can make it scrollable
+as well by adding the following tag to a cell’s metadata:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="s2">&quot;scroll-input&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+<p>For example, the following cell has a long input, but will be scrollable in the book:</p>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Intel<br/>
+  
+      &copy; Copyright Published 2022-10-06 22:52 by Intel.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

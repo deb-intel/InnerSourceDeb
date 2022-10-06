@@ -1,0 +1,1015 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Architecture of the repository &#8212; InnerSource 0.5.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">InnerSource 0.5.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../overview/innersource_overview.html">
+   InnerSource Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../blogpost-full.html">
+   Why InnerSource at Intel?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../FAQ.html">
+   FAQ - InnerSource @ Intel
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Practices and Guidelines
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../guidelines/index_guide.html">
+   Guidelines
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/Support.html">
+     Support
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/code-reviews.html">
+     Code Reviews
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/contributing.html">
+     What is a CONTRIBUTING file?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/global_trade_compliance.html">
+     Global Trade Complance (Export)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/legal.html">
+     Software Legal Compliance (SWLC)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/open_source_pdt_approval.html">
+     Open Source PDT (OSPDT) Approval
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/readme_guidelines.html">
+     Guildelines for Creating Readme Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/security.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/security_policy_help.html">
+     Create a Security Policy File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/support_file_help.html">
+     Create a Support File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../guidelines/tm_and_b.html">
+     Trademark &amp; Branding (TM&amp;B)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tier Definitions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../tier-definitions/index_tiers.html">
+   Tier Levels and Definitions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/architecture.html">
+     Architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/binaryDistributionViaPackageManager.html">
+     Binary Distribution Via Package Manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/buildEnvironmentAndDocumentation.html">
+     Build Environment And Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/codeBaseNaming.html">
+     Code Base Naming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/complianceForContribution.html">
+     Compliance for Contribution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/contributionGuidelines.html">
+     Contribution Guidelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/deploymentInfrastructure.html">
+     Deployment Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/developmentSetup.html">
+     Development environment setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/distributionAndPackaging.html">
+     Distribution And Packaging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/documentationCoverage.html">
+     Documentation Coverage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/intellectualPropertyLeakDetectionTool.html">
+     Intellectual Property Leak Detection Tool
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/maintainersSetup.html">
+     Maintainers Setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/participationEaseOfRamp.html">
+     Participation Ease Of Ramp
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/preProductionEarlyAccess.html">
+     Pre Production Early Access
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/project-documenation.html">
+     Project Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/projectInternalDocumentation.html">
+     Project Internal Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/qualityAssuranceCI.html">
+     Quality Assurance CI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/releaseCadence.html">
+     Release Cadence
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/requirements.html">
+     Requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/roadmap.html">
+     Roadmap
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/securityDevelopmentLifecycle.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/softwareLegalCompliance.html">
+     Software Legal Compliance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/sourceDistributionLanguageSpecificPackages.html">
+     Source Distribution Language Specific Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/supportContributingUsers.html">
+     Support Contributing Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/supportReuseUsers.html">
+     Support Reuse Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/testPlanAndInfrastructure.html">
+     Test Plan And Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../tier-definitions/versioning.html">
+     Versioning
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Templates
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../template_files/index_tmpl.html">
+   Template Files
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../template_files/CODEOWNERS.html">
+     CODEOWNERS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../template_files/CODEPLAN.html">
+     CODEPLAN
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../template_files/CODEREVIEW.html">
+     CODEREVIEW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../template_files/CODE_OF_CONDUCT.html">
+     Contributor Covenant Code of Conduct
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../template_files/CONTRIBUTING.html">
+     CONTRIBUTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../template_files/README.html">
+     README
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../template_files/SECURITY.html">
+     Security Policy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../template_files/SUPPORT.html">
+     Support
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git BKMs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../git_bkms/index_git.html">
+   Git BKMs
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git_bkms/git_overview.html">
+     Git Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git_bkms/git_install.html">
+     Install Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git_bkms/github_config.html">
+     GitHub Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git_bkms/github_fork_clone.html">
+     GitHub Fork and Clone
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git_bkms/github_workflows.html">
+     GitHub Workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git_bkms/git_rebase.html">
+     Git Rebase
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../git_bkms/codeowners_help.html">
+     Add CODEOWNERS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Portal
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../portal/index_use.html">
+   Portal Use Cases
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../portal/Use%20Cases.html">
+     InnerSource Portal Use Cases
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Community
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../contributing/index_contrib.html">
+   Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/docs.html">
+     How to Contribute Docs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../contributing/ops.html">
+     Operations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../CONTRIBUTING.html">
+   How to Submit Contributions
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/venv/sphinx-book-theme-0.3.3/ARCHITECTURE.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#src-sphinx-book-theme-theme-source-files">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     src/sphinx_book_theme/
+    </span>
+   </code>
+   - Theme source files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#theme-sphinx-book-theme-html-templates">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       /theme/sphinx_book_theme/
+      </span>
+     </code>
+     - HTML templates
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assets-scripts-javascript-assets">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       /assets/scripts
+      </span>
+     </code>
+     - JavaScript assets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assets-styles-scss-assets">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       /assets/styles
+      </span>
+     </code>
+     - SCSS assets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#translations-translations-and-internationalization">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       /translations/
+      </span>
+     </code>
+     - Translations and internationalization
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#docs-site-documentation">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     docs/
+    </span>
+   </code>
+   - Site documentation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#webpack-config-js-and-package-json-webpack-and-dependencies">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     webpack.config.js
+    </span>
+   </code>
+   and
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     package.json
+    </span>
+   </code>
+   - Webpack and dependencies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tests-testing-infrastructure">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     tests/
+    </span>
+   </code>
+   - Testing infrastructure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-workflows-continuous-integration-and-deployment">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     .github/workflows/
+    </span>
+   </code>
+   - Continuous Integration and Deployment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#parent-theme-pydata-sphinx-theme">
+   Parent theme -
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pydata-sphinx-theme
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Architecture of the repository</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#src-sphinx-book-theme-theme-source-files">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     src/sphinx_book_theme/
+    </span>
+   </code>
+   - Theme source files
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#theme-sphinx-book-theme-html-templates">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       /theme/sphinx_book_theme/
+      </span>
+     </code>
+     - HTML templates
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assets-scripts-javascript-assets">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       /assets/scripts
+      </span>
+     </code>
+     - JavaScript assets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#assets-styles-scss-assets">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       /assets/styles
+      </span>
+     </code>
+     - SCSS assets
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#translations-translations-and-internationalization">
+     <code class="docutils literal notranslate">
+      <span class="pre">
+       /translations/
+      </span>
+     </code>
+     - Translations and internationalization
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#docs-site-documentation">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     docs/
+    </span>
+   </code>
+   - Site documentation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#webpack-config-js-and-package-json-webpack-and-dependencies">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     webpack.config.js
+    </span>
+   </code>
+   and
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     package.json
+    </span>
+   </code>
+   - Webpack and dependencies
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tests-testing-infrastructure">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     tests/
+    </span>
+   </code>
+   - Testing infrastructure
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-workflows-continuous-integration-and-deployment">
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     .github/workflows/
+    </span>
+   </code>
+   - Continuous Integration and Deployment
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#parent-theme-pydata-sphinx-theme">
+   Parent theme -
+   <code class="docutils literal notranslate">
+    <span class="pre">
+     pydata-sphinx-theme
+    </span>
+   </code>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="architecture-of-the-repository">
+<h1><a class="toc-backref" href="#id1">Architecture of the repository</a><a class="headerlink" href="#architecture-of-the-repository" title="Permalink to this headline">#</a></h1>
+<p>This is a short overview of the general architecture and structure of the repository, to help you orient yourself.</p>
+<p>This theme uses <a class="reference external" href="https://sphinx-theme-builder.readthedocs.io/en/latest/">sphinx-theme-builder</a> as its build backend, and follows the <a class="reference external" href="https://sphinx-theme-builder.readthedocs.io/en/latest/filesystem-layout/">filesystem layout</a> recommended by it.
+See below for some more specific sections</p>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#architecture-of-the-repository" id="id1">Architecture of the repository</a></p>
+<ul>
+<li><p><a class="reference internal" href="#src-sphinx-book-theme-theme-source-files" id="id2"><code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/</span></code> - Theme source files</a></p>
+<ul>
+<li><p><a class="reference internal" href="#theme-sphinx-book-theme-html-templates" id="id3"><code class="docutils literal notranslate"><span class="pre">/theme/sphinx_book_theme/</span></code> - HTML templates</a></p></li>
+<li><p><a class="reference internal" href="#assets-scripts-javascript-assets" id="id4"><code class="docutils literal notranslate"><span class="pre">/assets/scripts</span></code> - JavaScript assets</a></p></li>
+<li><p><a class="reference internal" href="#assets-styles-scss-assets" id="id5"><code class="docutils literal notranslate"><span class="pre">/assets/styles</span></code> - SCSS assets</a></p></li>
+<li><p><a class="reference internal" href="#translations-translations-and-internationalization" id="id6"><code class="docutils literal notranslate"><span class="pre">/translations/</span></code> - Translations and internationalization</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#docs-site-documentation" id="id7"><code class="docutils literal notranslate"><span class="pre">docs/</span></code> - Site documentation</a></p></li>
+<li><p><a class="reference internal" href="#webpack-config-js-and-package-json-webpack-and-dependencies" id="id8"><code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code> and <code class="docutils literal notranslate"><span class="pre">package.json</span></code> - Webpack and dependencies</a></p></li>
+<li><p><a class="reference internal" href="#tests-testing-infrastructure" id="id9"><code class="docutils literal notranslate"><span class="pre">tests/</span></code> - Testing infrastructure</a></p></li>
+<li><p><a class="reference internal" href="#github-workflows-continuous-integration-and-deployment" id="id10"><code class="docutils literal notranslate"><span class="pre">.github/workflows/</span></code> - Continuous Integration and Deployment</a></p></li>
+<li><p><a class="reference internal" href="#parent-theme-pydata-sphinx-theme" id="id11">Parent theme - <code class="docutils literal notranslate"><span class="pre">pydata-sphinx-theme</span></code></a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<section id="src-sphinx-book-theme-theme-source-files">
+<h2><a class="toc-backref" href="#id2"><code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/</span></code> - Theme source files</a><a class="headerlink" href="#src-sphinx-book-theme-theme-source-files" title="Permalink to this headline">#</a></h2>
+<p>This folder contains all of the source files for this theme, and most changes to the theme are made somewhere inside this folder.</p>
+<p><code class="docutils literal notranslate"><span class="pre">__init__.py</span></code>
+: The theme’s Python module, which runs several configuration and set-up steps.
+This module does things like load in Sphinx’s default HTML for the sidebar, and modify it in order to have dropdown nested lists.
+It also inserts several variables into the Jinja template context that are then used in our HTML templates.</p>
+<p><code class="docutils literal notranslate"><span class="pre">header_buttons/</span></code>
+: Scripts to generate metadata for buttons in the header. We use <a class="reference external" href="https://jinja.palletsprojects.com/en/3.0.x/templates/">Jinja Macros</a> (in the <code class="docutils literal notranslate"><span class="pre">macros/</span></code> folder) to generate the HTML for header buttons. The scripts in <code class="docutils literal notranslate"><span class="pre">header_buttons/</span></code> generate the data structure that is used to generate buttons with these macros (in the <code class="docutils literal notranslate"><span class="pre">header-article.html</span></code> template).</p>
+<p><code class="docutils literal notranslate"><span class="pre">header_buttons/launch.py</span></code>
+: Logic to create the correct URLs for our launch buttons. This basically means building the URL for a given launch service in a proper fashion.</p>
+<p>The other folders in this section are described in the next few sections.</p>
+<section id="theme-sphinx-book-theme-html-templates">
+<h3><a class="toc-backref" href="#id3"><code class="docutils literal notranslate"><span class="pre">/theme/sphinx_book_theme/</span></code> - HTML templates</a><a class="headerlink" href="#theme-sphinx-book-theme-html-templates" title="Permalink to this headline">#</a></h3>
+<p>This is the actual theme source that is packaged and distributed via PyPI.
+It contains HTML templates that make up the theme structure.</p>
+<p>These follow the <a class="reference external" href="https://sphinx-basic-ng.readthedocs.io/en/latest"><code class="docutils literal notranslate"><span class="pre">sphinx-basic-ng</span></code> template structure</a>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">layout.html</span></code> inherits from the <a class="reference external" href="https://pydata-sphinx-theme.readthedocs.io/">pydata sphinx theme</a> and modifies several sections.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">theme.conf</span></code> contains the Sphinx configuration file for this theme.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">macros/</span></code> contains HTML templates that define Jinja macros</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sections/</span></code> contains HTML templates for major sections of the page.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">components/</span></code> contains HTML templates for smaller, self-contained parts of the page.</p></li>
+</ul>
+</section>
+<section id="assets-scripts-javascript-assets">
+<h3><a class="toc-backref" href="#id4"><code class="docutils literal notranslate"><span class="pre">/assets/scripts</span></code> - JavaScript assets</a><a class="headerlink" href="#assets-scripts-javascript-assets" title="Permalink to this headline">#</a></h3>
+<p>Contains JavaScript files for this theme. They are automatically compiled and inserted into the theme when new releases are made (or, via the command <code class="docutils literal notranslate"><span class="pre">stb</span> <span class="pre">compile</span></code>). They are <strong>not checked in to <code class="docutils literal notranslate"><span class="pre">git</span></code> history</strong>.</p>
+</section>
+<section id="assets-styles-scss-assets">
+<h3><a class="toc-backref" href="#id5"><code class="docutils literal notranslate"><span class="pre">/assets/styles</span></code> - SCSS assets</a><a class="headerlink" href="#assets-styles-scss-assets" title="Permalink to this headline">#</a></h3>
+<p>Contains SCSS files for this theme.
+These are compiled and bundled with the theme at build time.
+See the <a class="reference internal" href="docs/contributing/style.html#contributing-style"><span class="std std-ref">Style and Design section</span></a> for more information.</p>
+</section>
+<section id="translations-translations-and-internationalization">
+<h3><a class="toc-backref" href="#id6"><code class="docutils literal notranslate"><span class="pre">/translations/</span></code> - Translations and internationalization</a><a class="headerlink" href="#translations-translations-and-internationalization" title="Permalink to this headline">#</a></h3>
+<p>This folder contains all of the translations that we use in this theme, so that it may be used in many different base languages.
+For more information about our translation infrastructure, see <code class="docutils literal notranslate"><span class="pre">/translations/README.md</span></code>.</p>
+</section>
+</section>
+<section id="docs-site-documentation">
+<h2><a class="toc-backref" href="#id7"><code class="docutils literal notranslate"><span class="pre">docs/</span></code> - Site documentation</a><a class="headerlink" href="#docs-site-documentation" title="Permalink to this headline">#</a></h2>
+<p>The documentation for the theme, written as a Sphinx documentation site.
+The documentation tries to follow <a class="reference external" href="https://diataxis.fr/">the Diataxis.fr documentation framework</a>.</p>
+<p>Here is a brief overview:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">docs/*.md</span></code>: Contains several topic sections for the documentation (e.g. <code class="docutils literal notranslate"><span class="pre">content-blocks.md</span></code> covers special content blocks for this theme)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs/tutorials/</span></code>: Step-by-step tutorials that cover how to do a particular thing from beginning to end.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">docs/reference/</span></code>: Reference sections of the documentation, to demonstrate the look and feel of the theme.
+The “kitchen sink” is pulled directly <a class="reference external" href="https://github.com/sphinx-themes/sphinx-themes.org/tree/master/sample-docs/kitchen-sink">from the <code class="docutils literal notranslate"><span class="pre">sphinx-themes</span></code> website</a>.
+There are also other sections for theme-specific elements.</p></li>
+</ul>
+</section>
+<section id="webpack-config-js-and-package-json-webpack-and-dependencies">
+<h2><a class="toc-backref" href="#id8"><code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code> and <code class="docutils literal notranslate"><span class="pre">package.json</span></code> - Webpack and dependencies</a><a class="headerlink" href="#webpack-config-js-and-package-json-webpack-and-dependencies" title="Permalink to this headline">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">webpack.config.js</span></code> contains the compilation code to convert source files like SCSS and JS in <code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/assets/*</span></code> into the production assets in <code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/theme/sphinx_book_theme/static/</span></code> .
+This compilation is called by default, during development commands (see below).</p>
+</section>
+<section id="tests-testing-infrastructure">
+<h2><a class="toc-backref" href="#id9"><code class="docutils literal notranslate"><span class="pre">tests/</span></code> - Testing infrastructure</a><a class="headerlink" href="#tests-testing-infrastructure" title="Permalink to this headline">#</a></h2>
+<p>Testing infrastructure that uses <code class="docutils literal notranslate"><span class="pre">pytest</span></code> along with <code class="docutils literal notranslate"><span class="pre">beautifulsoup</span></code> to validate
+that the generated HTML is what we expect it to be.
+Much of these tests also use <code class="docutils literal notranslate"><span class="pre">pytest-regressions</span></code>, to check whether newly-generated HTML differs from previously-generated HTML.</p>
+</section>
+<section id="github-workflows-continuous-integration-and-deployment">
+<h2><a class="toc-backref" href="#id10"><code class="docutils literal notranslate"><span class="pre">.github/workflows/</span></code> - Continuous Integration and Deployment</a><a class="headerlink" href="#github-workflows-continuous-integration-and-deployment" title="Permalink to this headline">#</a></h2>
+<p>Contains Continuous-integration (CI) workflows, run on commits/PRs to the GitHub repository.</p>
+</section>
+<section id="parent-theme-pydata-sphinx-theme">
+<h2><a class="toc-backref" href="#id11">Parent theme - <code class="docutils literal notranslate"><span class="pre">pydata-sphinx-theme</span></code></a><a class="headerlink" href="#parent-theme-pydata-sphinx-theme" title="Permalink to this headline">#</a></h2>
+<p>This theme inherits a lot of functionality and design rules from its parent theme, the <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme">PyData Sphinx Theme</a>.
+This is a theme designed for the PyData community, with a similar look and feel to the book theme.
+Over time, we try to upstream any improvements made here into the parent theme, as long as the look and feel is the same between the two.</p>
+<p>If you come across something in the codebase and you’re not sure where it comes from (an example is the <code class="docutils literal notranslate"><span class="pre">generate_nav_html</span></code> function), you should <a class="reference external" href="https://github.com/pydata/pydata-sphinx-theme/tree/master/src/pydata_sphinx_theme">check the PyData Theme source files</a> to see if it is defined there.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Intel<br/>
+  
+      &copy; Copyright Published 2022-10-06 22:52 by Intel.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

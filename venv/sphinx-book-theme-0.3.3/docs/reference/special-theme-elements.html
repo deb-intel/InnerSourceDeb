@@ -1,0 +1,1116 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Theme-specific elements &#8212; InnerSource 0.5.0 documentation</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+    <script src="../../../../_static/jquery.js"></script>
+    <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../../_static/design-tabs.js"></script>
+    <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">InnerSource 0.5.0 documentation</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../overview/innersource_overview.html">
+   InnerSource Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../blogpost-full.html">
+   Why InnerSource at Intel?
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../FAQ.html">
+   FAQ - InnerSource @ Intel
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Practices and Guidelines
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../guidelines/index_guide.html">
+   Guidelines
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/Support.html">
+     Support
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/code-reviews.html">
+     Code Reviews
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/contributing.html">
+     What is a CONTRIBUTING file?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/global_trade_compliance.html">
+     Global Trade Complance (Export)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/legal.html">
+     Software Legal Compliance (SWLC)
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/open_source_pdt_approval.html">
+     Open Source PDT (OSPDT) Approval
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/readme_guidelines.html">
+     Guildelines for Creating Readme Files
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/security.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/security_policy_help.html">
+     Create a Security Policy File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/support_file_help.html">
+     Create a Support File
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../guidelines/tm_and_b.html">
+     Trademark &amp; Branding (TM&amp;B)
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Tier Definitions
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../tier-definitions/index_tiers.html">
+   Tier Levels and Definitions
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/architecture.html">
+     Architecture
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/binaryDistributionViaPackageManager.html">
+     Binary Distribution Via Package Manager
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/buildEnvironmentAndDocumentation.html">
+     Build Environment And Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/codeBaseNaming.html">
+     Code Base Naming
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/complianceForContribution.html">
+     Compliance for Contribution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/contributionGuidelines.html">
+     Contribution Guidelines
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/deploymentInfrastructure.html">
+     Deployment Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/developmentSetup.html">
+     Development environment setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/distributionAndPackaging.html">
+     Distribution And Packaging
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/documentationCoverage.html">
+     Documentation Coverage
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/intellectualPropertyLeakDetectionTool.html">
+     Intellectual Property Leak Detection Tool
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/maintainersSetup.html">
+     Maintainers Setup
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/participationEaseOfRamp.html">
+     Participation Ease Of Ramp
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/preProductionEarlyAccess.html">
+     Pre Production Early Access
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/project-documenation.html">
+     Project Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/projectInternalDocumentation.html">
+     Project Internal Documentation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/qualityAssuranceCI.html">
+     Quality Assurance CI
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/releaseCadence.html">
+     Release Cadence
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/requirements.html">
+     Requirements
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/roadmap.html">
+     Roadmap
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/securityDevelopmentLifecycle.html">
+     Security Development Lifecycle
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/softwareLegalCompliance.html">
+     Software Legal Compliance
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/sourceDistributionLanguageSpecificPackages.html">
+     Source Distribution Language Specific Packages
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/supportContributingUsers.html">
+     Support Contributing Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/supportReuseUsers.html">
+     Support Reuse Users
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/testPlanAndInfrastructure.html">
+     Test Plan And Infrastructure
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../tier-definitions/versioning.html">
+     Versioning
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Templates
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../template_files/index_tmpl.html">
+   Template Files
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../template_files/CODEOWNERS.html">
+     CODEOWNERS
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../template_files/CODEPLAN.html">
+     CODEPLAN
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../template_files/CODEREVIEW.html">
+     CODEREVIEW
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../template_files/CODE_OF_CONDUCT.html">
+     Contributor Covenant Code of Conduct
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../template_files/CONTRIBUTING.html">
+     CONTRIBUTING
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../template_files/README.html">
+     README
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../template_files/SECURITY.html">
+     Security Policy
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../template_files/SUPPORT.html">
+     Support
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Git BKMs
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../git_bkms/index_git.html">
+   Git BKMs
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../git_bkms/git_overview.html">
+     Git Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../git_bkms/git_install.html">
+     Install Git
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../git_bkms/github_config.html">
+     GitHub Configuration
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../git_bkms/github_fork_clone.html">
+     GitHub Fork and Clone
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../git_bkms/github_workflows.html">
+     GitHub Workflows
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../git_bkms/git_rebase.html">
+     Git Rebase
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../git_bkms/codeowners_help.html">
+     Add CODEOWNERS
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Portal
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../portal/index_use.html">
+   Portal Use Cases
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../portal/Use%20Cases.html">
+     InnerSource Portal Use Cases
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Community
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../../../contributing/index_contrib.html">
+   Community
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../contributing/docs.html">
+     How to Contribute Docs
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../../../contributing/ops.html">
+     Operations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../../../CONTRIBUTING.html">
+   How to Submit Contributions
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../../_sources/venv/sphinx-book-theme-0.3.3/docs/reference/special-theme-elements.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#full-width-elements">
+   Full-width elements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-cells">
+     Code cells
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown">
+     Markdown
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mathematics">
+     Mathematics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#margins">
+   Margins
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment">
+     Margin under lower level shouldn’t have different left-alignment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#margins-with-toggle-buttons">
+     Margins with toggle buttons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#margins-with-full-width-content">
+     Margins with full-width content
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-content-after-the-margin-content">
+     More content after the margin content
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figures-with-margin-captions">
+     Figures with margin captions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sidenotes-and-marginnotes">
+   Sidenotes and marginnotes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nested-admonitions">
+   Nested admonitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-markdown-elements">
+   MyST Markdown elements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#table-alignment">
+     Table alignment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-table-width">
+     List table width
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Theme-specific elements</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#full-width-elements">
+   Full-width elements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#code-cells">
+     Code cells
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#markdown">
+     Markdown
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mathematics">
+     Mathematics
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#margins">
+   Margins
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment">
+     Margin under lower level shouldn’t have different left-alignment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#margins-with-toggle-buttons">
+     Margins with toggle buttons
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#margins-with-full-width-content">
+     Margins with full-width content
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#more-content-after-the-margin-content">
+     More content after the margin content
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#figures-with-margin-captions">
+     Figures with margin captions
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#sidenotes-and-marginnotes">
+   Sidenotes and marginnotes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nested-admonitions">
+   Nested admonitions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#myst-markdown-elements">
+   MyST Markdown elements
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#table-alignment">
+     Table alignment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#list-table-width">
+     List table width
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="theme-specific-elements">
+<h1>Theme-specific elements<a class="headerlink" href="#theme-specific-elements" title="Permalink to this headline">#</a></h1>
+<p>This page contains a number of reference elements to see how they look in this
+theme. The information is not meant to be easy to read or understand, just browse
+through and see how things look!</p>
+<section id="full-width-elements">
+<h2>Full-width elements<a class="headerlink" href="#full-width-elements" title="Permalink to this headline">#</a></h2>
+<section id="code-cells">
+<h3>Code cells<a class="headerlink" href="#code-cells" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="markdown">
+<h3>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">#</a></h3>
+<div class="full-width docutils container">
+<p>This is some markdown that should be shown at full width.</p>
+<p>Here’s the Jupyter logo:</p>
+<p><img alt="" src="https://raw.githubusercontent.com/adebar/awesome-jupyter/master/logo.png" /></p>
+<p>:::{note}
+Here’s a full-width admonition!
+:::</p>
+</div>
+</section>
+<section id="mathematics">
+<h3>Mathematics<a class="headerlink" href="#mathematics" title="Permalink to this headline">#</a></h3>
+<p>\begin{equation}
+\int_0^\infty \frac{x^3}{e^x-1},dx = \frac{\pi^4}{15}
+\end{equation}</p>
+<p>$$
+\int_0^\infty \frac{x^3}{e^x-1},dx = \frac{\pi^4}{15}
+$$</p>
+<div class="math notranslate nohighlight" id="equation-my-label">
+<span class="eqno">(1)<a class="headerlink" href="#equation-my-label" title="Permalink to this equation">#</a></span>\[w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\]</div>
+<p>Link to above: <a class="reference internal" href="#equation-my-label">(1)</a></p>
+<div class="math notranslate nohighlight" id="equation-my-label2">
+<span class="eqno">(2)<a class="headerlink" href="#equation-my-label2" title="Permalink to this equation">#</a></span>\[\begin{split}w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\
+w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1} \\
+w_{t+1} = (1 + r_{t+1}) s(w_t) + y_{t+1}\end{split}\]</div>
+<p>Link to above: <a class="reference internal" href="#equation-my-label2">(2)</a></p>
+<ul class="simple">
+<li><p>$$
+\mathcal{O}(f) = { g |
+\exists c &gt; 0,
+\exists n_0 \in \mathbb{N}_0,
+\forall n \geq n_0
+:
+[g(n) \leq c \cdot f(n)]}$$</p></li>
+</ul>
+<p>A really long math equation</p>
+<p>$$
+\begin{align}
+\mathrm{SetConv} \left( {(x^{c},y^{c})}<em>{c=1}^{C} \right)(x) \left( {(x^{c},y^{c})}</em>{c=1}^{C} \right)(x) \left( {(x^{c},y^{c})}<em>{c=1}^{C} \right)(x)
+&amp;= \sum</em>{c=1}^{C} y^{(c)} w_{\theta} \left( x - x^{(c)} \right)  \sum_{c=1}^{C} y^{(c)} w_{\theta} \left( x - x^{(c)} \right) \sum_{c=1}^{C} y^{(c)} w_{\theta} \left( x - x^{(c)} \right)\
+&amp;= \left( y^{(c’)} w_{\theta} \left( x - x^{(c’)} \right) \right) + \sum_{c \neq c’}  y^{(c)} w_{\theta} \left( x - x^{(c)} \right) \
+&amp;= 0 + \sum_{c \neq c’}  y^{(c)} w_{\theta} \left( x - x^{(c)} \right)
+\end{align}
+$$</p>
+<p>Full width equations work</p>
+<div class="full-width math notranslate nohighlight">
+\[\begin{split}\begin{align}
+\mathrm{SetConv} \left( \{(x^{c},y^{c})\}_{c=1}^{C} \right)(x) \left( \{(x^{c},y^{c})\}_{c=1}^{C} \right)(x) \left( \{(x^{c},y^{c})\}_{c=1}^{C} \right)(x)
+&amp;= \sum_{c=1}^{C} y^{(c)} w_{\theta} \left( x - x^{(c)} \right)  \sum_{c=1}^{C} y^{(c)} w_{\theta} \left( x - x^{(c)} \right) \sum_{c=1}^{C} y^{(c)} w_{\theta} \left( x - x^{(c)} \right)\\
+&amp;= \left( y^{(c')} w_{\theta} \left( x - x^{(c')} \right) \right) + \sum_{c \neq c'}  y^{(c)} w_{\theta} \left( x - x^{(c)} \right) \\
+&amp;= 0 + \sum_{c \neq c'}  y^{(c)} w_{\theta} \left( x - x^{(c)} \right)
+\end{align}\end{split}\]</div>
+</section>
+</section>
+<section id="margins">
+<h2>Margins<a class="headerlink" href="#margins" title="Permalink to this headline">#</a></h2>
+<p>Margin content can include all kinds of things, such as code blocks:</p>
+<aside class="margin sidebar">
+<p class="sidebar-title">Code blocks in margins</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is some python&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</aside>
+<p>as well as admonitions and images:</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Notes in margins</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Wow, a note with an image in a margin!
+<img alt="" src="../../../../_images/cool.jpg" /></p>
+</div>
+</aside>
+<section id="margin-under-lower-level-shouldn-t-have-different-left-alignment">
+<h3>Margin under lower level shouldn’t have different left-alignment<a class="headerlink" href="#margin-under-lower-level-shouldn-t-have-different-left-alignment" title="Permalink to this headline">#</a></h3>
+<aside class="margin sidebar">
+<p class="sidebar-title"><strong>Notes in margins</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Wow, a note with an image in a margin!
+<img alt="" src="../../../../_images/cool.jpg" /></p>
+</div>
+</aside>
+</section>
+<section id="margins-with-toggle-buttons">
+<h3>Margins with toggle buttons<a class="headerlink" href="#margins-with-toggle-buttons" title="Permalink to this headline">#</a></h3>
+<p>Here’s some margin content, let’s see how it interacts w/ the toggle button</p>
+<aside class="margin sidebar">
+<p class="sidebar-title">My margin</p>
+<p>Here’s my margin content</p>
+</aside>
+<p>Here’s a toggleable note:</p>
+<div class="toggle admonition note">
+<p class="admonition-title">Note</p>
+<p>My note</p>
+</div>
+</section>
+<section id="margins-with-full-width-content">
+<h3>Margins with full-width content<a class="headerlink" href="#margins-with-full-width-content" title="Permalink to this headline">#</a></h3>
+<div class="tag-fullwidth admonition note">
+<p class="admonition-title">Note</p>
+<p>This is my test</p>
+</div>
+<p>Let’s see what happens</p>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Markdown cell with code in margin</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">def</span> <span class="nf">aplusb</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></div>
+</div>
+<p>and now r</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">&lt;-</span> <span class="m">2</span>
+<span class="n">b</span> <span class="o">&lt;-</span> <span class="m">4</span>
+<span class="n">a</span><span class="o">+</span><span class="n">b</span>
+</pre></div>
+</div>
+<p>how does it look?</p>
+<p>Markdown cell with images in sidebar</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/883px-Jupyter_logo.svg.png" style="max-width:200px" />
+</aside>
+</section>
+<section id="more-content-after-the-margin-content">
+<h3>More content after the margin content<a class="headerlink" href="#more-content-after-the-margin-content" title="Permalink to this headline">#</a></h3>
+<p>This is extra content after the margins to see if cells overlap and such.
+Also to make sure you can still interact with the margin content.
+This is extra content after the margins to see if cells overlap and such.
+Also to make sure you can still interact with the margin content.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">2</span>
+</pre></div>
+</div>
+<p>This is extra content after the margins to see if cells overlap and such.
+Also to make sure you can still interact with the margin content.
+This is extra content after the margins to see if cells overlap and such.
+Also to make sure you can still interact with the margin content.
+This is extra content after the margins to see if cells overlap and such.
+Also to make sure you can still interact with the margin content.</p>
+</section>
+<section id="figures-with-margin-captions">
+<h3>Figures with margin captions<a class="headerlink" href="#figures-with-margin-captions" title="Permalink to this headline">#</a></h3>
+<p>The <code class="docutils literal notranslate"><span class="pre">margin-caption</span></code> class should cause a figure’s caption to pop out to the right.</p>
+<figure class="margin-caption align-default" id="reference-margin-fig">
+<a class="reference internal image-reference" href="../../../../_images/cool.jpg"><img alt="My figure text" src="../../../../_images/cool.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">And here is my figure caption, if you look to the left, you can see that COOL is in big red letters. But you probably already noticed that, really I am just taking up space to see how the margin caption looks like when it is really long :-).</span><a class="headerlink" href="#reference-margin-fig" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>:::{note}
+:class: margin
+This note should not overlap with the margin caption!
+:::</p>
+<p>Entire figures in the margin:</p>
+<figure class="margin align-default" id="id7">
+<a class="reference internal image-reference" href="../../../../_images/cool.jpg"><img alt="My figure text" src="../../../../_images/cool.jpg" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-text">This figure should be entirely in the margin.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="sidenotes-and-marginnotes">
+<h2>Sidenotes and marginnotes<a class="headerlink" href="#sidenotes-and-marginnotes" title="Permalink to this headline">#</a></h2>
+<p>Here’s a sentence<a class="footnote-reference brackets" href="#sn1" id="id1">1</a> with multiple <a class="footnote-reference brackets" href="#sn2" id="id2">2</a> sidenotes.</p>
+<p>Here’s a sentence<a class="footnote-reference brackets" href="#mn1" id="id3">3</a> with multiple marginnotes<a class="footnote-reference brackets" href="#mn2" id="id4">4</a>.</p>
+<p>Sidenotes inside of admonitions should behave the same:</p>
+<p>:::{note}
+An admonition with a sidenote defined in the admonition<a class="footnote-reference brackets" href="#snam1" id="id5">5</a> and another defined outside of the admonition <a class="footnote-reference brackets" href="#snam2" id="id6">6</a>.</p>
+<p>:::</p>
+</section>
+<section id="nested-admonitions">
+<h2>Nested admonitions<a class="headerlink" href="#nested-admonitions" title="Permalink to this headline">#</a></h2>
+<p>These aren’t theme-specific, but we still show below to make sure they work.</p>
+<p>::::{note} Here’s a note!
+:::{tip} And a tip!
+:::
+::::</p>
+</section>
+<section id="myst-markdown-elements">
+<h2>MyST Markdown elements<a class="headerlink" href="#myst-markdown-elements" title="Permalink to this headline">#</a></h2>
+<p>Here are a few design elements to show off MyST Markdown.</p>
+<section id="table-alignment">
+<h3>Table alignment<a class="headerlink" href="#table-alignment" title="Permalink to this headline">#</a></h3>
+<p>To ensure that markdown alignment is rendered properly.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Default Header</p></th>
+<th class="text-left head"><p>Left Align</p></th>
+<th class="text-right head"><p>Right Align</p></th>
+<th class="text-center head"><p>Center Align</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Cell 1</p></td>
+<td class="text-left"><p>Cell 2</p></td>
+<td class="text-right"><p>Cell 3</p></td>
+<td class="text-center"><p>Cell 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Cell 1</p></td>
+<td class="text-left"><p>Cell 2</p></td>
+<td class="text-right"><p>Cell 3</p></td>
+<td class="text-center"><p>Cell 4</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="list-table-width">
+<h3>List table width<a class="headerlink" href="#list-table-width" title="Permalink to this headline">#</a></h3>
+<p>Testing list tables take width as expected.</p>
+<table class="table">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>a</p></td>
+<td><p>b</p></td>
+</tr>
+<tr class="row-even"><td><p>c</p></td>
+<td><p>d</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="sn1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Test sidenote 1.</p>
+</dd>
+<dt class="label" id="sn2"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p>Test sidenote 2.</p>
+</dd>
+<dt class="label" id="mn1"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p>{-} Test marginnote 1.</p>
+</dd>
+<dt class="label" id="mn2"><span class="brackets"><a class="fn-backref" href="#id4">4</a></span></dt>
+<dd><p>{-} Test marginnote 2.</p>
+</dd>
+<dt class="label" id="snam1"><span class="brackets"><a class="fn-backref" href="#id5">5</a></span></dt>
+<dd><p>Sidenote defined in the admonition.</p>
+</dd>
+<dt class="label" id="snam2"><span class="brackets"><a class="fn-backref" href="#id6">6</a></span></dt>
+<dd><p>Sidenote defined outside the admonition.</p>
+</dd>
+</dl>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Intel<br/>
+  
+      &copy; Copyright Published 2022-10-06 22:52 by Intel.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
