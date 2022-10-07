@@ -5,7 +5,7 @@ Documentation Guidelines
 
 The InnerSource Documentation project content is written using the `reStructuredText`_ markup
 language (``.rst`` file extension) with Sphinx extensions, and processed
-using Sphinx to create a formatted standalone website.  Developers can
+using Sphinx to create a formatted standalone website. Developers can
 view this content either in its raw form as ``.rst`` markup files, or (with
 Sphinx installed) they can build the documentation using the Makefile
 (on Linux systems) to
@@ -28,9 +28,9 @@ Headings
 ********
 
 Document sections are identified through their heading titles,
-indicated with an underline below the title text.  (While reST allows
+indicated with an underline below the title text. (While reST allows
 use of both and overline and matching underline to indicate a heading,
-we only use an underline indicator for headings.)  For consistency in
+we only use an underline indicator for headings.) For consistency in
 our documentation, we define the order of characters used to indicated
 the nested table of contents levels:
 
@@ -81,7 +81,7 @@ Some common reST inline markup samples:
 * two backquotes: ````text```` for ``inline code`` samples.
 
 ReST rules for inline markup try to be forgiving to account for common
-cases of using these marks.  For example using an asterisk to indicate
+cases of using these marks. For example using an asterisk to indicate
 multiplication, such as ``2 * (x + y)`` will not be interpreted as an
 unterminated italics section. For inline markup, the characters between
 the beginning and ending characters must not start or end with a space,
@@ -200,7 +200,7 @@ To enable easy cross-page linking within the site, each file should have
 a reference label before its title so it can
 be referenced from another file. These reference labels must be unique
 across the whole site, so generic names such as "samples" should be
-avoided.  For example the top of this document's ``.rst`` file is:
+avoided. For example the top of this document's ``.rst`` file is:
 
 
 .. code-block:: rst
@@ -217,7 +217,7 @@ across multiple files, and the link text is obtained from the document
 source so if the title changes, the link text will update as well.
 
 There may be times where you'd like to change the link text that's shown
-in the generated document.  In this case, you can add specify alternate
+in the generated document. In this case, you can add specify alternate
 text using ``:ref:`alternate text <doc_guidelines>``` (renders as
 :ref:`alternate text <doc_guidelines>`).
 
@@ -262,7 +262,7 @@ This would be rendered as:
 You can specify other languages for the ``code-block`` directive,
 including ``c``, ``python``, and ``rst``, and also ``console``,
 ``bash``, or ``shell``. If you want no syntax highlighting, use the
-language ``none``,  for example:
+language ``none``, for example:
 
 .. code-block:: rest
 
@@ -280,18 +280,18 @@ Would display as:
 
 There's a shorthand for writing code blocks too: end the introductory
 paragraph with a double colon (``::``) and indent the code block content
-by three spaces.  On output, only one colon will be shown.  The
+by three spaces. On output, only one colon will be shown. The
 highlighting package makes a best guess at the type of content in the
-block and highlighting purposes.  This can lead to some odd
+block and highlighting purposes. This can lead to some odd
 highlighting in the generated output.
 
 Tabs, spaces, and indenting
 ***************************
 
 Indenting is significant in reST file content, and using spaces is
-preferred.  Extra indenting can (unintentionally) change the way content
-is rendered too.  For lists and directives, indent the content text to
-the first non-white space in the preceding line.  For example:
+preferred. Extra indenting can (unintentionally) change the way content
+is rendered too. For lists and directives, indent the content text to
+the first non-white space in the preceding line. For example:
 
 .. code-block:: rest
 
@@ -326,8 +326,7 @@ Create the Python virtual environment:
 
    python -m venv .venv
 
-Activate the virtual environment. This and the following steps must be done every
-time:
+Activate the virtual environment. This and the following steps must be done every time:
 
 .. code-block:: bash
 

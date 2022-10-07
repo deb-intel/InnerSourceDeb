@@ -15,7 +15,7 @@ InnerSource Documentation
 
       **Community**
       ^^^^^^^^^^^^^^
-      Join our community and help improve our docs. View our :ref:`CONTRIBUTING`.
+      Join our community and help improve our docs. Use our :ref:`CONTRIBUTING`.
 
    .. grid-item-card:: 
       :img-background: images/background.png
@@ -24,7 +24,7 @@ InnerSource Documentation
 
       **Guidelines**
       ^^^^^^^^^^^^^^
-      Use our :ref:`guidelines <index_guide>` to support collaboration, security, and compliance.
+      Use our :ref:`best practices <index_guide>` to support collaboration, security, and compliance.
 
    .. grid-item-card::
       :img-background: images/background.png
@@ -121,5 +121,5 @@ InnerSource Documentation
    :caption: Community
 
    CONTRIBUTING 
-   contributing/doc_guidelines
+   contributing/docs_guidelines
    
