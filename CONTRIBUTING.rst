@@ -48,8 +48,9 @@ All pull requests require review and approval from at least one member in the :f
 Coding conventions
 ******************
 
-The InnerSource Documentation project uses reStructuredText and `Sphinx Docs`_.
+The InnerSource Documentation project uses `reStructuredText`_ and `Sphinx Docs`_.
 
 
 
 .. _Sphinx Docs: https://www.sphinx-doc.org/en/master/
+.. _reStructuredText: http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html
