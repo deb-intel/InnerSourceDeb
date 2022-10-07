@@ -10,12 +10,12 @@ InnerSource Documentation
      
    .. grid-item-card::
       :img-background: images/background.png
-      :link: CONTRIBUTING.rst
+      :link: CONTRIBUTING
       :link-type: ref
 
       **Community**
       ^^^^^^^^^^^^^^
-      Join our community and help improve our docs. Use our :ref:`contribution guidelines <CONTRIBUTING.rst>`.
+      Join our community and help improve our docs. Use our :ref:`contribution guidelines <CONTRIBUTING>`.
 
    .. grid-item-card:: 
       :img-background: images/background.png
