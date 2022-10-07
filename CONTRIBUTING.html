@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>How to Submit Contributions &#8212; InnerSource 0.5.0 documentation</title>
+    <title>Contribution Guidelines &#8212; InnerSource 0.5.0 documentation</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -36,7 +36,7 @@
     <script src="_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Operations" href="contributing/ops.html" />
+    <link rel="prev" title="InnerSource Portal Use Cases" href="portal/Use%20Cases.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -471,31 +471,9 @@
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="contributing/index_contrib.html">
-   Community
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
-  <label for="toctree-checkbox-6">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="contributing/docs.html">
-     How to Contribute Docs
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="contributing/ops.html">
-     Operations
-    </a>
-   </li>
-  </ul>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   How to Submit Contributions
+   Contribution Guidelines
   </a>
  </li>
 </ul>
@@ -631,8 +609,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pull-requests">
-   Pull requests
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#set-up-git">
+   Set up Git
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contribution-workflow">
+   Contribution workflow
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -649,7 +637,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>How to Submit Contributions</h1>
+                <h1>Contribution Guidelines</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -660,8 +648,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pull-requests">
-   Pull requests
+  <a class="reference internal nav-link" href="#prerequisites">
+   Prerequisites
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#set-up-git">
+   Set up Git
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#contribution-workflow">
+   Contribution workflow
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -679,32 +677,50 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="how-to-submit-contributions">
-<span id="contributing"></span><h1>How to Submit Contributions<a class="headerlink" href="#how-to-submit-contributions" title="Permalink to this headline">#</a></h1>
-<p>We welcome contributions to the InnerSource Documentation project.
-To contribute, please use the <a class="reference internal" href="git_bkms/github_fork_clone.html#github-fork-clone"><span class="std std-ref">GitHub Fork and Clone</span></a> method.</p>
+  <section id="contribution-guidelines">
+<span id="contributing"></span><h1>Contribution Guidelines<a class="headerlink" href="#contribution-guidelines" title="Permalink to this headline">#</a></h1>
+<p>We welcome contributions to the InnerSource Documentation project.</p>
+<p>To contribute, follow the guidelines outlined in this document.</p>
+<section id="prerequisites">
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
+<li><p>Familiarize yourself with Git and GitHub. For convenience, numerous links that pertain to the InnerSource Documentation project are referenced throughout this document.</p></li>
+<li><p>Obtain an InnerSource-specific GitHub account through <a class="reference external" href="https://1source.intel.com/docs/getting_started/onboard">Intel 1Source</a>.</p></li>
+</ul>
+</section>
+<section id="set-up-git">
+<h2>Set up Git<a class="headerlink" href="#set-up-git" title="Permalink to this headline">#</a></h2>
+<ul>
+<li><p>To contribute to the InnerSource Documentation repo, use the <a class="reference internal" href="git_bkms/github_fork_clone.html#github-fork-clone"><span class="std std-ref">GitHub Fork and Clone</span></a> method. To clone the InnerSource Documentation repo, use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone git@github.com:intel-innersource/documentation.practices.innersource.git
+</pre></div>
+</div>
+</li>
 <li><p>Submit your changes directly with a <a class="reference external" href="https://github.com/intel-innersource/documentation.practices.innersource/pulls">pull
 request</a></p></li>
 <li><p>Log a bug or feedback with an
 <a class="reference external" href="https://github.com/intel-innersource/documentation.practices.innersource/issues">issue</a></p></li>
 </ul>
-<section id="pull-requests">
-<h2>Pull requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">#</a></h2>
-<p>This project uses an adaptation of <a class="reference external" href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a> influenced by the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow workflow</a>.</p>
-<p>To submit your change for review:</p>
-<p>Follow a workflow in the <a class="reference internal" href="git_bkms/github_workflows.html#github-workflows"><span class="std std-ref">GitHub Workflows</span></a></p>
+</section>
+<section id="contribution-workflow">
+<h2>Contribution workflow<a class="headerlink" href="#contribution-workflow" title="Permalink to this headline">#</a></h2>
+<p>This project uses the <a class="reference external" href="https://docs.github.com/en/get-started/quickstart/github-flow">GitHub flow</a> for project collaboration and contribution. In a GitHub flow, contributors create a branch, make changes to a file(s), create a pull request, address comments from reviews, and merge the pull request into the project.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An alternative Git branching model is the <a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">Gitflow workflow</a> that uses feature branches and multiple primary branches.</p>
+</div>
+<p>To submit your contributions for review, first follow the appropriate workflow–developer or technical–as described in <a class="reference internal" href="git_bkms/github_workflows.html#github-workflows"><span class="std std-ref">GitHub Workflows</span></a>.</p>
 <ul class="simple">
-<li><p>Make sure your code is in line with our <a class="reference external" href="#coding-conventions">coding conventions</a>.</p></li>
-<li><p>Create an issue describing the problem you are fixing, or the documentation you are adding.</p></li>
+<li><p>Make sure your code is in line with our <a class="reference external" href="#coding-conventions">coding conventions</a> and <a class="reference internal" href="contributing/docs_guidelines.html#docs-guidelines"><span class="std std-ref">Documentation Guidelines</span></a>.</p></li>
+<li><p>Create an <a class="reference external" href="https://github.com/intel-innersource/documentation.practices.innersource/issues">issue</a> describing the problem you are fixing, or the documentation you are adding.</p></li>
 <li><p>Submit a <a class="reference external" href="https://docs.github.com/en/free-pro-team&#64;latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request">pull request</a> into the dev branch. Reference the issue created in the previous step in the pull request.</p></li>
-<li><p>A PR may impact many files but should be limited to one issue to enable efficient review(s)</p></li>
+<li><p>A pull request may impact many files but should be limited to one issue to enable efficient review(s)</p></li>
 </ul>
-<p>All PRs require review and approval from at least one member in the <code class="file docutils literal notranslate"><span class="pre">CODEOWNERS.md</span></code>, located at the root directory.</p>
+<p>All pull requests require review and approval from at least one member in the <code class="file docutils literal notranslate"><span class="pre">CODEOWNERS.md</span></code>, located at the root directory.</p>
 </section>
 <section id="coding-conventions">
 <h2>Coding conventions<a class="headerlink" href="#coding-conventions" title="Permalink to this headline">#</a></h2>
-<p>The InnerSource Documentation project uses reStructuredText and <a class="reference external" href="https://www.sphinx-doc.org/en/master/index.html&gt;">Sphinx Docs</a></p>
+<p>The InnerSource Documentation project uses reStructuredText and <a class="reference external" href="https://www.sphinx-doc.org/en/master/&gt;">Sphinx Docs</a></p>
 </section>
 </section>
 
@@ -716,11 +732,11 @@ request</a></p></li>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="contributing/ops.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="portal/Use%20Cases.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Operations</p>
+            <p class="prev-next-title">InnerSource Portal Use Cases</p>
         </div>
     </a>
 </div>
@@ -732,7 +748,7 @@ request</a></p></li>
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-10-06 22:52 by Intel.<br/>
+      &copy; Copyright Published 2022-10-07 21:02 by Intel.<br/>
 </p>
         </footer>
     </div>
