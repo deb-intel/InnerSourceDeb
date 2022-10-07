@@ -140,7 +140,7 @@ File names and Commands
 
 Sphinx extends reST by supporting additional inline markup elements (called
 "roles") used to tag text with special
-meanings and allow style output formatting. (You can refer to the `Sphinx Inline Markup`_
+meanings and allow style output formatting. (Refer to the `Sphinx Inline Markup`_
 documentation for the full list).
 
 For example, there are roles for marking :file:`filenames`
@@ -326,7 +326,7 @@ Create the Python virtual environment:
 
    python -m venv .venv
 
-Activate virtual environment. This and the following steps must be done every
+Activate the virtual environment. This and the following steps must be done every
 time:
 
 .. code-block:: bash
@@ -342,27 +342,27 @@ Install build tools:
 Build and view
 ==============
 
-Use the `Makefile` to build or test documentation. 
+Use `Makefile` to build or test documentation. 
 
-#. Run command to build html.
+#. Run command to build html:
 
    .. code-block:: bash
       
       make html
 
-#. Display docs site
+#. Display the docs site:
 
    .. code-block:: console
 
       python -m http.server --directory _build/ 8080
 
-#. Clean the build directory.
+#. Clean the build directory:
 
    .. code-block:: bash
     
       make clean
 
-#. Deactivate the venv.
+#. Deactivate the venv:
 
    .. code-block:: bash 
 

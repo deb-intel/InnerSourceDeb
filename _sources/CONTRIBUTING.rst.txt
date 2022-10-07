@@ -23,9 +23,9 @@ Set up Git
      $ git clone git@github.com:intel-innersource/documentation.practices.innersource.git
 
 -  Submit your changes directly with a `pull
-   request <https://github.com/intel-innersource/documentation.practices.innersource/pulls>`__
+   request <https://github.com/intel-innersource/documentation.practices.innersource/pulls>`__.
 -  Log a bug or feedback with an
-   `issue <https://github.com/intel-innersource/documentation.practices.innersource/issues>`__
+   `issue <https://github.com/intel-innersource/documentation.practices.innersource/issues>`__.
 
 
 Contribution workflow
@@ -36,7 +36,7 @@ This project uses the `GitHub flow <https://docs.github.com/en/get-started/quick
 .. note::
    An alternative Git branching model is the `Gitflow workflow <https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow>`__ that uses feature branches and multiple primary branches. 
 
-To submit your contributions for review, first follow the appropriate workflow--developer or technical--as described in :ref:`github_workflows`.
+To submit your contributions for review, first follow the appropriate workflow--*developer* or *technical writer*--as described in :ref:`github_workflows`.
 
 -  Make sure your code is in line with our `coding conventions <#coding-conventions>`__ and :ref:`docs_guidelines`.
 -  Create an `issue <https://github.com/intel-innersource/documentation.practices.innersource/issues>`__ describing the problem you are fixing, or the documentation you are adding.
@@ -48,8 +48,8 @@ All pull requests require review and approval from at least one member in the :f
 Coding conventions
 ******************
 
-The InnerSource Documentation project uses reStructuredText and `Sphinx Docs`_
+The InnerSource Documentation project uses reStructuredText and `Sphinx Docs`_.
 
 
 
-.. _Sphinx Docs: https://www.sphinx-doc.org/en/master/>
+.. _Sphinx Docs: https://www.sphinx-doc.org/en/master/
