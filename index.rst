@@ -15,7 +15,7 @@ InnerSource Documentation
 
       **Community**
       ^^^^^^^^^^^^^^
-      Join our community and help improve our docs. Use our :ref:`CONTRIBUTING`.
+      Join our community and help improve our docs. Use our :ref:`contribution guidelines <CONTRIBUTING>`.
 
    .. grid-item-card:: 
       :img-background: images/background.png
