@@ -117,10 +117,10 @@ InnerSource Documentation
    portal/index_use
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :hidden:
    :caption: Community
 
-   contributing/index_contrib
    CONTRIBUTING 
+   doc_guidelines
    

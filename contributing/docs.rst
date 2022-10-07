@@ -3,6 +3,7 @@
 How to Contribute Docs
 ######################
 
+# This document is currently not being used. It's replacement is 
 Create virtual environment to isolate build dependencies. This step must only be
 done once.
 
