@@ -7,6 +7,15 @@ InnerSource Documentation
    :gutter: 4
    :padding: 2
 
+   .. grid-item-card::
+      :img-background: images/background.png
+      :link: innersource_overview
+      :link-type: ref
+
+      **What is InnerSource**
+      ^^^^^^^^^^^^^^^^^^^^^^^
+      
+      Learn more about InnerSource. Read our :ref:`Overview <innersource_overview>`.
      
    .. grid-item-card::
       :img-background: images/background.png
@@ -28,16 +37,6 @@ InnerSource Documentation
 
    .. grid-item-card::
       :img-background: images/background.png
-      :link: index_git
-      :link-type: ref
-
-      **Git BKMs**
-      ^^^^^^^^^^^^
-      Follow our :ref:`Git BKMs<index_git>` to set up your repository.
-
-
-   .. grid-item-card::
-      :img-background: images/background.png
       :link: index_tmpl
       :link-type: ref
 
@@ -56,16 +55,14 @@ InnerSource Documentation
 
       Understand the criteria for evaluation of :ref:`Tier Levels <index_tiers>` in your project assessment.
       
-   .. grid-item-card:: 
-      :img-background: images/background.png 
-      :link: index_use
+   .. grid-item-card::
+      :img-background: images/background.png
+      :link: index_git
       :link-type: ref
 
-      **Portal Use Cases**
-      ^^^^^^^^^^^^^^^^^^^^
-
-      Review use cases for the :ref:`InnerSource Portal App <index_use>`.
-
+      **Git BKMs**
+      ^^^^^^^^^^^^
+      Follow our :ref:`Git BKMs<index_git>` to set up your repository.
 
 
 .. toctree::
@@ -88,17 +85,17 @@ InnerSource Documentation
    :glob:
    :maxdepth: 2
    :hidden:
-   :caption: Tier Definitions
+   :caption: Templates
 
-   tier-definitions/index_tiers
+   template_files/index_tmpl
 
 .. toctree::
    :glob:
    :maxdepth: 2
    :hidden:
-   :caption: Templates
+   :caption: Tier Definitions
 
-   template_files/index_tmpl
+   tier-definitions/index_tiers
 
    
 .. toctree::
@@ -107,13 +104,6 @@ InnerSource Documentation
    :caption: Git BKMs
 
    git_bkms/index_git
-
-.. toctree::
-   :maxdepth: 2
-   :hidden:
-   :caption: Portal
-
-   portal/index_use
 
 .. toctree::
    :maxdepth: 3
