@@ -1,7 +1,7 @@
 CODEOWNERS
 ==========
 
-For additional information regarding creating CODEOWNERS files, refer to [Add a CODEOWNERS File](https://probable-fiesta-6f2be87d.pages.github.io/template_files/CODEOWNERS.html).
+For additional information regarding creating CODEOWNERS files, refer to [Add CODEOWNERS](git_bkms/CODEOWNERS.md).
 
 In the following examples, remove the sample owner names and add your own.
 
@@ -67,3 +67,7 @@ Modify the sample file paths.
     *trace.*                @member13
 
     /.github/               @member1 @admin1 @sysadmin7 @member4
+
+## Reference
+
+[Add CODEOWNERS](git_bkms/CODEOWNERS.md)
