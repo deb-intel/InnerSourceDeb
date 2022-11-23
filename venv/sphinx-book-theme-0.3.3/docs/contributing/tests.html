@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Testing infrastructure &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../../../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
@@ -702,10 +704,10 @@ title="Print to PDF"
               <div>
                 
   <section id="testing-infrastructure">
-<span id="contribute-testing"></span><h1>Testing infrastructure<a class="headerlink" href="#testing-infrastructure" title="Permalink to this headline">#</a></h1>
+<span id="contribute-testing"></span><h1>Testing infrastructure<a class="headerlink" href="#testing-infrastructure" title="Permalink to this heading">#</a></h1>
 <p>Our testing infrastructure uses pytest</p>
 <section id="run-the-tests-with-a-single-environment">
-<h2>Run the tests with a single environment<a class="headerlink" href="#run-the-tests-with-a-single-environment" title="Permalink to this headline">#</a></h2>
+<h2>Run the tests with a single environment<a class="headerlink" href="#run-the-tests-with-a-single-environment" title="Permalink to this heading">#</a></h2>
 <p>You can run the test suite with the default environment like so:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox
 </pre></div>
@@ -717,7 +719,7 @@ title="Print to PDF"
 </div>
 </section>
 <section id="list-all-test-environments">
-<h2>List all test environments<a class="headerlink" href="#list-all-test-environments" title="Permalink to this headline">#</a></h2>
+<h2>List all test environments<a class="headerlink" href="#list-all-test-environments" title="Permalink to this heading">#</a></h2>
 <p>To list all of the test environments to may choose from, run:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -a
 </pre></div>
@@ -726,7 +728,7 @@ title="Print to PDF"
 <p>See the <code class="docutils literal notranslate"><span class="pre">tox.ini</span></code> file in the repository’s root for details of all available development environments.</p>
 </section>
 <section id="supply-arguments-to-pytest">
-<h2>Supply arguments to pytest<a class="headerlink" href="#supply-arguments-to-pytest" title="Permalink to this headline">#</a></h2>
+<h2>Supply arguments to pytest<a class="headerlink" href="#supply-arguments-to-pytest" title="Permalink to this heading">#</a></h2>
 <p>To supply arguments to pytest, use <code class="docutils literal notranslate"><span class="pre">--</span></code> and pass arguments after.
 For example:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -- -x
@@ -734,7 +736,7 @@ For example:</p>
 </div>
 </section>
 <section id="re-build-an-environment-from-scratch">
-<h2>Re-build an environment from scratch<a class="headerlink" href="#re-build-an-environment-from-scratch" title="Permalink to this headline">#</a></h2>
+<h2>Re-build an environment from scratch<a class="headerlink" href="#re-build-an-environment-from-scratch" title="Permalink to this heading">#</a></h2>
 <p>By default, <code class="docutils literal notranslate"><span class="pre">tox</span></code> will only install the necessary environment <strong>once</strong>.
 If you’d like to force a re-build, use the <code class="docutils literal notranslate"><span class="pre">-r</span></code> parameter. For example:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -r -e py38-sphinx3
@@ -742,7 +744,7 @@ If you’d like to force a re-build, use the <code class="docutils literal notra
 </div>
 </section>
 <section id="test-audits-with-lighthouse">
-<h2>Test audits with lighthouse<a class="headerlink" href="#test-audits-with-lighthouse" title="Permalink to this headline">#</a></h2>
+<h2>Test audits with lighthouse<a class="headerlink" href="#test-audits-with-lighthouse" title="Permalink to this heading">#</a></h2>
 <p>This theme uses the <a class="reference external" href="https://github.com/treosh/lighthouse-ci-action"><code class="docutils literal notranslate"><span class="pre">treosh/lighthouse-ci-action</span></code></a> to run some basic audits on our performance, accessibility, etc.</p>
 <p>To preview the output of these tests:</p>
 <ul class="simple">
@@ -753,11 +755,11 @@ If you’d like to force a re-build, use the <code class="docutils literal notra
 </ul>
 </section>
 <section id="test-multiple-sphinx-versions">
-<h2>Test multiple Sphinx versions<a class="headerlink" href="#test-multiple-sphinx-versions" title="Permalink to this headline">#</a></h2>
+<h2>Test multiple Sphinx versions<a class="headerlink" href="#test-multiple-sphinx-versions" title="Permalink to this heading">#</a></h2>
 <p>This theme is tested against the latest two major versions of Sphinx.
 We try to set up our regression tests such that there are no differences between these two Sphinx versions.</p>
 <section id="unit-tests">
-<h3>Unit tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline">#</a></h3>
+<h3>Unit tests<a class="headerlink" href="#unit-tests" title="Permalink to this heading">#</a></h3>
 <p>Use the variable <code class="docutils literal notranslate"><span class="pre">sphinx_build.software_versions</span></code> to conditionally run tests based on the version of Sphinx.</p>
 <p>For example:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">sphinx_build</span><span class="o">.</span><span class="n">software_versions</span> <span class="o">==</span> <span class="s2">&quot;.sphinx3&quot;</span><span class="p">:</span>
@@ -768,7 +770,7 @@ We try to set up our regression tests such that there are no differences between
 </div>
 </section>
 <section id="regression-tests">
-<h3>Regression tests<a class="headerlink" href="#regression-tests" title="Permalink to this headline">#</a></h3>
+<h3>Regression tests<a class="headerlink" href="#regression-tests" title="Permalink to this heading">#</a></h3>
 <p>Regression tests are trickier, because updating them generally requires re-running the tests, not hand-editing code.
 This is cumbersome for maintenance because we have to run the test suite two times for each regression that is updated.
 For this reason, we have a more lightweight approach:</p>
@@ -818,7 +820,7 @@ For example:</p>
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

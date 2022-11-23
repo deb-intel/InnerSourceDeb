@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Documentation Guidelines &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -723,7 +725,7 @@ title="Print to PDF"
               <div>
                 
   <section id="documentation-guidelines">
-<span id="docs-guidelines"></span><h1>Documentation Guidelines<a class="headerlink" href="#documentation-guidelines" title="Permalink to this headline">#</a></h1>
+<span id="docs-guidelines"></span><h1>Documentation Guidelines<a class="headerlink" href="#documentation-guidelines" title="Permalink to this heading">#</a></h1>
 <p>The InnerSource Documentation project content is written using the <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html">reStructuredText</a> markup
 language (<code class="docutils literal notranslate"><span class="pre">.rst</span></code> file extension) with Sphinx extensions, and processed
 using Sphinx to create a formatted standalone website. Developers can
@@ -739,7 +741,7 @@ and about <a class="reference external" href="http://www.sphinx-doc.org/en/stabl
 Sphinx-defined directives and roles used to create the documentation
 you’re reading.</p>
 <section id="headings">
-<h2>Headings<a class="headerlink" href="#headings" title="Permalink to this headline">#</a></h2>
+<h2>Headings<a class="headerlink" href="#headings" title="Permalink to this heading">#</a></h2>
 <p>Document sections are identified through their heading titles,
 indicated with an underline below the title text. (While reST allows
 use of both and overline and matching underline to indicate a heading,
@@ -780,7 +782,7 @@ underlines to use:</p>
 </div>
 </section>
 <section id="content-highlighting">
-<h2>Content Highlighting<a class="headerlink" href="#content-highlighting" title="Permalink to this headline">#</a></h2>
+<h2>Content Highlighting<a class="headerlink" href="#content-highlighting" title="Permalink to this heading">#</a></h2>
 <p>Some common reST inline markup samples:</p>
 <ul class="simple">
 <li><p>one asterisk: <code class="docutils literal notranslate"><span class="pre">*text*</span></code> for emphasis (<em>italics</em>),</p></li>
@@ -799,7 +801,7 @@ inline markup delimiters, you can eliminate the confusion by adding a
 backslash (<code class="docutils literal notranslate"><span class="pre">\</span></code>) before it.</p>
 </section>
 <section id="lists">
-<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">#</a></h2>
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this heading">#</a></h2>
 <p>For bullet lists, place an asterisk (<code class="docutils literal notranslate"><span class="pre">*</span></code>) or hyphen (<code class="docutils literal notranslate"><span class="pre">-</span></code>) at
 the start of a paragraph and indent continuation lines with two
 spaces.</p>
@@ -838,7 +840,7 @@ a) This is a numbered list using alphabetic list headings
 </div>
 </section>
 <section id="file-names-and-commands">
-<h2>File names and Commands<a class="headerlink" href="#file-names-and-commands" title="Permalink to this headline">#</a></h2>
+<h2>File names and Commands<a class="headerlink" href="#file-names-and-commands" title="Permalink to this heading">#</a></h2>
 <p>Sphinx extends reST by supporting additional inline markup elements (called
 “roles”) used to tag text with special
 meanings and allow style output formatting. (Refer to the <a class="reference external" href="http://sphinx-doc.org/markup/inline.html#inline-markup">Sphinx Inline Markup</a>
@@ -850,7 +852,7 @@ markup (double backticks) to indicate a <code class="docutils literal notranslat
 <p>Don’t use items within a single backtick, for example <code class="docutils literal notranslate"><span class="pre">`word`</span></code>.</p>
 </section>
 <section id="internal-cross-reference-linking">
-<span id="internal-linking"></span><h2>Internal Cross-Reference Linking<a class="headerlink" href="#internal-cross-reference-linking" title="Permalink to this headline">#</a></h2>
+<span id="internal-linking"></span><h2>Internal Cross-Reference Linking<a class="headerlink" href="#internal-cross-reference-linking" title="Permalink to this heading">#</a></h2>
 <p>ReST links are only supported within the current file using the
 notation:</p>
 <div class="highlight-rest notranslate"><div class="highlight"><pre><span></span>refer to the <span class="s">`internal-linking`_</span> page
@@ -907,7 +909,7 @@ text using <code class="docutils literal notranslate"><span class="pre">:ref:`al
 <span class="xref std std-ref">alternate text</span>).</p>
 </section>
 <section id="code-and-command-examples">
-<h2>Code and Command Examples<a class="headerlink" href="#code-and-command-examples" title="Permalink to this headline">#</a></h2>
+<h2>Code and Command Examples<a class="headerlink" href="#code-and-command-examples" title="Permalink to this heading">#</a></h2>
 <p>Use the reST <code class="docutils literal notranslate"><span class="pre">code-block</span></code> directive to create a highlighted block of
 fixed-width text, typically used for showing formatted code or console
 commands and output.  Smart syntax highlighting is also supported (using the
@@ -964,7 +966,7 @@ block and highlighting purposes. This can lead to some odd
 highlighting in the generated output.</p>
 </section>
 <section id="tabs-spaces-and-indenting">
-<h2>Tabs, spaces, and indenting<a class="headerlink" href="#tabs-spaces-and-indenting" title="Permalink to this headline">#</a></h2>
+<h2>Tabs, spaces, and indenting<a class="headerlink" href="#tabs-spaces-and-indenting" title="Permalink to this heading">#</a></h2>
 <p>Indenting is significant in reST file content, and using spaces is
 preferred. Extra indenting can (unintentionally) change the way content
 is rendered too. For lists and directives, indent the content text to
@@ -986,11 +988,11 @@ it easier for reviewing in GitHub. Long lines because of URL references
 are an allowed exception.</p>
 </section>
 <section id="documentation-generation">
-<h2>Documentation Generation<a class="headerlink" href="#documentation-generation" title="Permalink to this headline">#</a></h2>
+<h2>Documentation Generation<a class="headerlink" href="#documentation-generation" title="Permalink to this heading">#</a></h2>
 <p>Follow the instructions mentioned in the <a class="reference internal" href="../CONTRIBUTING.html#contributing"><span class="std std-ref">Contribution Guidelines</span></a> for setting up a repo and contributing to the InnerSource Documentation project.</p>
 <p>To build or test your documentation updates, do the following:</p>
 <section id="set-up-a-virtual-environment">
-<h3>Set up a virtual environment<a class="headerlink" href="#set-up-a-virtual-environment" title="Permalink to this headline">#</a></h3>
+<h3>Set up a virtual environment<a class="headerlink" href="#set-up-a-virtual-environment" title="Permalink to this heading">#</a></h3>
 <p>Create the Python virtual environment:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m venv .venv</span>
 </pre></div>
@@ -1005,7 +1007,7 @@ are an allowed exception.</p>
 </div>
 </section>
 <section id="build-and-view">
-<h3>Build and view<a class="headerlink" href="#build-and-view" title="Permalink to this headline">#</a></h3>
+<h3>Build and view<a class="headerlink" href="#build-and-view" title="Permalink to this heading">#</a></h3>
 <p>Use <cite>Makefile</cite> to build or test documentation.</p>
 <ol class="arabic">
 <li><p>Run command to build html:</p>
@@ -1057,7 +1059,7 @@ are an allowed exception.</p>
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

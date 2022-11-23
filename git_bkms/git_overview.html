@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Git Overview &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -794,17 +796,17 @@ title="Print to PDF"
               <div>
                 
   <section id="git-overview">
-<span id="id1"></span><h1>Git Overview<a class="headerlink" href="#git-overview" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Git Overview<a class="headerlink" href="#git-overview" title="Permalink to this heading">#</a></h1>
 <p>Git is an open source version control system with automated tracking and support for branch management and workflows. This page gives a descriptive overview of how Git works.</p>
-<div class="contents local topic" id="contents">
+<nav class="contents local" id="contents">
 <ul class="simple">
 <li><p><a class="reference internal" href="#prerequisites" id="id7">Prerequisites</a></p></li>
 <li><p><a class="reference internal" href="#git-repository-overview" id="id8">Git Repository Overview</a></p></li>
 <li><p><a class="reference internal" href="#git-file-lifecycle" id="id9">Git File Lifecycle</a></p></li>
 </ul>
-</div>
+</nav>
 <section id="prerequisites">
-<h2><a class="toc-backref" href="#id7">Prerequisites</a><a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Prerequisites</a><a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p><a class="reference internal" href="git_install.html#git-install"><span class="std std-ref">Install Git</span></a></p></li>
 </ul>
@@ -815,7 +817,7 @@ See <a class="reference internal" href="github_fork_clone.html#github-fork-clone
 <li><p>Initialize an existing directory (and push to a repository)</p></li>
 </ul>
 <section id="initialize-directory">
-<h3>Initialize directory<a class="headerlink" href="#initialize-directory" title="Permalink to this headline">#</a></h3>
+<h3>Initialize directory<a class="headerlink" href="#initialize-directory" title="Permalink to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Change directory into where you want Git version control.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> &lt;my-directory&gt;
@@ -830,12 +832,12 @@ See <a class="reference internal" href="github_fork_clone.html#github-fork-clone
 </ol>
 </section>
 <section id="learn-more">
-<h3>Learn more<a class="headerlink" href="#learn-more" title="Permalink to this headline">#</a></h3>
+<h3>Learn more<a class="headerlink" href="#learn-more" title="Permalink to this heading">#</a></h3>
 <p>Learn more about <a class="reference internal" href="github_config.html#github-config"><span class="std std-ref">basic Git configuration</span></a>.</p>
 </section>
 </section>
 <section id="git-repository-overview">
-<h2><a class="toc-backref" href="#id8">Git Repository Overview</a><a class="headerlink" href="#git-repository-overview" title="Permalink to this headline">#</a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Git Repository Overview</a><a class="headerlink" href="#git-repository-overview" title="Permalink to this heading">#</a></h2>
 <figure class="align-default" id="id5">
 <img alt="Git Repository Overview" src="../_images/git-overview-basic.png" />
 <figcaption>
@@ -843,7 +845,7 @@ See <a class="reference internal" href="github_fork_clone.html#github-fork-clone
 </figcaption>
 </figure>
 <section id="working-directory">
-<h3>Working Directory<a class="headerlink" href="#working-directory" title="Permalink to this headline">#</a></h3>
+<h3>Working Directory<a class="headerlink" href="#working-directory" title="Permalink to this heading">#</a></h3>
 <p>This state represents a snapshot of the latest changes merged into the default branch in the <a class="reference internal" href="#local-repository">Local repository</a>. By default, tracking is applied.</p>
 <p>After a directory is initialized, Git adds a hidden <cite>.git</cite> directory with  sub-directories and configuration files. This hidden directory contains a lot of plumbing and mechanics. For practical purposes, we focus on the <cite>config</cite> file. For more details, see <a class="reference external" href="https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain#ch10-git-internals">Git Internals</a>.</p>
 <p>Think of the <code class="file docutils literal notranslate"><span class="pre">config</span></code> file like a packing slip, or manifest, which accompanies a package and describes its contents. When you run special <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span></code> commands, the <code class="file docutils literal notranslate"><span class="pre">config</span></code> file is modified. Some items this file records:</p>
@@ -854,8 +856,8 @@ See <a class="reference internal" href="github_fork_clone.html#github-fork-clone
 </ul>
 <p>To configure items in this file, see instructions in <a class="reference internal" href="github_config.html#github-config"><span class="std std-ref">GitHub Configuration</span></a>.</p>
 <section id="key-commands">
-<h4>Key Commands<a class="headerlink" href="#key-commands" title="Permalink to this headline">#</a></h4>
-<table class="colwidths-auto table">
+<h4>Key Commands<a class="headerlink" href="#key-commands" title="Permalink to this heading">#</a></h4>
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
 <th class="head"><p>Description</p></th>
@@ -873,7 +875,7 @@ See <a class="reference internal" href="github_fork_clone.html#github-fork-clone
 </section>
 </section>
 <section id="staging-area">
-<h3>Staging area<a class="headerlink" href="#staging-area" title="Permalink to this headline">#</a></h3>
+<h3>Staging area<a class="headerlink" href="#staging-area" title="Permalink to this heading">#</a></h3>
 <p>This intermediary state can be helpful while you develop and decide what you want or don't want before you commit. When you start modifying files, they are “not staged for commit.” You can:</p>
 <ul class="simple">
 <li><p>Stage files to be committed</p></li>
@@ -882,8 +884,8 @@ See <a class="reference internal" href="github_fork_clone.html#github-fork-clone
 <p>Think of the <em>staging area</em> as a step in a workflow. See <a class="reference internal" href="#git-file-lifecycle">Git File Lifecycle</a>.</p>
 <p>Remember that <cite>.git/</cite> hidden directory? Git stores <cite>staging</cite> information in an <code class="file docutils literal notranslate"><span class="pre">.git/index</span></code> file, inside this hidden directory.</p>
 <section id="id2">
-<h4>Key Commands<a class="headerlink" href="#id2" title="Permalink to this headline">#</a></h4>
-<table class="colwidths-auto table">
+<h4>Key Commands<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
 <th class="head"><p>Description</p></th>
@@ -901,7 +903,7 @@ See <a class="reference internal" href="github_fork_clone.html#github-fork-clone
 </section>
 </section>
 <section id="local-repository">
-<h3>Local repository<a class="headerlink" href="#local-repository" title="Permalink to this headline">#</a></h3>
+<h3>Local repository<a class="headerlink" href="#local-repository" title="Permalink to this heading">#</a></h3>
 <p>A local repository maintains a fluid state in relation to a remote repository.
 Your local repository requires maintenance. In your local repository, you can:</p>
 <ul class="simple">
@@ -913,8 +915,8 @@ Your local repository requires maintenance. In your local repository, you can:</
 </ul>
 <p>A critical relationship exists between your local repository and remote repositories. A <strong>Contributor Guide</strong>, in each Git repository, should define this relationship in a workflow.</p>
 <section id="id3">
-<h4>Key Commands<a class="headerlink" href="#id3" title="Permalink to this headline">#</a></h4>
-<table class="colwidths-auto table">
+<h4>Key Commands<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h4>
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
 <th class="head"><p>Description</p></th>
@@ -929,12 +931,12 @@ Your local repository requires maintenance. In your local repository, you can:</
 </section>
 </section>
 <section id="remote-repository">
-<h3>Remote repository<a class="headerlink" href="#remote-repository" title="Permalink to this headline">#</a></h3>
+<h3>Remote repository<a class="headerlink" href="#remote-repository" title="Permalink to this heading">#</a></h3>
 <p>A <cite>remote</cite> maintains a fluid state that may be managed by one or more people, contributor guidelines, and supporting processes (e.g., CI/CD).</p>
 <p>A <cite>remote</cite> is a placeholder (or reference) that stands for a website URL. When you perform a Git action on a remote, you interact with a URL.</p>
 <p>Consider two common examples of <cite>origin</cite> below.</p>
 <section id="clone">
-<h4>Clone<a class="headerlink" href="#clone" title="Permalink to this headline">#</a></h4>
+<h4>Clone<a class="headerlink" href="#clone" title="Permalink to this heading">#</a></h4>
 <p>When you simply <cite>clone</cite> a Git repository, you establish a <em>two-way</em> relationship. You receive the remote, <cite>origin</cite>, for free. Its <cite>namespace</cite> reflects the root-level repository, found in the website URL. For example, run commands in a test directory:</p>
 <ul class="simple">
 <li><p><strong class="command">git clone git&#64;github.com:intel-innersource/documentation.practices.innersource.git</strong>.</p></li>
@@ -943,7 +945,7 @@ Your local repository requires maintenance. In your local repository, you can:</
 <p>In this example, the default namespace for origin is “intel-innersource”. It appears after <cite>git&#64;github.com</cite> like so: “<a class="reference external" href="mailto:git&#37;&#52;&#48;github&#46;com">git<span>&#64;</span>github<span>&#46;</span>com</a>:intel-innersource…”</p>
 </section>
 <section id="fork-and-clone">
-<h4>Fork-and-Clone<a class="headerlink" href="#fork-and-clone" title="Permalink to this headline">#</a></h4>
+<h4>Fork-and-Clone<a class="headerlink" href="#fork-and-clone" title="Permalink to this heading">#</a></h4>
 <p>When you <cite>fork-and-clone</cite> a Git repository, you establish a <em>triangular</em> relationship between remotes. Run commands in a test directory.</p>
 <ul class="simple">
 <li><p>Follow <a class="reference internal" href="github_fork_clone.html#fork-and-clone-start"><span class="std std-ref">Fork and Clone Instruction</span></a>, creating remotes <cite>origin</cite> and <cite>upstream</cite></p></li>
@@ -954,8 +956,8 @@ Your local repository requires maintenance. In your local repository, you can:</
 <p>How you configure remotes can differ, depending on the Git workflow.</p>
 </section>
 <section id="id4">
-<h4>Key Commands<a class="headerlink" href="#id4" title="Permalink to this headline">#</a></h4>
-<table class="colwidths-auto table">
+<h4>Key Commands<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h4>
+<table class="table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
 <th class="head"><p>Description</p></th>
@@ -971,7 +973,7 @@ Your local repository requires maintenance. In your local repository, you can:</
 </section>
 </section>
 <section id="git-file-lifecycle">
-<h2><a class="toc-backref" href="#id9">Git File Lifecycle</a><a class="headerlink" href="#git-file-lifecycle" title="Permalink to this headline">#</a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Git File Lifecycle</a><a class="headerlink" href="#git-file-lifecycle" title="Permalink to this heading">#</a></h2>
 <figure class="align-default" id="id6">
 <img alt="Git File Lifecycle" src="../_images/git-file-lifecyle.png" />
 <figcaption>
@@ -1027,7 +1029,7 @@ Consider the above three bullets as the minimum steps to keep the working tree c
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

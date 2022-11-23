@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Project Documentation &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -684,7 +686,7 @@ title="Print to PDF"
               <div>
                 
   <section id="project-documentation">
-<span id="id1"></span><h1>Project Documentation<a class="headerlink" href="#project-documentation" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Project Documentation<a class="headerlink" href="#project-documentation" title="Permalink to this heading">#</a></h1>
 <p>Project documentation in software engineering is the umbrella term that encompasses written
 documents and other materials that cover usage guidelines, software design, API reference,
 development process, etc.</p>
@@ -703,13 +705,13 @@ guides, release notes, etc.</p>
 <p><strong>System documentation</strong> covers software architecture, design principles, code organization,
 requirements, test plans, internal API reference, etc.</p>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
 <p>There are no prerequisites to start project documentation. The best practice is to seed the
 project documentation with a README file as soon as the source code repository is created and
 then evolve the documentation as the software product and processes mature.</p>
 </section>
 <section id="process">
-<h2>Process<a class="headerlink" href="#process" title="Permalink to this headline">#</a></h2>
+<h2>Process<a class="headerlink" href="#process" title="Permalink to this heading">#</a></h2>
 <p>Documentation should be treated as code:</p>
 <ul class="simple">
 <li><p>Have internal policies or rules to be followed</p></li>
@@ -722,7 +724,7 @@ then evolve the documentation as the software product and processes mature.</p>
 </ul>
 </section>
 <section id="bkms">
-<h2>BKMs<a class="headerlink" href="#bkms" title="Permalink to this headline">#</a></h2>
+<h2>BKMs<a class="headerlink" href="#bkms" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>README and CONTRIBUTING files in the root of a source code repository should be the entry for
 project documentation. This ensures documentation discoverability and enables a self-service
@@ -736,12 +738,12 @@ discussions will be kept in GitHub for future reference.</p></li>
 </ul>
 </section>
 <section id="tier-definitions">
-<h2>Tier Definitions<a class="headerlink" href="#tier-definitions" title="Permalink to this headline">#</a></h2>
+<h2>Tier Definitions<a class="headerlink" href="#tier-definitions" title="Permalink to this heading">#</a></h2>
 <p>Innersource Readiness assesses exposed interface documentation separately from the rest of the
 project documentation, since documentation coverage for such things as API reference can be
 easily measured and tracked.</p>
 <section id="exposed-interface-documentation">
-<h3>Exposed Interface Documentation<a class="headerlink" href="#exposed-interface-documentation" title="Permalink to this headline">#</a></h3>
+<h3>Exposed Interface Documentation<a class="headerlink" href="#exposed-interface-documentation" title="Permalink to this heading">#</a></h3>
 <ul id="tier-exposed-interface-docs-start">
 <li><p><strong>Tier 5</strong>: Automated check verifies exposed interface coverage.</p></li>
 <li><p><strong>Tier 4</strong>: At least 50% applicable exposed interface coverage (ex: Public API for Binary Reuse,
@@ -757,7 +759,7 @@ using Javadoc, Doxygen, Swagger, or similar API documentation system.</p>
 </ul>
 </section>
 <section id="internal-project-documentation">
-<span id="tier-exposed-interface-docs-end"></span><h3>Internal Project Documentation<a class="headerlink" href="#internal-project-documentation" title="Permalink to this headline">#</a></h3>
+<span id="tier-exposed-interface-docs-end"></span><h3>Internal Project Documentation<a class="headerlink" href="#internal-project-documentation" title="Permalink to this heading">#</a></h3>
 <ul class="simple" id="tier-internal-project-docs-start">
 <li><p><strong>Tier 5</strong>: No documentation.</p></li>
 <li><p><strong>Tier 4</strong>: Quickstart and tutorials for key features / use cases.</p></li>
@@ -801,7 +803,7 @@ Internal documentation release aligns with SW Release</p></li>
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

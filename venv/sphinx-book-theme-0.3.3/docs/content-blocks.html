@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Special content blocks &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -748,10 +750,10 @@ title="Print to PDF"
               <div>
                 
   <section id="special-content-blocks">
-<h1>Special content blocks<a class="headerlink" href="#special-content-blocks" title="Permalink to this headline">#</a></h1>
+<h1>Special content blocks<a class="headerlink" href="#special-content-blocks" title="Permalink to this heading">#</a></h1>
 <p>There are a few content blocks that are unique to this theme.</p>
 <section id="quotations-and-epigraphs">
-<h2>Quotations and epigraphs<a class="headerlink" href="#quotations-and-epigraphs" title="Permalink to this headline">#</a></h2>
+<h2>Quotations and epigraphs<a class="headerlink" href="#quotations-and-epigraphs" title="Permalink to this heading">#</a></h2>
 <p>Here is what quotations and epigraphs look like in <code class="docutils literal notranslate"><span class="pre">sphinx-book-theme</span></code>:</p>
 <p>Sometimes you’d like to draw more attention to a quote. To do so, use the <code class="docutils literal notranslate"><span class="pre">{epigraph}</span></code> directive.
 Below is an epigraph, click the button to the right of it to show the code that was used
@@ -760,21 +762,21 @@ to generate it:</p>
 followed by a line that starts with <code class="docutils literal notranslate"><span class="pre">--</span></code>. This will be renderered like so:</p>
 </section>
 <section id="sidenotes-and-marginnotes">
-<span id="margin-sidenote"></span><h2>Sidenotes and marginnotes<a class="headerlink" href="#sidenotes-and-marginnotes" title="Permalink to this headline">#</a></h2>
+<span id="margin-sidenote"></span><h2>Sidenotes and marginnotes<a class="headerlink" href="#sidenotes-and-marginnotes" title="Permalink to this heading">#</a></h2>
 <p>This theme has support for <a class="reference external" href="https://edwardtufte.github.io/tufte-css/">Tufte-style margin / side notes</a>, with a UX similar to <a class="reference external" href="https://github.com/jez/pandoc-sidenote">pandoc-sidenote</a>.</p>
 <p>Sidenotes are numbered, and behave like footnotes, except they live in the margin and don’t force the reader to jump their eye to the bottom of the page.
-For example, here is a sidenote<a class="footnote-reference brackets" href="#ex" id="id1">1</a>.
+For example, here is a sidenote<a class="footnote-reference brackets" href="#ex" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.
 On narrow screens, sidenotes are hidden until a user clicks the number.
 If you’re on a mobile device, try clicking the sidenote number above.</p>
 <p>Marginnotes are not numbered, but behave the same way as sidenotes.
-On mobile devices you’ll see a symbol that will show the marginnote when clicked<a class="footnote-reference brackets" href="#exmn" id="id2">2</a>.
+On mobile devices you’ll see a symbol that will show the marginnote when clicked<a class="footnote-reference brackets" href="#exmn" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>.
 For example, there’s a marginnote in the previous sentence, and you should see a symbol show to display it on mobile screens.</p>
 <p>:::{seealso}
 Sidenotes and marginnotes are inline content - you cannot use block-level content inside of these notes.
 If you’d like to use block-level content in the margins, see <a class="reference internal" href="#margin-block"><span class="std std-ref">Block margin content with the {margin} directive</span></a>.
 :::</p>
 <section id="activate-sidenotes-and-marginnotes">
-<h3>Activate sidenotes and marginnotes<a class="headerlink" href="#activate-sidenotes-and-marginnotes" title="Permalink to this headline">#</a></h3>
+<h3>Activate sidenotes and marginnotes<a class="headerlink" href="#activate-sidenotes-and-marginnotes" title="Permalink to this heading">#</a></h3>
 <p>The theme activates sidenotes and marginnotes by over-riding footnote syntax to instead exist in the margin.</p>
 <p>To convert your footnotes to <em>instead</em> be sidenotes/marginnotes, use this configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -787,17 +789,17 @@ If you’d like to use block-level content in the margins, see <a class="referen
 <p>This will turn your <strong>footnotes</strong> into <strong>sidenotes</strong> or <strong>marginnotes</strong>.</p>
 </section>
 <section id="create-a-sidenote">
-<h3>Create a sidenote<a class="headerlink" href="#create-a-sidenote" title="Permalink to this headline">#</a></h3>
+<h3>Create a sidenote<a class="headerlink" href="#create-a-sidenote" title="Permalink to this heading">#</a></h3>
 <p>The following sentence defines a sidenote and its respective content:</p>
 </section>
 <section id="create-a-marginnote">
-<h3>Create a marginnote<a class="headerlink" href="#create-a-marginnote" title="Permalink to this headline">#</a></h3>
+<h3>Create a marginnote<a class="headerlink" href="#create-a-marginnote" title="Permalink to this heading">#</a></h3>
 <p>Marginnotes are defined by adding <code class="docutils literal notranslate"><span class="pre">{-}</span></code> at the beginning of the content block.
 The following syntax defines a marginnote:</p>
 </section>
 </section>
 <section id="block-margin-content-with-the-margin-directive">
-<span id="margin-block"></span><h2>Block margin content with the <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> directive<a class="headerlink" href="#block-margin-content-with-the-margin-directive" title="Permalink to this headline">#</a></h2>
+<span id="margin-block"></span><h2>Block margin content with the <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> directive<a class="headerlink" href="#block-margin-content-with-the-margin-directive" title="Permalink to this heading">#</a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> directive allows you to create block-level margin content with an optional title.
 It is a wrapper around the Sphinx <code class="docutils literal notranslate"><span class="pre">{sidebar}</span></code> directive, and largely does its magic via CSS classes (see below).</p>
 <p>:::{seealso}
@@ -805,7 +807,7 @@ If you’d like in-line margin content with numbered references, see <a class="r
 :::</p>
 <p>Here’s how you can use the <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> directive:</p>
 <section id="figure-captions-in-the-margin">
-<h3>Figure captions in the margin<a class="headerlink" href="#figure-captions-in-the-margin" title="Permalink to this headline">#</a></h3>
+<h3>Figure captions in the margin<a class="headerlink" href="#figure-captions-in-the-margin" title="Permalink to this heading">#</a></h3>
 <p>You can configure figures to use the margin for captions.
 Here is a figure with a caption to the right.</p>
 <p>::::{example}
@@ -821,7 +823,7 @@ Here is a figure with a caption to the right.</p>
 <code class="xref std std-numref docutils literal notranslate"><span class="pre">myfig5</span></code>.</p>
 </section>
 <section id="css-classes-for-custom-margin-content">
-<h3>CSS classes for custom margin content<a class="headerlink" href="#css-classes-for-custom-margin-content" title="Permalink to this headline">#</a></h3>
+<h3>CSS classes for custom margin content<a class="headerlink" href="#css-classes-for-custom-margin-content" title="Permalink to this heading">#</a></h3>
 <p>You may also directly add CSS classes to elements on your page in order to make them behave like margin content.
 To do so, add the <code class="docutils literal notranslate"><span class="pre">margin</span></code> CSS class to any element on the page.
 Many Sphinx directives allow you to directly add classes.
@@ -834,7 +836,7 @@ some vertical space to see better.</p>
 <code class="xref std std-numref docutils literal notranslate"><span class="pre">myfig4</span></code>.</p>
 </section>
 <section id="content-examples-in-the-margin">
-<h3>Content examples in the margin<a class="headerlink" href="#content-examples-in-the-margin" title="Permalink to this headline">#</a></h3>
+<h3>Content examples in the margin<a class="headerlink" href="#content-examples-in-the-margin" title="Permalink to this heading">#</a></h3>
 <p>Margin content can include all kinds of things, such as code blocks:</p>
 <aside class="margin sidebar">
 <p class="sidebar-title">Code blocks in margins</p>
@@ -864,7 +866,7 @@ Wow, a note with an image in a margin!
 </section>
 </section>
 <section id="sidebars">
-<h2>Sidebars<a class="headerlink" href="#sidebars" title="Permalink to this headline">#</a></h2>
+<h2>Sidebars<a class="headerlink" href="#sidebars" title="Permalink to this heading">#</a></h2>
 <p>Sidebars exist in-line with your text, but allow the rest of the
 page to flow around them, rather than moving to the right margin.</p>
 <p>To add content sidebars, use this syntax:</p>
@@ -874,7 +876,7 @@ certain kinds of elements, such as “note” blocks and code cells, that may
 clash with your sidebar. If this happens, try using a <code class="docutils literal notranslate"><span class="pre">{margin}</span></code> instead.</p>
 </section>
 <section id="full-width-content">
-<h2>Full-width content<a class="headerlink" href="#full-width-content" title="Permalink to this headline">#</a></h2>
+<h2>Full-width content<a class="headerlink" href="#full-width-content" title="Permalink to this heading">#</a></h2>
 <p>Full-width content extends into the right margin, making it stand out against
 the rest of your book’s content. To add full-width content to your page, add the
 class <code class="docutils literal notranslate"><span class="pre">full-width</span></code> to any of the elements in your documentation. For example, you can
@@ -886,15 +888,17 @@ add a <code class="docutils literal notranslate"><span class="pre">full-width</s
 this behavior with a code cell by adding a <code class="docutils literal notranslate"><span class="pre">full-width</span></code> tag to the cell.</p>
 </div>
 <hr class="footnotes docutils" />
-<dl class="footnote brackets">
-<dt class="label" id="ex"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
-<dd><p>Here’s my sidenote text!</p>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="ex" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>Here’s my sidenote text!</p>
 <p>On narrow screens, this text won’t show up unless you click the superscript number!</p>
-</dd>
-<dt class="label" id="exmn"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
-<dd><p>{-} This is a margin note. Notice there isn’t a number preceding the note.</p>
-</dd>
-</dl>
+</aside>
+<aside class="footnote brackets" id="exmn" role="note">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>{-} This is a margin note. Notice there isn’t a number preceding the note.</p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -915,7 +919,7 @@ this behavior with a code cell by adding a <code class="docutils literal notrans
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Set up your development workflow &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../../../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
@@ -690,11 +692,11 @@ title="Print to PDF"
               <div>
                 
   <section id="set-up-your-development-workflow">
-<h1>Set up your development workflow<a class="headerlink" href="#set-up-your-development-workflow" title="Permalink to this headline">#</a></h1>
+<h1>Set up your development workflow<a class="headerlink" href="#set-up-your-development-workflow" title="Permalink to this heading">#</a></h1>
 <p>The following instructions will help you set up a basic development environment so that you can begin experimenting with changes.
 This covers the basics, and see the other sections of the Contributing Guide for more details.</p>
 <section id="set-up-your-development-environment">
-<h2>Set up your development environment<a class="headerlink" href="#set-up-your-development-environment" title="Permalink to this headline">#</a></h2>
+<h2>Set up your development environment<a class="headerlink" href="#set-up-your-development-environment" title="Permalink to this heading">#</a></h2>
 <p>First we’ll install the necessary tools that you can use to begin making changes.
 Follow these steps:</p>
 <ol class="arabic">
@@ -738,7 +740,7 @@ You can also run pre-commit via <code class="docutils literal notranslate"><span
 <p>The rest of these instructions use <code class="docutils literal notranslate"><span class="pre">tox</span></code> to automate the installation and commands necessary to do many common things.</p>
 </section>
 <section id="build-the-documentation">
-<h2>Build the documentation<a class="headerlink" href="#build-the-documentation" title="Permalink to this headline">#</a></h2>
+<h2>Build the documentation<a class="headerlink" href="#build-the-documentation" title="Permalink to this heading">#</a></h2>
 <p>Now that you’ve installed the necessary tools, try building the documentation for this theme locally.
 To do so, run the following <code class="docutils literal notranslate"><span class="pre">tox</span></code> command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e docs-update
@@ -748,7 +750,7 @@ To do so, run the following <code class="docutils literal notranslate"><span cla
 You may then preview them by opening one of the HTML files.</p>
 </section>
 <section id="update-the-theme-s-assets-css-js">
-<h2>Update the theme’s assets (CSS/JS)<a class="headerlink" href="#update-the-theme-s-assets-css-js" title="Permalink to this headline">#</a></h2>
+<h2>Update the theme’s assets (CSS/JS)<a class="headerlink" href="#update-the-theme-s-assets-css-js" title="Permalink to this heading">#</a></h2>
 <p>Now that you’ve previewed the documentation, try making changes to this theme’s assets and see how they affect the documentation builds.
 This is an easy way to preview the effect that your changes will make.</p>
 <p>First, <strong>make your changes in <code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/assets/</span></code></strong>.
@@ -769,7 +771,7 @@ These compiled assets are <strong>not included</strong> in our git repository, b
 <p>When you open the HTML files for the documentation, your changes should be reflected.</p>
 </section>
 <section id="auto-build-the-docs-when-you-make-changes">
-<h2>Auto-build the docs when you make changes<a class="headerlink" href="#auto-build-the-docs-when-you-make-changes" title="Permalink to this headline">#</a></h2>
+<h2>Auto-build the docs when you make changes<a class="headerlink" href="#auto-build-the-docs-when-you-make-changes" title="Permalink to this heading">#</a></h2>
 <p>You can bundle both of the steps above into a single command, which also opens a live server that watches for changes to the theme’s assets and documentation, and automatically compiles changes + re-builds the theme.</p>
 <p>To do so, use this <code class="docutils literal notranslate"><span class="pre">tox</span></code> command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox -e docs-live
@@ -785,7 +787,7 @@ These compiled assets are <strong>not included</strong> in our git repository, b
 <p>With this, you can modify the theme in an editor, and see how those modifications render on the browser.</p>
 </section>
 <section id="run-the-tests">
-<h2>Run the tests<a class="headerlink" href="#run-the-tests" title="Permalink to this headline">#</a></h2>
+<h2>Run the tests<a class="headerlink" href="#run-the-tests" title="Permalink to this heading">#</a></h2>
 <p>Once you’ve made a change to the theme, you should confirm that the tests still pass, and potentially add or modify a test for your changes.</p>
 <p>To run the test suite with the default <code class="docutils literal notranslate"><span class="pre">tox</span></code> environment, simply run this command:</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>tox
@@ -802,7 +804,7 @@ See <a class="reference internal" href="tests.html#contribute-testing"><span cla
 :::</p>
 </section>
 <section id="the-example-directive">
-<h2>The <code class="docutils literal notranslate"><span class="pre">{example}</span></code> directive<a class="headerlink" href="#the-example-directive" title="Permalink to this headline">#</a></h2>
+<h2>The <code class="docutils literal notranslate"><span class="pre">{example}</span></code> directive<a class="headerlink" href="#the-example-directive" title="Permalink to this heading">#</a></h2>
 <p>This theme uses the <a class="reference external" href="https://github.com/executablebooks/sphinx-examples">sphinx-examples</a> extension to make it easy to quickly show off example snippets.</p>
 <p>Basic usage is like so:</p>
 <p>:::{example}</p>
@@ -828,7 +830,7 @@ See <a class="reference internal" href="tests.html#contribute-testing"><span cla
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

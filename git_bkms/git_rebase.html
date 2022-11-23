@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Git Rebase &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -664,22 +666,22 @@ title="Print to PDF"
               <div>
                 
   <section id="git-rebase">
-<span id="id1"></span><h1>Git Rebase<a class="headerlink" href="#git-rebase" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Git Rebase<a class="headerlink" href="#git-rebase" title="Permalink to this heading">#</a></h1>
 <p>This page walks you through how to do an interactive rebase in Git.</p>
 <section id="git-merge-vs-git-rebase">
-<h2>Git Merge vs. Git Rebase<a class="headerlink" href="#git-merge-vs-git-rebase" title="Permalink to this headline">#</a></h2>
+<h2>Git Merge vs. Git Rebase<a class="headerlink" href="#git-merge-vs-git-rebase" title="Permalink to this heading">#</a></h2>
 <p>Oftentimes, our branches get out of sync with upstream. This is common when collaborating using a <a class="reference internal" href="github_fork_clone.html#github-fork-clone"><span class="std std-ref">Fork-and-Clone</span></a> method.</p>
 <p>When a <cite>git merge</cite> is run, an extra commit is performed and local copies can be overwritten. In contrast, when a <cite>git rebase</cite> is run,
 we attempt to resolve conflicting histories.</p>
 <p>Using <cite>git rebase -i</cite> helps us iron out conflicting histories and selectively include revisions from our local branch.</p>
 </section>
 <section id="rebase-in-fork-and-clone">
-<h2>Rebase in Fork and Clone<a class="headerlink" href="#rebase-in-fork-and-clone" title="Permalink to this headline">#</a></h2>
+<h2>Rebase in Fork and Clone<a class="headerlink" href="#rebase-in-fork-and-clone" title="Permalink to this heading">#</a></h2>
 <p>This instruction walks you through doing a git rebase after you already did a fork-and-clone for development.</p>
 <p>We assume you have two git <cite>remotes</cite>: <cite>upstream</cite> and <cite>origin</cite>, where the default branch is <cite>main</cite>.` Your repo may have a different
 default branch, like <cite>dev</cite>, so be sure to check at the repo root directory.</p>
 <section id="use-case-1">
-<h3>Use Case 1<a class="headerlink" href="#use-case-1" title="Permalink to this headline">#</a></h3>
+<h3>Use Case 1<a class="headerlink" href="#use-case-1" title="Permalink to this heading">#</a></h3>
 <p>Let's walk through a simple use case. It's Monday morning. Your manager asked you to submit a new PR to revise an existing document, <code class="file docutils literal notranslate"><span class="pre">bash-script-howto.md</span></code>. The document shows how to write a bash script to install Ubuntu dependencies in a Dockerfile.</p>
 <p>You:</p>
 <ul class="simple">
@@ -701,7 +703,7 @@ default branch, like <cite>dev</cite>, so be sure to check at the repo root dire
 <p>How do you do that?</p>
 </section>
 <section id="method-1">
-<h3>Method 1<a class="headerlink" href="#method-1" title="Permalink to this headline">#</a></h3>
+<h3>Method 1<a class="headerlink" href="#method-1" title="Permalink to this heading">#</a></h3>
 <ol class="arabic">
 <li><p>Checkout the main (or default) branch.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout main
@@ -900,7 +902,7 @@ who should help you determine if any specific conventions should be followed.</p
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

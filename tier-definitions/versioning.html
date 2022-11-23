@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Versioning &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -650,20 +652,20 @@ title="Print to PDF"
               <div>
                 
   <section id="versioning">
-<span id="id1"></span><h1>Versioning<a class="headerlink" href="#versioning" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>Versioning<a class="headerlink" href="#versioning" title="Permalink to this heading">#</a></h1>
 <p>Using a versioning scheme allows potential contributors and consumers of your project to understand the scope and impact of releases. Managing depencies of a project is difficult especially as depencies evolve their API, fix bugs and CVEs, etc. Using a clearly defined versioning scheme should help comsumers of your project understand if a given release fixed bugs, breaks compatibility, or adds new functionality. This will allow informed decisions about which versions to consume as their own projects develop and mature. In addition, build sripts, CI/CD, etc can automate update of dependencies based on clearly defined and consistently applied versioning schemes.</p>
 <section id="prerequisites">
-<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h2>
+<h2>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h2>
 <p>The project repository and workflow needs to be setup to support a release process, typically using branches to separate releases from ongoing development.</p>
 </section>
 <section id="bkms">
-<h2>BKMS<a class="headerlink" href="#bkms" title="Permalink to this headline">#</a></h2>
+<h2>BKMS<a class="headerlink" href="#bkms" title="Permalink to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Use git tagging to tag releases in your repository (TBD link to doc describing tagging)</p></li>
 </ul>
 </section>
 <section id="tier-definitions">
-<h2>Tier Definitions<a class="headerlink" href="#tier-definitions" title="Permalink to this headline">#</a></h2>
+<h2>Tier Definitions<a class="headerlink" href="#tier-definitions" title="Permalink to this heading">#</a></h2>
 <ul class="simple" id="tier-versioning-start">
 <li><p><strong>Tier 5.</strong> No versioning; ie the codebase is presented as is, without any explicit versioned releases.</p></li>
 <li><p><strong>Tier 4.</strong> The project uses manual versioning, ie releases are created but release names / numbers are assigned by the project owner without reference to a versioning scheme.</p></li>
@@ -704,7 +706,7 @@ title="Print to PDF"
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

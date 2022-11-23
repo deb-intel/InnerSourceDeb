@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Creating sub-themes &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../../../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
@@ -638,7 +640,7 @@ title="Print to PDF"
               <div>
                 
   <section id="creating-sub-themes">
-<h1>Creating sub-themes<a class="headerlink" href="#creating-sub-themes" title="Permalink to this headline">#</a></h1>
+<h1>Creating sub-themes<a class="headerlink" href="#creating-sub-themes" title="Permalink to this heading">#</a></h1>
 <p>It is possible to create sub-themes from this, in order to bring much of the same functionality but modify the style and behavior a bit.
 This page has a few helpful tips for doing so.</p>
 <p>:::{warning}
@@ -646,7 +648,7 @@ Creating sub-themes requires advanced Sphinx skills, and is not explicitly a sup
 There are no promises that we won’t make breaking changes here, so be sure to test your sub-theme against the latest branch and / or pin your versions!!
 :::</p>
 <section id="hashing-your-assets">
-<h2>Hashing your assets<a class="headerlink" href="#hashing-your-assets" title="Permalink to this headline">#</a></h2>
+<h2>Hashing your assets<a class="headerlink" href="#hashing-your-assets" title="Permalink to this heading">#</a></h2>
 <p>This theme defines a function called <code class="docutils literal notranslate"><span class="pre">hash_html_assets</span></code> that can be used to create hashes for your style files, and updates the Sphinx links to include them with <code class="docutils literal notranslate"><span class="pre">?digest=</span></code>.
 You can re-use this function in a sub-theme if you wish - to do so, look at the function signature of <code class="docutils literal notranslate"><span class="pre">hash_html_assets</span></code>.</p>
 <p>For example, here’s a Python snippet that reuses this function:</p>
@@ -663,7 +665,7 @@ You can re-use this function in a sub-theme if you wish - to do so, look at the 
 </div>
 </section>
 <section id="defining-your-own-css">
-<h2>Defining your own CSS<a class="headerlink" href="#defining-your-own-css" title="Permalink to this headline">#</a></h2>
+<h2>Defining your own CSS<a class="headerlink" href="#defining-your-own-css" title="Permalink to this heading">#</a></h2>
 <p>If you’d like to define a new CSS stylesheet for your sub-theme, make sure to import the CSS for this theme as well.
 As a best practice, you should put your sub-theme’s CSS stylesheet in the <code class="docutils literal notranslate"><span class="pre">STATIC_PATH/styles/</span></code> folder, similar to this theme.
 Then, you can import this theme’s CSS with:</p>
@@ -692,7 +694,7 @@ Then, you can import this theme’s CSS with:</p>
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

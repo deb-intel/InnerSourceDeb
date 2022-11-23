@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Security Development Lifecycle &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -593,59 +595,53 @@ title="Print to PDF"
               <div>
                 
   <section id="security-development-lifecycle">
-<h1>Security Development Lifecycle<a class="headerlink" href="#security-development-lifecycle" title="Permalink to this headline">#</a></h1>
+<span id="sdlc"></span><h1>Security Development Lifecycle<a class="headerlink" href="#security-development-lifecycle" title="Permalink to this heading">#</a></h1>
 <p>The InnerSource community of practice does not define or interfere with the corporate Security Development Lifecycle requirements.
-SDL Sharepoint: <a class="reference external" href="http://goto.intel.com/sdl">http://goto.intel.com/sdl</a>
-SDL Essentials portal: <a class="reference external" href="http://goto.intel.com/sdle">http://goto.intel.com/sdle</a>
-SDL Wiki: <a class="reference external" href="http://goto.intel.com/sdle-wiki">http://goto.intel.com/sdle-wiki</a></p>
-<p>The InnerSource community of practice would like to see the following ensure InnerSource readiness for reuse and contribution:</p>
+- <a class="reference external" href="http://goto.intel.com/sdl">SDL Sharepoint</a>
+- <a class="reference external" href="http://goto.intel.com/sdle">SDL Essentials portal</a>
+- <a class="reference external" href="http://goto.intel.com/sdle-wiki">SDL Wiki</a></p>
+<p>The InnerSource community of practice recommends the following to ensure InnerSource readiness for reuse and contribution:</p>
 <ul class="simple">
 <li><p>SDL Essentials</p>
 <ul>
 <li><p>Complete requirements and obtain SDL approval for your current release.</p></li>
-<li><p>Document your project according to InnerSource BKMs</p></li>
-<li><p>In your InnerSource YAML file, please record the location of your SDL project and how to get access.</p></li>
+<li><p>Document your project according to InnerSource BKMs.</p></li>
+<li><p>Record the location of your SDL project and how to access it in your InnerSource YAML file,.</p></li>
 <li><p>Document your Export Compliance Classifcation Number (ECCN) in your SDL project.</p></li>
 </ul>
 </li>
 <li><p>SW Composition analysis (ex: BDBA and SNYK)</p>
 <ul>
-<li><p>Include language specific manifest file (requirements.txt) in your GitHub repo (TODO: link from Ryan)</p></li>
-<li><p>Include SW Composition analysis (ex: BDBA and SNYK) exceptions file in your GitHub repo (TODO: link from Ryan)</p></li>
-<li><p>Ensure your project is set up for continuous scanning at least once a quarter (TODO: link to ongoing support definition by EOQ3’21 from Diana)</p></li>
+<li><p>Include a language-specific manifest file (requirements.txt) in your GitHub repo (TODO: link from Ryan).</p></li>
+<li><p>Include SW Composition analysis (ex: BDBA and SNYK) exceptions file in your GitHub repo (TODO: link from Ryan).</p></li>
+<li><p>Ensure your project is set up for continuous scanning at least once a quarter (TODO: link to ongoing support definition by EOQ3’21 from Diana).</p></li>
 </ul>
 </li>
 </ul>
-<p>For teams reusing code</p>
-<ul>
+<p>For teams reusing code:</p>
+<ul class="simple">
 <li><p>SDLE Task CT47: Assessing the risk of the reused components.</p>
 <ul>
 <li><p>Assess threat model of reused project</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>How to get access if BU is no longer in existence: File a support ticket to get access (link from portal to ticketing system under help)</p></li>
+<ul>
+<li><p>How to get access if the BU is no longer in existence: File a support ticket to get access (link from portal to ticketing system under help)</p></li>
 </ul>
-</div></blockquote>
 </li>
-</ul>
-<blockquote>
-<div><ul class="simple">
 <li><p>Assess the risk of the reused project</p>
 <ul>
-<li><p>Read reused project documentation</p></li>
+<li><p>Read reused project documentation.</p></li>
 </ul>
 </li>
 </ul>
-</div></blockquote>
 </li>
 <li><p>If you are not modifying the code</p>
-<ul class="simple">
+<ul>
 <li><p>Static code analysis not required.  Reference original static code analysis.</p></li>
 <li><p>SW Composition analysis (ex: BDBA and SNYK) required.</p></li>
 </ul>
 </li>
 <li><p>If you are modifying the code</p>
-<ul class="simple">
+<ul>
 <li><p>Static code analysis required.</p>
 <ul>
 <li><p>The expectation is that they are reviewing the scan for the parts of the code they changed and not the whole of the code.</p></li>
@@ -688,7 +684,7 @@ SDL Wiki: <a class="reference external" href="http://goto.intel.com/sdle-wiki">h
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

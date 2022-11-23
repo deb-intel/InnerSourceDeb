@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Customize the primary sidebar &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../../../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
@@ -692,12 +694,12 @@ title="Print to PDF"
               <div>
                 
   <section id="customize-the-primary-sidebar">
-<h1>Customize the primary sidebar<a class="headerlink" href="#customize-the-primary-sidebar" title="Permalink to this headline">#</a></h1>
+<h1>Customize the primary sidebar<a class="headerlink" href="#customize-the-primary-sidebar" title="Permalink to this heading">#</a></h1>
 <p>The primary sidebar generally contains the site navigation and logo.
 By default it is on the left side of the site.
 This page describes ways that you can control and customize the primary sidebar.</p>
 <section id="control-the-left-sidebar-items">
-<span id="sidebar-primary-items"></span><h2>Control the left sidebar items<a class="headerlink" href="#control-the-left-sidebar-items" title="Permalink to this headline">#</a></h2>
+<span id="sidebar-primary-items"></span><h2>Control the left sidebar items<a class="headerlink" href="#control-the-left-sidebar-items" title="Permalink to this heading">#</a></h2>
 <p>You can control what kind of content goes underneath the logo and name of your website in the top left.</p>
 <p>To do so, use the <code class="docutils literal notranslate"><span class="pre">html_sidebars</span></code> variable in your <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> file. This takes a dictionary of filename patterns as keys, and a list of sidebar elements as values. Any files that match a key will have the corresponding sidebar elements placed in that page’s sidebar.</p>
 <p>For example, the following configuration would include <em>only the footer</em> on pages under the <code class="docutils literal notranslate"><span class="pre">posts/</span></code> folder:</p>
@@ -714,7 +716,7 @@ This page describes ways that you can control and customize the primary sidebar.
 </div>
 <p>See the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-html_sidebars">Sphinx HTML sidebars documentation</a> for more information.</p>
 <section id="default-sidebar-elements">
-<h3>Default sidebar elements<a class="headerlink" href="#default-sidebar-elements" title="Permalink to this headline">#</a></h3>
+<h3>Default sidebar elements<a class="headerlink" href="#default-sidebar-elements" title="Permalink to this heading">#</a></h3>
 <p>By default, this theme comes with these three theme-specific sidebar elements enabled on all pages:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">sidebar-logo.html</span></code>: Displays the logo and site title.</p></li>
@@ -725,7 +727,7 @@ This page describes ways that you can control and customize the primary sidebar.
 </section>
 </section>
 <section id="customize-the-sidebar-footer">
-<span id="custom-footer"></span><h2>Customize the sidebar footer<a class="headerlink" href="#customize-the-sidebar-footer" title="Permalink to this headline">#</a></h2>
+<span id="custom-footer"></span><h2>Customize the sidebar footer<a class="headerlink" href="#customize-the-sidebar-footer" title="Permalink to this heading">#</a></h2>
 <p>You may choose your own HTML to include in the footer of your sidebar (or set it to be empty). To do so, set the following option in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -737,12 +739,12 @@ This page describes ways that you can control and customize the primary sidebar.
 <p>This text will be placed at the bottom of the sidebar by default.</p>
 </section>
 <section id="add-a-header-to-your-table-of-contents">
-<h2>Add a header to your Table of Contents<a class="headerlink" href="#add-a-header-to-your-table-of-contents" title="Permalink to this headline">#</a></h2>
+<h2>Add a header to your Table of Contents<a class="headerlink" href="#add-a-header-to-your-table-of-contents" title="Permalink to this heading">#</a></h2>
 <p>If you’d like to add a header above a section of TOC links, use <code class="docutils literal notranslate"><span class="pre">:caption:</span> <span class="pre">My</span> <span class="pre">header</span> <span class="pre">text</span></code>
 in your <code class="docutils literal notranslate"><span class="pre">toctree</span></code> directive for that section.</p>
 </section>
 <section id="customize-the-logo-title-and-favicon">
-<span id="sidebar-primary-logo"></span><h2>Customize the logo, title, and favicon<a class="headerlink" href="#customize-the-logo-title-and-favicon" title="Permalink to this headline">#</a></h2>
+<span id="sidebar-primary-logo"></span><h2>Customize the logo, title, and favicon<a class="headerlink" href="#customize-the-logo-title-and-favicon" title="Permalink to this heading">#</a></h2>
 <p>You can customize the logo, title, and favicon of your site with the following Sphinx configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_title</span> <span class="o">=</span> <span class="s2">&quot;Your title&quot;</span>
 <span class="n">html_logo</span> <span class="o">=</span> <span class="s2">&quot;path/to/logo.png&quot;</span>
@@ -760,7 +762,7 @@ in your <code class="docutils literal notranslate"><span class="pre">toctree</sp
 </div>
 </section>
 <section id="add-the-home-page-to-your-table-of-contents">
-<span id="sidebar-primary-home-page"></span><h2>Add the home page to your table of contents<a class="headerlink" href="#add-the-home-page-to-your-table-of-contents" title="Permalink to this headline">#</a></h2>
+<span id="sidebar-primary-home-page"></span><h2>Add the home page to your table of contents<a class="headerlink" href="#add-the-home-page-to-your-table-of-contents" title="Permalink to this heading">#</a></h2>
 <p>By default, your table of contents will begin with the first file that you add to a <code class="docutils literal notranslate"><span class="pre">toctree</span></code>. You can also configure the theme to show the <strong>landing page</strong> of the theme in your navigation bar as well.</p>
 <p>To add the landing page of your site to the table of contents, use the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -772,7 +774,7 @@ in your <code class="docutils literal notranslate"><span class="pre">toctree</sp
 </div>
 </section>
 <section id="control-the-depth-of-the-left-sidebar-lists-to-expand">
-<span id="sidebar-navbar-depth"></span><h2>Control the depth of the left sidebar lists to expand<a class="headerlink" href="#control-the-depth-of-the-left-sidebar-lists-to-expand" title="Permalink to this headline">#</a></h2>
+<span id="sidebar-navbar-depth"></span><h2>Control the depth of the left sidebar lists to expand<a class="headerlink" href="#control-the-depth-of-the-left-sidebar-lists-to-expand" title="Permalink to this heading">#</a></h2>
 <p>You can control the level of toc items in the left sidebar to remain expanded,
 using the following configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -803,7 +805,7 @@ using the following configuration in <code class="docutils literal notranslate">
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

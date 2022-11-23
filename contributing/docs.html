@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>How to Contribute Docs &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -668,7 +670,7 @@ title="Print to PDF"
               <div>
                 
   <section id="how-to-contribute-docs">
-<span id="docs"></span><h1>How to Contribute Docs<a class="headerlink" href="#how-to-contribute-docs" title="Permalink to this headline">#</a></h1>
+<span id="docs"></span><h1>How to Contribute Docs<a class="headerlink" href="#how-to-contribute-docs" title="Permalink to this heading">#</a></h1>
 <p># This document is currently not being used. It’s replacement is
 Create virtual environment to isolate build dependencies. This step must only be
 done once.</p>
@@ -677,7 +679,7 @@ done once.</p>
 <li><p><a class="reference internal" href="#use-doc-template">Use Doc Template</a> to create a new reStructuredText (RST) file</p></li>
 </ul>
 <section id="use-doc-template">
-<h2>Use Doc Template<a class="headerlink" href="#use-doc-template" title="Permalink to this headline">#</a></h2>
+<h2>Use Doc Template<a class="headerlink" href="#use-doc-template" title="Permalink to this heading">#</a></h2>
 <p>Follow <cite>Instructions</cite> below to create a new RST document.</p>
 <p>Follow along using a Terminal.</p>
 <ul class="simple">
@@ -688,7 +690,7 @@ done once.</p>
 </ul>
 </section>
 <section id="instructions">
-<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">#</a></h2>
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this heading">#</a></h2>
 <p>Use our bash script to create a RST file.</p>
 <ol class="arabic">
 <li><p>Navigate to the project root.</p></li>
@@ -710,7 +712,7 @@ done once.</p>
 </ol>
 </section>
 <section id="install-requirements">
-<h2>Install requirements<a class="headerlink" href="#install-requirements" title="Permalink to this headline">#</a></h2>
+<h2>Install requirements<a class="headerlink" href="#install-requirements" title="Permalink to this heading">#</a></h2>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">python -m venv .venv</span>
 </pre></div>
 </div>
@@ -725,7 +727,7 @@ time.</p>
 </div>
 </section>
 <section id="build-view">
-<h2>Build &amp; View<a class="headerlink" href="#build-view" title="Permalink to this headline">#</a></h2>
+<h2>Build &amp; View<a class="headerlink" href="#build-view" title="Permalink to this heading">#</a></h2>
 <p>Use the <cite>Makefile</cite> to build or test documentation.</p>
 <ol class="arabic">
 <li><p>Run command to build html.</p>
@@ -751,7 +753,7 @@ time.</p>
 </ol>
 </section>
 <section id="push-to-github-pages">
-<h2>Push to GitHub Pages<a class="headerlink" href="#push-to-github-pages" title="Permalink to this headline">#</a></h2>
+<h2>Push to GitHub Pages<a class="headerlink" href="#push-to-github-pages" title="Permalink to this heading">#</a></h2>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span><span class="nb">cd</span> _build/
 <span class="gp">$ </span><span class="nb">echo</span> .doctrees/ &gt;&gt; .gitignore
 <span class="gp">$ </span>touch .nojekyll
@@ -783,7 +785,7 @@ time.</p>
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

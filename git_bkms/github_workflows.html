@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>GitHub Workflows &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -700,14 +702,14 @@ title="Print to PDF"
   <blockquote>
 <div></div></blockquote>
 <section id="github-workflows">
-<span id="id1"></span><h1>GitHub Workflows<a class="headerlink" href="#github-workflows" title="Permalink to this headline">#</a></h1>
+<span id="id1"></span><h1>GitHub Workflows<a class="headerlink" href="#github-workflows" title="Permalink to this heading">#</a></h1>
 <p>This page is divided into two workflows:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#developer-workflow">Developer Workflow</a></p></li>
 <li><p><a class="reference internal" href="#tech-writer-workflow">Tech Writer Workflow</a></p></li>
 </ul>
 <section id="individual-contributions">
-<h2>Individual Contributions<a class="headerlink" href="#individual-contributions" title="Permalink to this headline">#</a></h2>
+<h2>Individual Contributions<a class="headerlink" href="#individual-contributions" title="Permalink to this heading">#</a></h2>
 <p>Open source development often uses a “fork-and-clone” development model, where an upstream repository serves as the one source of truth for several contributors.  While individual contributors work on private branches, they must synchronize them frequently with upstream before submitting a pull request. This ensures that contributors' pull requests may be easily merged with the upstream without conflicts.</p>
 <p>When working on project with two or more contributors, we follow the same model.  Using this model, individual contributors:</p>
 <ul class="simple">
@@ -717,13 +719,13 @@ title="Print to PDF"
 </ul>
 </section>
 <section id="collective-contributions">
-<h2>Collective Contributions<a class="headerlink" href="#collective-contributions" title="Permalink to this headline">#</a></h2>
+<h2>Collective Contributions<a class="headerlink" href="#collective-contributions" title="Permalink to this heading">#</a></h2>
 <p>A staging area is created for a team that wants to make collective contributions to an upstream repository as an aggregate.  The organization forks an upstream repository at the “project” level, and the entire team contributes only to that new fork (or staging area).</p>
 <p>Team members contribute to the organization's fork. Afterward, a repository maintainer must aggregate all changes and rebase them with upstream; and then push from the organization's fork to the original upstream.</p>
 <p>A good example of a staging contribution repo is the <a class="reference external" href="https://github.com/intel/llvm">Intel Project for LLVM* technology</a>.</p>
 <p>[TBD] Note: Cannot fork within an organizations. (See 1 Source docs.)</p>
 <section id="prerequisites">
-<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">#</a></h3>
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p><a class="reference internal" href="github_fork_clone.html#fork-and-clone-start"><span class="std std-ref">Fork and Clone Instruction</span></a></p></li>
 </ul>
@@ -741,13 +743,13 @@ In this repository, <span class="guilabel">main</span> is the default branch.</p
 </section>
 </section>
 <section id="developer-workflow">
-<h2>Developer Workflow<a class="headerlink" href="#developer-workflow" title="Permalink to this headline">#</a></h2>
+<h2>Developer Workflow<a class="headerlink" href="#developer-workflow" title="Permalink to this heading">#</a></h2>
 <p>This workflow assumes you <strong>frequently</strong> contribute to a repository. It also assumes you are comfortable using a command line interface (CLI) to develop and manage contributions. Instructions are given using a CLI.</p>
 <ul class="simple">
 <li><p>Complete the <a class="reference internal" href="#prerequisites">Prerequisites</a>.</p></li>
 </ul>
 <section id="synchronize-forked-copy">
-<span id="id2"></span><h3>Synchronize forked copy<a class="headerlink" href="#synchronize-forked-copy" title="Permalink to this headline">#</a></h3>
+<span id="id2"></span><h3>Synchronize forked copy<a class="headerlink" href="#synchronize-forked-copy" title="Permalink to this heading">#</a></h3>
 <p>Follow these steps on any repository that you contribute to regularly.
 These steps are basic maintenance tasks that you must follow prior to working on a new branch.</p>
 <p>In this example, <cite>main</cite> is the default branch on upstream. To check the default branch on the upstream repository, navigate to the project root; then select the branch pull-down menu in the upper-left. The default branch shows a check mark.</p>
@@ -785,7 +787,7 @@ tracking branch.</p>
 </ol>
 </section>
 <section id="develop-a-feature-branch">
-<h3>Develop a feature branch<a class="headerlink" href="#develop-a-feature-branch" title="Permalink to this headline">#</a></h3>
+<h3>Develop a feature branch<a class="headerlink" href="#develop-a-feature-branch" title="Permalink to this heading">#</a></h3>
 <p>In this example, we develop a new feature and keep that feature branch updated with the upstream default branch. We use the <a class="reference external" href="https://github.com/intel-innersource/documentation.practices.innersource">InnerSource documentation repository</a> where <code class="docutils literal notranslate"><span class="pre">main</span></code> is the default branch.
 See also <a class="reference external" href="https://git-scm.com/docs/git-branch">Git branch</a> documentation.</p>
 <p>In this example, we show the relationship of multiple contributors who develop a feature branch, based on a common <cite>upstream/main</cite> branch.</p>
@@ -851,7 +853,7 @@ As Beams suggests, the commit message should answer: “If applied, this commit 
 </section>
 </section>
 <section id="tech-writer-workflow">
-<h2>Tech Writer Workflow<a class="headerlink" href="#tech-writer-workflow" title="Permalink to this headline">#</a></h2>
+<h2>Tech Writer Workflow<a class="headerlink" href="#tech-writer-workflow" title="Permalink to this heading">#</a></h2>
 <p>This workflow assumes you <strong>infrequently</strong> contribute to a repository. It  assumes that you have a GitHub account, know how to access GitHub, and can learn to use the graphical user interface (GUI) to make casual contributions.</p>
 <ul class="simple">
 <li><p>Complete the <a class="reference internal" href="#prerequisites">Prerequisites</a>.</p></li>
@@ -961,7 +963,7 @@ to sync your forked copy.</p></li>
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

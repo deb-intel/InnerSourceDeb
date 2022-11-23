@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Launch buttons for interactivity &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
     <script src="../../../_static/jquery.js"></script>
     <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
@@ -688,7 +690,7 @@ title="Print to PDF"
               <div>
                 
   <section id="launch-buttons-for-interactivity">
-<span id="customize-launch"></span><h1>Launch buttons for interactivity<a class="headerlink" href="#launch-buttons-for-interactivity" title="Permalink to this headline">#</a></h1>
+<span id="customize-launch"></span><h1>Launch buttons for interactivity<a class="headerlink" href="#launch-buttons-for-interactivity" title="Permalink to this heading">#</a></h1>
 <p>You can automatically add buttons that allow users to interact with your
 book’s content. This is either by directing them to a BinderHub or JupyterHub
 that runs in the cloud, or by making your page interactive using Thebe.</p>
@@ -711,7 +713,7 @@ folder as your content, then Binder/JupyterHub links will point to the ipynb
 file instead of the text file.</p>
 </aside>
 <section id="binder-binderhub">
-<h2>Binder / BinderHub<a class="headerlink" href="#binder-binderhub" title="Permalink to this headline">#</a></h2>
+<h2>Binder / BinderHub<a class="headerlink" href="#binder-binderhub" title="Permalink to this heading">#</a></h2>
 <p>To add Binder links your page, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -724,7 +726,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="jupyterhub">
-<h2>JupyterHub<a class="headerlink" href="#jupyterhub" title="Permalink to this headline">#</a></h2>
+<h2>JupyterHub<a class="headerlink" href="#jupyterhub" title="Permalink to this heading">#</a></h2>
 <p>To add JupyterHub links to your page, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -737,7 +739,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="google-colab">
-<h2>Google Colab<a class="headerlink" href="#google-colab" title="Permalink to this headline">#</a></h2>
+<h2>Google Colab<a class="headerlink" href="#google-colab" title="Permalink to this heading">#</a></h2>
 <p>To add Google Colab links to your page, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -750,7 +752,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="deepnote">
-<h2>Deepnote<a class="headerlink" href="#deepnote" title="Permalink to this headline">#</a></h2>
+<h2>Deepnote<a class="headerlink" href="#deepnote" title="Permalink to this heading">#</a></h2>
 <p>To add <a class="reference external" href="https://deepnote.com">Deepnote</a> links to your page, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -767,7 +769,7 @@ file instead of the text file.</p>
 </div>
 </section>
 <section id="live-code-cells-with-thebe">
-<h2>Live code cells with Thebe<a class="headerlink" href="#live-code-cells-with-thebe" title="Permalink to this headline">#</a></h2>
+<h2>Live code cells with Thebe<a class="headerlink" href="#live-code-cells-with-thebe" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="http://thebe.readthedocs.org/">Thebe</a> converts your static code blocks into
 <em>interactive</em> code blocks powered by a Jupyter kernel. It does this by asking for a BinderHub kernel
 <em>under the hood</em> and converts all of your
@@ -814,7 +816,7 @@ documentation for what you can configure.</p>
 </div>
 </section>
 <section id="configure-a-relative-path-to-your-source-file">
-<h2>Configure a relative path to your source file<a class="headerlink" href="#configure-a-relative-path-to-your-source-file" title="Permalink to this headline">#</a></h2>
+<h2>Configure a relative path to your source file<a class="headerlink" href="#configure-a-relative-path-to-your-source-file" title="Permalink to this heading">#</a></h2>
 <p>To configure a relative path to your documentation, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
     <span class="o">...</span>
@@ -825,7 +827,7 @@ documentation for what you can configure.</p>
 </div>
 </section>
 <section id="control-the-user-interface-that-is-opened">
-<h2>Control the user interface that is opened<a class="headerlink" href="#control-the-user-interface-that-is-opened" title="Permalink to this headline">#</a></h2>
+<h2>Control the user interface that is opened<a class="headerlink" href="#control-the-user-interface-that-is-opened" title="Permalink to this heading">#</a></h2>
 <p>You can control the interface that is opened when somebody clicks on a launch button.
 To do so, add the following configuration:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span> <span class="o">=</span> <span class="p">{</span>
@@ -857,7 +859,7 @@ To do so, add the following configuration:</p>
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

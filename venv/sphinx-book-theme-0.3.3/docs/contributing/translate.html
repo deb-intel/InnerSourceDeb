@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Translation workflow &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../../../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
@@ -672,13 +674,13 @@ title="Print to PDF"
               <div>
                 
   <section id="translation-workflow">
-<h1>Translation workflow<a class="headerlink" href="#translation-workflow" title="Permalink to this headline">#</a></h1>
+<h1>Translation workflow<a class="headerlink" href="#translation-workflow" title="Permalink to this heading">#</a></h1>
 <p>This folder contains code and translations for supporting multiple languages with Sphinx.
 See <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-internationalization">the Sphinx internationalization documentation</a> for more details.</p>
 <section id="structure-of-translation-files">
-<h2>Structure of translation files<a class="headerlink" href="#structure-of-translation-files" title="Permalink to this headline">#</a></h2>
+<h2>Structure of translation files<a class="headerlink" href="#structure-of-translation-files" title="Permalink to this heading">#</a></h2>
 <section id="translation-source-files">
-<h3>Translation source files<a class="headerlink" href="#translation-source-files" title="Permalink to this headline">#</a></h3>
+<h3>Translation source files<a class="headerlink" href="#translation-source-files" title="Permalink to this heading">#</a></h3>
 <p>The source files for our translations are hand-edited, and contain the raw mapping of words onto various languages.
 They are checked in to <code class="docutils literal notranslate"><span class="pre">git</span></code> history with this repository.</p>
 <p><code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/assets/translations/jsons</span></code> contains a collection of JSON files that define the translation for various phrases in this repository.
@@ -686,7 +688,7 @@ Each file is a different phrase, and its contents define language codes and tran
 They were originally created with <a class="reference external" href="https://smodin.me/translate-one-text-into-multiple-languages">the smodin.io language translator</a> (see below for how to update them).</p>
 </section>
 <section id="compiled-translation-files">
-<h3>Compiled translation files<a class="headerlink" href="#compiled-translation-files" title="Permalink to this headline">#</a></h3>
+<h3>Compiled translation files<a class="headerlink" href="#compiled-translation-files" title="Permalink to this heading">#</a></h3>
 <p>The translation source files are compiled at build time (when we run <code class="docutils literal notranslate"><span class="pre">stb</span> <span class="pre">compile</span></code>) automatically.
 This is executed by the Python script at <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">src/sphinx_book_theme/_compile_translations.py</span></code> (more information on that below).</p>
 <p>These compiled files are <strong>not checked into <code class="docutils literal notranslate"><span class="pre">.git</span></code> history</strong>, but they <strong>are</strong> bundled with the theme when it is distributed in a package.
@@ -698,7 +700,7 @@ Here’s a brief explanation of each:</p>
 </section>
 </section>
 <section id="workflow-of-translations">
-<h2>Workflow of translations<a class="headerlink" href="#workflow-of-translations" title="Permalink to this headline">#</a></h2>
+<h2>Workflow of translations<a class="headerlink" href="#workflow-of-translations" title="Permalink to this heading">#</a></h2>
 <p>Here’s a short workflow of how to add a new translation, assuming that you are translating using the <a class="reference external" href="https://smodin.io/translate-one-text-into-multiple-languages">smodin.io service</a>.</p>
 <ol class="arabic">
 <li><p>Go to <a class="reference external" href="https://smodin.io/translate-one-text-into-multiple-languages">the smodin.io service</a></p></li>
@@ -719,7 +721,7 @@ So if the original phrase is <code class="docutils literal notranslate"><span cl
 <p>Sphinx should now know how to translate this message!</p>
 </section>
 <section id="to-update-a-translation">
-<h2>To update a translation<a class="headerlink" href="#to-update-a-translation" title="Permalink to this headline">#</a></h2>
+<h2>To update a translation<a class="headerlink" href="#to-update-a-translation" title="Permalink to this heading">#</a></h2>
 <p>To update a translation, you may go to the phase you’d like to modify in <code class="docutils literal notranslate"><span class="pre">jsons/</span></code>, then find the entry for the language you’d like to update, and change its value.
 Finally, run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">src/sphinx_book_theme/_compile_translations.py</span></code> and this will update the <code class="docutils literal notranslate"><span class="pre">.mo</span></code> files.</p>
 </section>
@@ -742,7 +744,7 @@ Finally, run <code class="docutils literal notranslate"><span class="pre">python
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>

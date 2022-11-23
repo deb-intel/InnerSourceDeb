@@ -4,7 +4,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
     <title>Style and design &#8212; InnerSource 0.5.0 documentation</title>
     
@@ -31,7 +31,9 @@
     <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
     <script src="../../../../_static/jquery.js"></script>
     <script src="../../../../_static/underscore.js"></script>
+    <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../../../../_static/doctools.js"></script>
+    <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../../../../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../../../../genindex.html" />
@@ -658,10 +660,10 @@ title="Print to PDF"
               <div>
                 
   <section id="style-and-design">
-<span id="contributing-style"></span><h1>Style and design<a class="headerlink" href="#style-and-design" title="Permalink to this headline">#</a></h1>
+<span id="contributing-style"></span><h1>Style and design<a class="headerlink" href="#style-and-design" title="Permalink to this heading">#</a></h1>
 <p>This describes the principles and infrastructure behind the style and design aspects of this theme.</p>
 <section id="design-principles-and-inspiration">
-<h2>Design principles and inspiration<a class="headerlink" href="#design-principles-and-inspiration" title="Permalink to this headline">#</a></h2>
+<h2>Design principles and inspiration<a class="headerlink" href="#design-principles-and-inspiration" title="Permalink to this heading">#</a></h2>
 <p>Here are a few guiding principles for the design of this theme:</p>
 <ul class="simple">
 <li><p><strong>Use minimalistic visual elements.</strong> This theme should not have “strong visual opinions” beyond a clean and minimal design.
@@ -679,7 +681,7 @@ For example, use whitespace instead of color blocks to separate content, use uni
 </ul>
 </section>
 <section id="scss-build-process">
-<h2>SCSS build process<a class="headerlink" href="#scss-build-process" title="Permalink to this headline">#</a></h2>
+<h2>SCSS build process<a class="headerlink" href="#scss-build-process" title="Permalink to this heading">#</a></h2>
 <p>Our SCSS source files at in <code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/assets/styles</span></code>.
 We use the <a class="reference external" href="https://github.com/pradyunsg/sphinx-theme-builder">Sphinx Theme Builder</a> tp compile these assets and bundle them with the theme at <code class="docutils literal notranslate"><span class="pre">src/sphinx_book_theme/theme/sphinx_book_theme/static/styles</span></code>.</p>
 <p>These compiled files are <strong>not checked in to <code class="docutils literal notranslate"><span class="pre">git</span></code> history</strong>.</p>
@@ -693,13 +695,13 @@ We use the <a class="reference external" href="https://github.com/pradyunsg/sphi
 </div>
 </section>
 <section id="css-scss-naming-conventions">
-<h2>CSS/SCSS naming conventions<a class="headerlink" href="#css-scss-naming-conventions" title="Permalink to this headline">#</a></h2>
+<h2>CSS/SCSS naming conventions<a class="headerlink" href="#css-scss-naming-conventions" title="Permalink to this heading">#</a></h2>
 <p>We try to follow the <a class="reference external" href="https://cssguidelin.es/#bem-like-naming"><code class="docutils literal notranslate"><span class="pre">block__element--modifier</span></code> naming convention for CSS</a>.</p>
 <p>This is aspirational!
 Many of our HTML elements do not quite follow this naming, and over time we hope to continue making adjustments to get closer to this frameowrk.</p>
 </section>
 <section id="scss-folder-structure">
-<h2>SCSS folder structure<a class="headerlink" href="#scss-folder-structure" title="Permalink to this headline">#</a></h2>
+<h2>SCSS folder structure<a class="headerlink" href="#scss-folder-structure" title="Permalink to this heading">#</a></h2>
 <p>Our SCSS files follow the structured described in <a class="reference external" href="https://sass-guidelin.es/#architecture">the sass-guidelines guide</a>.
 For a high-level overview, see the file <code class="docutils literal notranslate"><span class="pre">/assets/styles/index.scss</span></code>.</p>
 <div class="admonition note">
@@ -726,7 +728,7 @@ For a high-level overview, see the file <code class="docutils literal notranslat
   
     By Intel<br/>
   
-      &copy; Copyright Published 2022-11-15 16:13 by Intel.<br/>
+      &copy; Copyright Published 2022-11-23 18:34 by Intel.<br/>
 </p>
         </footer>
     </div>
